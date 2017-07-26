@@ -203,6 +203,7 @@ PRODUCT_PACKAGES += \
     OnePlus9ProFrameworks \
     OnePlus9ProSystemUI \
     OnePlus9SeriesFrameworks \
+    OnePlus9SeriesSystemUI \
     OnePlus9SystemUI \
     WifiResTarget
 
