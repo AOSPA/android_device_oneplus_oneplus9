@@ -36,6 +36,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Alert Slider
 PRODUCT_PACKAGES += \
+    TriStateHandler \
     tri-state-key_daemon
 
 # Attestation
@@ -175,6 +176,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAOnePlus9SeriesFrameworks \
     FrameworksResTarget \
     OnePlus9Frameworks \
     OnePlus9ProFrameworks \
