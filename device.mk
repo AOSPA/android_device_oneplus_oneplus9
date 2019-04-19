@@ -44,7 +44,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
+    vendor.oneplus.fingerprint.extension@1.0.vendor
 
 # Bluetooth
 PRODUCT_PACKAGES += \
