@@ -7,5 +7,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service          u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/irisConfig                                                             u:object_r:iris_config_exec:s0
 
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service.oneplus9    u:object_r:hal_fingerprint_default_exec:s0
+
 # Vibrator
 /vendor/bin/hw/vendor.qti.hardware.vibrator.service.oneplus9                                       u:object_r:hal_vibrator_default_exec:s0
