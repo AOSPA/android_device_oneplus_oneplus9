@@ -1,0 +1,3 @@
+# Alert Slider
+type vendor_persist_tri_state_key_file, file_type;
+type vendor_sysfs_tri_state_key, sysfs_type, fs_type;

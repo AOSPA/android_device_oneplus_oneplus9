@@ -1,0 +1,2 @@
+# Alert Slider
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib    u:object_r:vendor_sysfs_tri_state_key:s0

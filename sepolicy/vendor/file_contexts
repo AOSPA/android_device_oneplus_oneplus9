@@ -1,2 +1,3 @@
 # Alert Slider
-/vendor/bin/tri-state-key_daemon    u:object_r:tri-state-key_daemon_exec:s0
+/mnt/vendor/persist/engineermode/tri_state_hall_data    u:object_r:vendor_persist_tri_state_key_file:s0
+/vendor/bin/tri-state-key_daemon                        u:object_r:tri-state-key_daemon_exec:s0
