@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.sensortype=2 \
+    vendor.display.disable_mask_layer_hint=1 \
     vendor.display.use_layer_ext=1
 
 # Doze
