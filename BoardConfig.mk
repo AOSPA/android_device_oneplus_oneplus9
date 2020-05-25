@@ -68,6 +68,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
+# Biometrics
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
