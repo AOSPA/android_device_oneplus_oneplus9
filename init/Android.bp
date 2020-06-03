@@ -73,3 +73,14 @@ prebuilt_etc {
     src: "ueventd.oneplus.rc",
     vendor: true,
 }
+
+cc_library_static {
+    name: "libinit_oneplus9",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_oneplus9.cpp"],
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init"
+    ]
+}
