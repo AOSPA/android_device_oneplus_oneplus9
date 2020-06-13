@@ -58,6 +58,11 @@ PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.sys.fod.pos.x=453 \
+    persist.sys.fod.pos.y=2120 \
+    persist.sys.fod.size=174
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
