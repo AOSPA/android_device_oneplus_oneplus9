@@ -49,10 +49,12 @@ PRODUCT_PACKAGES += \
 
 # Biometrics
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
+    vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.2-service.oneplus9 \
+    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor
 
