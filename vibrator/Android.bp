@@ -9,14 +9,15 @@ cc_library_shared {
         "Vibrator.cpp",
     ],
     shared_libs: [
+        "libbase",
         "libcutils",
         "libutils",
         "liblog",
         "libqtivibratoreffect",
-        "libsoc_helper",
         "libbinder_ndk",
         "android.hardware.vibrator-ndk_platform",
     ],
+    include_dirs: ["system/core/base/include"],
     export_include_dirs: ["include"]
 }
 
