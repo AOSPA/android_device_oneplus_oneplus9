@@ -123,6 +123,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q875-32408-1
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
