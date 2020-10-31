@@ -21,6 +21,15 @@
 
 #include <android-base/properties.h>
 #include <hidl/HidlTransportSupport.h>
+#include <fstream>
+
+#define FOD_HBM_PATH "/sys/class/drm/card0-DSI-1/op_friginer_print_hbm"
+#define FOD_HBM_ON 1
+#define FOD_HBM_OFF 0
+
+#define FOD_PRESS_PATH "/sys/class/drm/card0-DSI-1/notify_fppress"
+#define FOD_NOTIFY_PRESSED 1
+#define FOD_NOTIFY_RELEASE 0
 
 using android::base::GetIntProperty;
 
@@ -32,6 +41,24 @@ namespace inscreen {
 namespace V1_0 {
 namespace implementation {
 
+/*
+ * Write value to path and close file.
+ */
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
+
+template <typename T>
+static T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+    T result;
+
+    file >> result;
+    return file.fail() ? def : result;
+}
+
 Return<void> FingerprintInscreen::onStartEnroll() {
     return Void();
 }
@@ -41,10 +68,16 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
+    set(FOD_HBM_PATH, FOD_HBM_ON);
+    set(FOD_PRESS_PATH, FOD_NOTIFY_PRESSED);
+
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
+    set(FOD_HBM_PATH, FOD_HBM_OFF);
+    set(FOD_PRESS_PATH, FOD_NOTIFY_RELEASE);
+
     return Void();
 }
 
