@@ -23,6 +23,8 @@
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 
+#define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/dim_alpha"
+
 #define FOD_HBM_PATH "/sys/class/drm/card0-DSI-1/op_friginer_print_hbm"
 #define FOD_HBM_ON 1
 #define FOD_HBM_OFF 0
@@ -102,7 +104,9 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
-    return 0;
+    int dimAmount = get(DIM_AMOUNT_PATH, 0);
+
+    return dimAmount;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
