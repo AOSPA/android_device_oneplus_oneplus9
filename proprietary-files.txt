@@ -859,6 +859,7 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display - OOS
 vendor/bin/hw/vendor.display.color@1.0-service|d42aee08f4ae0f6fccb5f7ee220d12a8cf7a9754
+vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service|ecdeea824b13717619b558c14272638d47688821
 vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service|b811af3d4280650e6dde83549986922d247683e2
 vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service|8a16ce8b21f38d99d7c14802793415a4c5644431
 vendor/bin/hw/vendor.qti.hardware.display.composer-service|3ea47965a97e0753d69bc4c10428d9e43baa7719
@@ -873,6 +874,7 @@ vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
 vendor/etc/init/feature_enabler_client.rc|7c8e7cf20093d1a6d94d7de2debd53a7e51f8c29
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc|03b0c962b97fc6cfb99a6b4f838928e7de7e188d
 vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc|b1fdaffcf7cfc2eb41c8030d085779b95600dced
 vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc|ba2a30c457151c6af8881b18886f80a26d1881f1
 vendor/etc/inparm/irissoft/inParm10.txt|e230e41dbefe78c0c7024abcbb59e01d6a24c63d

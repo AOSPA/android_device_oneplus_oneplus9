@@ -1,0 +1,8 @@
+type hal_display_default, domain;
+hal_server_domain(hal_display_default, hal_display)
+
+type hal_display_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_display_default)
+
+# Allow the OnePlus display HAL to read & write to card0-DSI-1 sysfs nodes.
+allow hal_display_default vendor_sysfs_graphics:file rw_file_perms;

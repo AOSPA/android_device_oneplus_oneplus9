@@ -1,2 +1,9 @@
 # Alert Slider
-genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib    u:object_r:vendor_sysfs_tri_state_key:s0
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib                             u:object_r:vendor_sysfs_tri_state_key:s0
+
+# Display
+genfscon proc  /touchpanel                                                                         u:object_r:proc_touchpanel:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha         u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm               u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_dim        u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress    u:object_r:vendor_sysfs_graphics:s0

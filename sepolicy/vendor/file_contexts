@@ -3,6 +3,7 @@
 /vendor/bin/tri-state-key_daemon                                                                   u:object_r:tri-state-key_daemon_exec:s0
 
 # Display
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                     u:object_r:hal_display_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                 u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service          u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/irisConfig                                                             u:object_r:iris_config_exec:s0

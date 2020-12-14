@@ -24,14 +24,10 @@
 #include <fstream>
 
 #define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/dim_alpha"
+#define HBM_MODE_PATH "/sys/class/drm/card0-DSI-1/hbm"
 
-#define FOD_HBM_PATH "/sys/class/drm/card0-DSI-1/op_friginer_print_hbm"
-#define FOD_HBM_ON 1
-#define FOD_HBM_OFF 0
-
-#define FOD_PRESS_PATH "/sys/class/drm/card0-DSI-1/notify_fppress"
-#define FOD_NOTIFY_PRESSED 1
-#define FOD_NOTIFY_RELEASE 0
+#define OP_DISPLAY_NOTIFY_PRESS 9
+#define OP_DISPLAY_SET_DIM 10
 
 using android::base::GetIntProperty;
 
@@ -61,6 +57,10 @@ static T get(const std::string& path, const T& def) {
     return file.fail() ? def : result;
 }
 
+FingerprintInscreen::FingerprintInscreen() {
+    this->mVendorDisplayService = IOneplusDisplay::getService();
+}
+
 Return<void> FingerprintInscreen::onStartEnroll() {
     return Void();
 }
@@ -70,15 +70,17 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    set(FOD_HBM_PATH, FOD_HBM_ON);
-    set(FOD_PRESS_PATH, FOD_NOTIFY_PRESSED);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
+    set(HBM_MODE_PATH, 5);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 1);
 
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    set(FOD_HBM_PATH, FOD_HBM_OFF);
-    set(FOD_PRESS_PATH, FOD_NOTIFY_RELEASE);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
+    set(HBM_MODE_PATH, 0);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
 
     return Void();
 }
@@ -88,6 +90,9 @@ Return<void> FingerprintInscreen::onShowFODView() {
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
+
     return Void();
 }
 
