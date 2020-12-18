@@ -113,7 +113,7 @@
         <param key="hifi_filter" value="false"/>
         <param key="native_audio_mode" value="multiple_mix_dsp"/>
         <param key="hfp_pcm_dev_id" value="39"/>
-        <param key="input_mic_max_count" value="4"/>
+        <param key="input_mic_max_count" value="2"/>
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>
@@ -162,6 +162,10 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_HIFI_FILTER" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-headphones" interface="WSA_CDC_DMA_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_HIFI_FILTER" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
@@ -181,6 +185,27 @@
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" interface="WSA_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" interface="WSA_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_HANDSET" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_SAFE" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_1" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_2" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VBAT" backend="tert_i2s" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_1" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_2" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" backend="tert_i2s"  interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="tert_i2s" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO" backend="tert_i2s" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_VBAT" backend="tert_i2s" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="tert_i2s" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_VBAT" backend="tert_i2s" interface="TERT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" interface="TERT_MI2S_RX-and-HDMI"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" interface="TERT_MI2S_RX-and-DISPLAY_PORT"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT1" interface="TERT_MI2S_RX-and-DISPLAY_PORT1"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_A2DP" interface="TERT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" backend="tert_i2s" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" interface="WSA_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO" interface="WSA_CDC_DMA_RX_0"/>
@@ -309,6 +334,19 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="WSA_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_SWB" backend="speaker-and-bt-sco-swb" interface="WSA_CDC_DMA_RX_0-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_DSD" backend="headphones-dsd" interface="RX_CDC_DMA_RX_5"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_HEADPHONES" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_ANC_HEADSET" backend="speaker-and-headphones" interface="TERT_MI2S_RX-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="TERT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="TERT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_SWB" backend="speaker-and-bt-sco-swb" interface="TERT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_STEREO" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_TMIC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC_AEC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_HANDSET_QMIC_AEC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_QMIC_FLUENCE" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_SPEAKER_TMIC_AEC" interface="TX_CDC_DMA_TX_3"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
