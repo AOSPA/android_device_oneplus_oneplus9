@@ -23,9 +23,7 @@
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 
-#define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/dim_alpha"
-#define HBM_MODE_PATH "/sys/class/drm/card0-DSI-1/hbm"
-
+#define OP_DISPLAY_HBM_MODE 7
 #define OP_DISPLAY_NOTIFY_PRESS 9
 #define OP_DISPLAY_SET_DIM 10
 
@@ -40,14 +38,8 @@ namespace V1_0 {
 namespace implementation {
 
 /*
- * Write value to path and close file.
+ * Get a value from a path.
  */
-template <typename T>
-static void set(const std::string& path, const T& value) {
-    std::ofstream file(path);
-    file << value;
-}
-
 template <typename T>
 static T get(const std::string& path, const T& def) {
     std::ifstream file(path);
@@ -71,7 +63,7 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
-    set(HBM_MODE_PATH, 5);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_HBM_MODE, 5);
     this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 1);
 
     return Void();
@@ -79,7 +71,7 @@ Return<void> FingerprintInscreen::onPress() {
 
 Return<void> FingerprintInscreen::onRelease() {
     this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
-    set(HBM_MODE_PATH, 0);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_HBM_MODE, 0);
     this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
 
     return Void();
@@ -109,7 +101,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
-    int dimAmount = get(DIM_AMOUNT_PATH, 0);
+    int dimAmount = get("/sys/class/drm/card0-DSI-1/dim_alpha", 0);
 
     return dimAmount;
 }
