@@ -17,6 +17,7 @@
 #define VENDOR_AOSPA_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
 
 #include <vendor/aospa/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
+#include <vendor/oneplus/fingerprint/extension/1.0/IVendorFingerprintExtensions.h>
 #include <vendor/oneplus/hardware/display/1.0/IOneplusDisplay.h>
 
 namespace vendor {
@@ -30,6 +31,8 @@ namespace implementation {
 using ::android::sp;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
+
+using ::vendor::oneplus::fingerprint::extension::V1_0::IVendorFingerprintExtensions;
 using ::vendor::oneplus::hardware::display::V1_0::IOneplusDisplay;
 
 class FingerprintInscreen : public IFingerprintInscreen {
@@ -53,7 +56,14 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<int32_t> getSize() override;
 
   private:
+    bool mFodCircleVisible;
+    bool mIsEnrolling;
+
     sp<IOneplusDisplay> mVendorDisplayService;
+    sp<IVendorFingerprintExtensions> mVendorFpService;
+
+    std::mutex mCallbackLock;
+    sp<IFingerprintInscreenCallback> mCallback;
 };
 
 }  // namespace implementation

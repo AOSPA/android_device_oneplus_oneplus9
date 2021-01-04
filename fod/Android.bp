@@ -28,6 +28,7 @@ cc_binary {
         "libhwbinder",
         "libutils",
         "vendor.aospa.biometrics.fingerprint.inscreen@1.0",
+        "vendor.oneplus.fingerprint.extension@1.0",
         "vendor.oneplus.hardware.display@1.0",
     ],
     system_ext_specific: true,

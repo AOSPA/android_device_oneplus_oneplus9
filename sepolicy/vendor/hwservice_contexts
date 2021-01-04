@@ -4,5 +4,5 @@ vendor.pixelworks.hardware.display::IIris                                  u:obj
 vendor.pixelworks.hardware.feature::IIrisFeature                           u:object_r:hal_display_iris_hwservice:s0
 
 # Fingerprint
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon    u:object_r:hal_fingerprint_hwservice:s0
-vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon    u:object_r:hal_oneplus_fingerprint_hwservice:s0
+vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_oneplus_fingerprint_hwservice:s0
