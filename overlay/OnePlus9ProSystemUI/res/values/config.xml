@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021 Paranoid Android
+     Copyright (C) 2021 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,11 +15,7 @@
 -->
 <resources>
 
-    <!-- Height of the status bar in portrait. The height should be
-         Max((status bar content height + waterfall top size), top cutout size) -->
-    <dimen name="status_bar_height_portrait">138px</dimen>
-
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">8dp</dimen>
+    <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
+    <bool name="config_roundedCornerMultipleRadius">true</bool>
 
 </resources>

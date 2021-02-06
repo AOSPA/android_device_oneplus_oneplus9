@@ -62,7 +62,4 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">209px</dimen>
-
 </resources>
