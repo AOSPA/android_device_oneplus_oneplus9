@@ -122,6 +122,7 @@ KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
 USE_KERNEL_AOSP_LLVM := true
 KERNEL_SD_LLVM_SUPPORT := false
 
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
 BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/adsp_loader_dlkm.ko \
     $(KERNEL_MODULES_OUT)/apr_dlkm.ko \

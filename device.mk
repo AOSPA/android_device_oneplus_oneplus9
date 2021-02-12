@@ -186,6 +186,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.haptics.rc \
     init.oneplus.perf.rc \
     init.oneplus.telephony.rc \
+    init.oplus.wlan.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc \
