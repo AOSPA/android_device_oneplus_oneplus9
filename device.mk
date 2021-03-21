@@ -53,6 +53,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
+PRODUCT_PACKAGES += \
+    fstab.default \
+    init.qti.ufs.rc \
+    init.target.rc \
+    ueventd.lahaina.rc
+
 # Kernel
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/oneplus9/$(KERNEL_MODULES_INSTALL)/lib/modules
