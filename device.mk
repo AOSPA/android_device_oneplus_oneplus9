@@ -77,6 +77,10 @@ LOC_HIDL_VERSION = 4.0
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Gatekeeper
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.gatekeeper.disable_spu=true
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
