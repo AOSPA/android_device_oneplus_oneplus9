@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.charger.enable_suspend=1
 
+# Config Store
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
