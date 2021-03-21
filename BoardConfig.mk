@@ -142,5 +142,8 @@ SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
+# VM
+TARGET_ENABLE_VM_SUPPORT := true
+
 # VNDK
 BOARD_VNDK_VERSION := current
