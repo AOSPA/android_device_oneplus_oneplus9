@@ -19,15 +19,24 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
 PRODUCT_PACKAGES += \
-    checkpoint_gc
+    checkpoint_gc \
+    otapreopt_script
 
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Boot
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti.recovery
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service
 
 # Charging
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
@@ -69,3 +78,16 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+# Update Engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+# Vendor Service Manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
