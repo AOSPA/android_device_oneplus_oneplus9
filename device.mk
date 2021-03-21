@@ -168,6 +168,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
