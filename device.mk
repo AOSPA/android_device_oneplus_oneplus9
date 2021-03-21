@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.default \
+    init.oneplus.camera.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc
