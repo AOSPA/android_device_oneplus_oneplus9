@@ -124,7 +124,8 @@ PRODUCT_PACKAGES += \
     init.oneplus.camera.rc \
     init.qti.ufs.rc \
     init.target.rc \
-    ueventd.lahaina.rc
+    ueventd.lahaina.rc \
+    ueventd.oneplus.rc
 
 # Kernel
 KERNEL_MODULES_INSTALL := dlkm
