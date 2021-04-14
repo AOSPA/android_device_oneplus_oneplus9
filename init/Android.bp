@@ -40,6 +40,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oneplus.haptics.rc",
+    src: "init.oneplus.haptics.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oneplus.power.rc",
     src: "init.oneplus.power.rc",
     sub_dir: "init",
