@@ -254,6 +254,10 @@ PRODUCT_PACKAGES += \
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus9/oneplus9-vendor.mk)
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.oneplus9
+
 # WLAN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
