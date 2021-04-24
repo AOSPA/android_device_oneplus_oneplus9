@@ -26,6 +26,27 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oneplus.display.rc",
+    src: "init.oneplus.display.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.fingerprint.rc",
+    src: "init.oneplus.fingerprint.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.power.rc",
+    src: "init.oneplus.power.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.target.rc",
     src: "init.target.rc",
     sub_dir: "init/hw",

@@ -1,0 +1,39 @@
+# Copyright (C) 2021 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on boot
+    # AOD
+    chmod 0666 /sys/class/drm/card0-DSI-1/aod
+    chown system system /sys/class/drm/card0-DSI-1/aod
+
+    # Backlight
+    chmod 0666 /sys/class/backlight/panel0-backlight/brightness
+
+    # Dimming
+    chmod 0666 /sys/class/drm/card0-DSI-1/notify_dim
+    chown system system /sys/class/drm/card0-DSI-1/notify_dim
+
+    # HBM
+    chmod 0666 /sys/class/drm/card0-DSI-1/hbm_brightness
+    chown system system /sys/class/drm/card0-DSI-1/hbm_brightness
+    chmod 0666 /sys/class/drm/card0-DSI-1/hbm
+    chown system system /sys/class/drm/card0-DSI-1/hbm
+
+    # TP Firmware
+    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-004b/tp_fw_update 0
+    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-0048/tp_fw_update 0
+    write /sys/devices/platform/soc/984000.i2c/i2c-4/4-005d/tp_fw_update 0
+    write /sys/devices/platform/soc/984000.i2c/i2c-4/4-0048/tp_fw_update 0
+    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-005d/tp_fw_update 0
+    write /sys/devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/tp_fw_update 0

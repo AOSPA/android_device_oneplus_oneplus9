@@ -124,6 +124,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.default \
     init.oneplus.camera.rc \
+    init.oneplus.display.rc \
+    init.oneplus.fingerprint.rc \
+    init.oneplus.power.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc \

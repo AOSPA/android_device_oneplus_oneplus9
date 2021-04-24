@@ -1,0 +1,24 @@
+# Copyright (C) 2021 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on boot
+    chmod 0666 /dev/goodix_fp
+    chmod 0660 /sys/devices/platform/soc/soc:fingerprint_detect/sensor_version
+    chown system system /sys/devices/platform/soc/soc:fingerprint_detect/sensor_version
+    chmod 0666 /proc/touchpanel/touch_hold
+    chown system system /proc/touchpanel/touch_hold
+    chmod 0666 /dev/qseecom
+
+on property:gf.debug.dump_path=*
+    mkdir /sdcard/Android/data/gf_file 0755 system ext_data_rw
