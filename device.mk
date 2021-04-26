@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.display.rc \
     init.oneplus.fingerprint.rc \
     init.oneplus.power.rc \
+    init.oneplus.telephony.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc \
