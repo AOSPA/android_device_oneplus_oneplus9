@@ -157,6 +157,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
+    OnePlus9Frameworks \
+    OnePlus9ProFrameworks \
     OnePlus9SeriesFrameworks \
     WifiResTarget
 
