@@ -160,6 +160,7 @@ PRODUCT_PACKAGES += \
     OnePlus9Frameworks \
     OnePlus9ProFrameworks \
     OnePlus9SeriesFrameworks \
+    OnePlus9SystemUI \
     WifiResTarget
 
 # Partitions
