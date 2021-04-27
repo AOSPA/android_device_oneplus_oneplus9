@@ -100,8 +100,7 @@ BOARD_KERNEL_CMDLINE := \
     pcie_ports=compat \
     service_locator.enable=1 \
     swiotlb=0 \
-    loop.max_part=7 \
-    video=vfb:640x400,bpp=32,memsize=3072000
+    loop.max_part=7
 
 BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 BOARD_KERNEL_BASE := 0x00000000
