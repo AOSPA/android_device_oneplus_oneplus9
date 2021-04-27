@@ -193,6 +193,10 @@ TARGET_BOARD_PLATFORM := lahaina
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# QMI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qcomsysd.enabled=1
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
 
