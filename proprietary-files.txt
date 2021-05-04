@@ -1079,14 +1079,6 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Power
-vendor/bin/poweropt-service
-vendor/etc/init/poweropt-service.rc
-vendor/etc/pwr/PowerFeatureConfig.xml
-vendor/etc/pwr/VideoPowerOptFeature.xml
-vendor/lib64/libpowercallback.so
-vendor/lib64/libpowercore.so
-
 # Public Libraries
 vendor/etc/public.libraries.txt
 
