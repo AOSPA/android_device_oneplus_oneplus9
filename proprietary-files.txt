@@ -768,9 +768,12 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a6c2d3ebba2
 vendor/bin/init.qti.chg_policy.sh
 
 # Charging - OOS
+vendor/bin/hw/vendor.oneplus.hardware.charger@1.0-service|ea2572a30c34d0285bafd89be16d5420f0ad9afd
 vendor/bin/init.oplus_chg.sh|f1080f957b517dc7b9c7ff1050f19b544783a34d
+vendor/etc/init/vendor.oneplus.hardware.charger@1.0-service.rc|1df16e673a5a96d9a053d557a0d34697ef70825f
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|f21348596ab4a873e34afb45ddb1c46867d4a046
 vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
+vendor/lib64/vendor.oneplus.hardware.charger@1.0.so|100a0a8eab1d2db98fafe806eeb32e09e29ce331
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
