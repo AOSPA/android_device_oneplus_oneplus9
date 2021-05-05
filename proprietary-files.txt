@@ -1111,7 +1111,6 @@ vendor/lib64/libqdma_file_agent.so
 
 # QMI
 vendor/bin/irsc_util
-vendor/bin/qcom-system-daemon
 vendor/bin/qdss_qmi_helper
 vendor/bin/qmipriod
 vendor/bin/qrtr-cfg
