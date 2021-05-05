@@ -1235,9 +1235,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/diagcommd
 vendor/bin/qseecomd
-vendor/etc/init/diagcommd.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/gpfspath_oem_config.xml
