@@ -250,3 +250,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus9/oneplus9-vendor.mk)
+
+# WLAN
+PRODUCT_COPY_FILES += \
+    device/qcom/wlan/$(TARGET_BOARD_PLATFORM)/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
