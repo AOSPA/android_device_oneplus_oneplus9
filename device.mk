@@ -227,6 +227,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# System Helper
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0.vendor
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
