@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2021 The LineageOS Project
  *               2020 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,6 @@
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 
-#define FINGERPRINT_ERROR_CANCELED 5
 #define FINGERPRINT_ACQUIRED_VENDOR 6
 #define FINGERPRINT_ERROR_VENDOR 8
 
@@ -49,13 +48,11 @@ namespace implementation {
 
 FingerprintInscreen::FingerprintInscreen() {
     this->mFodCircleVisible = false;
-    this->mIsEnrolling = false;
     this->mVendorFpService = IVendorFingerprintExtensions::getService();
     this->mVendorDisplayService = IOneplusDisplay::getService();
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
-    this->mIsEnrolling = true;
     this->mVendorFpService->updateStatus(OP_DISABLE_FP_LONGPRESS);
     this->mVendorFpService->updateStatus(OP_RESUME_FP_ENROLL);
 
@@ -63,23 +60,18 @@ Return<void> FingerprintInscreen::onStartEnroll() {
 }
 
 Return<void> FingerprintInscreen::onFinishEnroll() {
-    this->mIsEnrolling = false;
     this->mVendorFpService->updateStatus(OP_FINISH_FP_ENROLL);
 
     return Void();
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    if (mIsEnrolling) {
-        this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
-    }
     this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 1);
 
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
     this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
 
     return Void();
@@ -87,9 +79,7 @@ Return<void> FingerprintInscreen::onRelease() {
 
 Return<void> FingerprintInscreen::onShowFODView() {
     this->mFodCircleVisible = true;
-    this->mVendorDisplayService->setMode(OP_DISPLAY_AOD_MODE, 0);
-    this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 0);
-    this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
+    this->mVendorDisplayService->setMode(OP_DISPLAY_SET_DIM, 1);
 
     return Void();
 }
@@ -131,18 +121,7 @@ Return<bool> FingerprintInscreen::handleAcquired(int32_t acquiredInfo, int32_t v
 }
 
 Return<bool> FingerprintInscreen::handleError(int32_t error, int32_t vendorCode) {
-    switch (error) {
-        case FINGERPRINT_ERROR_CANCELED:
-            if (vendorCode == 0) {
-                this->mIsEnrolling = false;
-            }
-            return false;
-        case FINGERPRINT_ERROR_VENDOR:
-            // Ignore vendorCode 6
-            return vendorCode == 6;
-        default:
-            return false;
-    }
+    return error == FINGERPRINT_ERROR_VENDOR && vendorCode == 6;
 }
 
 Return<void> FingerprintInscreen::setLongPressEnabled(bool enabled) {
