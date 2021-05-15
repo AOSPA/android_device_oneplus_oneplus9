@@ -837,8 +837,12 @@ vendor/firmware/ipa_fws.elf|2723e7c5b7288e3eb832e702cd4682fbd653e723
 vendor/firmware/ipa_fws.mdt|c949edd91c5b11a69ad4b473b54422a4e4a2f9ea
 
 # Diag
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
+vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display
 vendor/bin/hw/vendor.display.color@1.0-service
