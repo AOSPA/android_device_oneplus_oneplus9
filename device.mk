@@ -165,8 +165,6 @@ PRODUCT_PACKAGES += \
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/oneplus9/$(KERNEL_MODULES_INSTALL)/lib/modules
 
-KERNEL_SD_LLVM_SUPPORT := false
-
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml
