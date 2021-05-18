@@ -203,10 +203,16 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/xc5000.ko
 
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
+    $(KERNEL_MODULES_OUT)/adsp_loader_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/apr_dlkm.ko \
     $(KERNEL_MODULES_OUT)/fingerprint_detect.ko \
     $(KERNEL_MODULES_OUT)/gf_spi_driver.ko \
     $(KERNEL_MODULES_OUT)/op_cmdline.ko \
+    $(KERNEL_MODULES_OUT)/oplus_chg.ko \
     $(KERNEL_MODULES_OUT)/project_info.ko \
+    $(KERNEL_MODULES_OUT)/q6_notifier_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/q6_pdr_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/snd_event_dlkm.ko \
     $(KERNEL_MODULES_OUT)/touchscreen.ko
 
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
