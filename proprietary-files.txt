@@ -258,33 +258,35 @@ vendor/lib64/vendor.qti.latency@2.0.so
 # CVP
 vendor/etc/cvp/v2.0/facedetection/model1.dat
 vendor/etc/cvp/v2.1/facedetection/model2.dat
-vendor/firmware/evass.b01
-vendor/firmware/evass.b02
-vendor/firmware/evass.b03
-vendor/firmware/evass.b04
-vendor/firmware/evass.b05
-vendor/firmware/evass.b06
-vendor/firmware/evass.b07
-vendor/firmware/evass.b08
-vendor/firmware/evass.b09
-vendor/firmware/evass.b10
-vendor/firmware/evass.b11
-vendor/firmware/evass.b12
-vendor/firmware/evass.b13
-vendor/firmware/evass.b14
-vendor/firmware/evass.b15
-vendor/firmware/evass.b16
-vendor/firmware/evass.b17
-vendor/firmware/evass.b18
-vendor/firmware/evass.b19
-vendor/firmware/evass.mbn
-vendor/firmware/evass.mdt
 vendor/lib/rfsa/adsp/libcvpdsp_2_1.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_util.so
 vendor/lib64/libcvp2_1.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+
+# CVP - OOS
+vendor/firmware/evass.b01|72f745cd0a03e920ae6ec9afc261998d2ba7a800
+vendor/firmware/evass.b02|efd5f1df2b063a3da6eaa7b94757a831eedb3444
+vendor/firmware/evass.b03|1d52832b25a0f59e89395566d2d9d4fba641c528
+vendor/firmware/evass.b04|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/evass.b05|e373f51453c378b8eafd6609d38d0505a8afff97
+vendor/firmware/evass.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
+vendor/firmware/evass.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
+vendor/firmware/evass.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/evass.b09|190ea766386964a7429b0340250774d82d2a08a5
+vendor/firmware/evass.b10|36bc6433f788f7b5fc224ffa4c3327c032e38b70
+vendor/firmware/evass.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/evass.b19|1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d
+vendor/firmware/evass.mbn|8a168ea20c7e24544b9454dc83d6139b7e32bc63
+vendor/firmware/evass.mdt|56b37bd51ec93df3f31d9097ccb7254dc57c9508
 
 # Camera - OOS
 odm/lib64/camera/com.qti.sensor.imx481.so|3fc762ad0ebf3b49f411da8b8b1f6e513ab9959d
@@ -1579,29 +1581,29 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
-# VPU
-vendor/firmware/vpu20_4v.b01
-vendor/firmware/vpu20_4v.b02
-vendor/firmware/vpu20_4v.b03
-vendor/firmware/vpu20_4v.b04
-vendor/firmware/vpu20_4v.b05
-vendor/firmware/vpu20_4v.b06
-vendor/firmware/vpu20_4v.b07
-vendor/firmware/vpu20_4v.b08
-vendor/firmware/vpu20_4v.b09
-vendor/firmware/vpu20_4v.b10
-vendor/firmware/vpu20_4v.b11
-vendor/firmware/vpu20_4v.b12
-vendor/firmware/vpu20_4v.b13
-vendor/firmware/vpu20_4v.b14
-vendor/firmware/vpu20_4v.b15
-vendor/firmware/vpu20_4v.b16
-vendor/firmware/vpu20_4v.b17
-vendor/firmware/vpu20_4v.b18
-vendor/firmware/vpu20_4v.b19
-vendor/firmware/vpu20_4v.mbn
-vendor/firmware/vpu20_4v.mdt
-vendor/firmware/vpu20_4v_unsigned.mbn
+# VPU - OOS
+vendor/firmware/vpu20_4v.b01|eb639159bc930e2cfffe50a179c7ec2915bc7152
+vendor/firmware/vpu20_4v.b02|7a23598e03a319880e9eb7f288d8678be72160d3
+vendor/firmware/vpu20_4v.b03|7772b18b16e520641e8051fd6284384e9b0e1939
+vendor/firmware/vpu20_4v.b04|99065b73c172fecbeb14bee44535e9282c6d4e74
+vendor/firmware/vpu20_4v.b05|f726e7fa233485e02ef6172833d51353627aa81d
+vendor/firmware/vpu20_4v.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
+vendor/firmware/vpu20_4v.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
+vendor/firmware/vpu20_4v.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
+vendor/firmware/vpu20_4v.b09|c1854c8571b9a207e21b992563acf684d73153fb
+vendor/firmware/vpu20_4v.b10|1af205e4e4c3af59a4546ae1d03fa9c3d421eaca
+vendor/firmware/vpu20_4v.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/firmware/vpu20_4v.b19|c1756e0567d10a1173f481cd367ff4637b2dd77f
+vendor/firmware/vpu20_4v.mbn|998f0d3b0e99b3298a754278e3ffe285a9d12649
+vendor/firmware/vpu20_4v.mdt|1aef361ecc68d01db154cb4813069eac69fc11d7
+vendor/firmware/vpu20_4v_unsigned.mbn|315d4277df2a03163377cb5a1a247005cf3b0eb0
 
 # Vibrator - OOS
 vendor/firmware/20ms_RTP.bin|bfc5908438bd132a8897fae1a185dd0f27e46fff
