@@ -22,6 +22,7 @@ LOCAL_SRC_FILES := amplifier.c
 LOCAL_VENDOR_MODULE := true
 
 LOCAL_C_INCLUDES += \
+    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/audio \
     $(call include-path-for, audio-route) \
     $(call include-path-for, audio-utils) \
     external/tinycompress/include \
