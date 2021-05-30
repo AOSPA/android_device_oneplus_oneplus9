@@ -178,6 +178,8 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/rdbg.ko \
     $(KERNEL_MODULES_OUT)/rmnet_core.ko \
     $(KERNEL_MODULES_OUT)/rmnet_ctl.ko \
+    $(KERNEL_MODULES_OUT)/rmnet_offload.ko \
+    $(KERNEL_MODULES_OUT)/rmnet_shs.ko \
     $(KERNEL_MODULES_OUT)/rx_macro_dlkm.ko \
     $(KERNEL_MODULES_OUT)/si2157.ko \
     $(KERNEL_MODULES_OUT)/sim_holder_detect.ko \
