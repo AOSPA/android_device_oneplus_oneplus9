@@ -15,11 +15,13 @@
  */
 
 #include <android-base/properties.h>
+#include "util.h"
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
 using android::base::GetProperty;
+using android::init::IsRecoveryMode;
 
 /*
  * SetProperty does not allow updating read only properties and as a result
@@ -44,10 +46,12 @@ void OverrideProperty(const std::string& name, const std::string& value) {
  */
 void vendor_load_properties() {
     std::string variant = GetProperty("ro.boot.prj_version", "");
-    if (variant == "11") {
-        OverrideProperty("ro.product.product.model", "OnePlus 9 Pro");
-        OverrideProperty("ro.product.product.device", "OnePlus9Pro");
-    } else if (variant == "12") {
-        OverrideProperty("ro.product.product.device", "OnePlus9");
+    if (!IsRecoveryMode()) {
+        if (variant == "11") {
+            OverrideProperty("ro.product.product.model", "OnePlus 9 Pro");
+            OverrideProperty("ro.product.product.device", "OnePlus9Pro");
+        } else if (variant == "12") {
+            OverrideProperty("ro.product.product.device", "OnePlus9");
+        }
     }
 }
