@@ -59,6 +59,7 @@ vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
@@ -109,6 +110,7 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
@@ -132,13 +134,13 @@ vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Audio - OOS
-odm/etc/acdbdata/Bluetooth_cal.acdb|2710e4cbc8308241fd7c83c7415af3cde36c2ef5
-odm/etc/acdbdata/General_cal.acdb|f6af39c7d1523029b8b7eedfcf1d1ee0e32ab47b
-odm/etc/acdbdata/Global_cal.acdb|0735c1241617b413a9495b5e12aa62775f69a928
-odm/etc/acdbdata/Handset_cal.acdb|18eea9992823f3314be6fd2abc1d66cd3c6c3f59
-odm/etc/acdbdata/Hdmi_cal.acdb|4d4fece38092541113e16f87b95e30ff8da658cc
-odm/etc/acdbdata/Headset_cal.acdb|6a54e08303b0768eb7b53429547e522a31544e44
-odm/etc/acdbdata/Speaker_cal.acdb|1b8e63ea1cc3e5e200b5238e15721e77e81486ea
+odm/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|2710e4cbc8308241fd7c83c7415af3cde36c2ef5
+odm/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|f6af39c7d1523029b8b7eedfcf1d1ee0e32ab47b
+odm/etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|0735c1241617b413a9495b5e12aa62775f69a928
+odm/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|18eea9992823f3314be6fd2abc1d66cd3c6c3f59
+odm/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|4d4fece38092541113e16f87b95e30ff8da658cc
+odm/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|6a54e08303b0768eb7b53429547e522a31544e44
+odm/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|1b8e63ea1cc3e5e200b5238e15721e77e81486ea
 vendor/etc/acdbdata/adsp_avs_config.acdb|2dbe0eb155813d1b096c2efeee9b297bc5a63e15
 vendor/etc/audio/sku_lahaina/audio_effects.xml|1ce4c2dd22e32d30ebd4a5dccb5135f30a9bba47
 vendor/etc/audio/sku_lahaina/audio_io_policy.conf|412152b21332ec09515bf412e89e539618964d03
@@ -152,8 +154,6 @@ vendor/firmware/tfa98xx.cnt|abe175ffd4aa6407317f6adb4e7ff8b3d9ca151c
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|1f568f739f627889ae24f1fc22e62ebb2d264eb5
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|810a8fbbc0ea6e12979f327330c8b66b07467846
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so|8a89bfc289fad5442b163ff9107ce5e4b36fea6a
-vendor/lib/libacdbloader.so|e1779cd22482b166015c9af8f67c21668e353218
-vendor/lib64/libacdbloader.so|af3ed78ec29e62fa4b57b3c5076d721c4a6bf965
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
