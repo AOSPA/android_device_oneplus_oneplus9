@@ -1561,11 +1561,6 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# VM
-vendor/bin/vmmgr
-vendor/etc/init/vmmgr.rc
-vendor/etc/vmmgr.conf
-
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml

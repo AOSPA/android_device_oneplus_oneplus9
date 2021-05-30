@@ -260,6 +260,3 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
-
-# VM
-TARGET_ENABLE_VM_SUPPORT := true
