@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=9 \
     ro.vendor.audio.sdk.fluencetype=fluence \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.speaker.prot.enable=false \
