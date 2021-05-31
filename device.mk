@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.display.sensortype=2
+    ro.vendor.display.sensortype=2 \
+    vendor.display.use_layer_ext=1
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
