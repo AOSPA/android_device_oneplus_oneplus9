@@ -56,7 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.spv4.enable=false \
     persist.vendor.audio.vbat.enabled=false \
-    vendor.audio.feature.spkr_prot.enable=false
+    vendor.audio.feature.spkr_prot.enable=false \
+    vendor.audio.hal.output.suspend.supported=false
 
 # Biometrics
 PRODUCT_COPY_FILES += \
