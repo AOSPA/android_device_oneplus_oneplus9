@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio_amplifier.lahaina
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    persist.vendor.audio.fluence.voicerec=true
+
 # Biometrics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
