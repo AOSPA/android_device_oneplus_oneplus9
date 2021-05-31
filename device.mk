@@ -49,9 +49,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
+    persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.spv4.enable=false \
+    persist.vendor.audio.vbat.enabled=false \
     vendor.audio.feature.spkr_prot.enable=false
 
 # Biometrics
