@@ -48,6 +48,7 @@ PRODUCT_PACKAGES += \
     audio_amplifier.lahaina
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=9 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
