@@ -161,6 +161,20 @@ vendor/lib64/libssrec.so|4605c36573ff366315e9e18c9009c074cd1a3e2f
 vendor/lib64/libstagefright_soft_qtiflacdec.so|3c2e1246c04c5abb271d27ef0396dddbfc5048b7
 vendor/lib64/vendor.qti.voiceprint@1.0.so|975999ec0c79581c68d1d5eca2dae7bca6eb5e0b
 
+# Audio (Pro) - OOS
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/etc/prj_11/acdbdata/Bluetooth_cal.acdb|401d183a40273c07b78b0dfb2011be1c059d1452
+odm/etc/acdbdata/General_cal.acdb:odm/etc/prj_11/acdbdata/General_cal.acdb|94b5b3b6dfb2a4cbaf681c85a5f67858b5344ce2
+odm/etc/acdbdata/Global_cal.acdb:odm/etc/prj_11/acdbdata/Global_cal.acdb|98b31e589a61fd587ab0790296027881ed75e34d
+odm/etc/acdbdata/Handset_cal.acdb:odm/etc/prj_11/acdbdata/Handset_cal.acdb|7991af348d206b0b5d1910a20bcd0e3c2271c970
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/etc/prj_11/acdbdata/Hdmi_cal.acdb|9b80fe6c8fc3cb5f5dbe6cbcc08cf721f4f1b42b
+odm/etc/acdbdata/Headset_cal.acdb:odm/etc/prj_11/acdbdata/Headset_cal.acdb|5fb84ff86ecce62afdd7d4c0fc4e96df697075b6
+odm/etc/acdbdata/Speaker_cal.acdb:odm/etc/prj_11/acdbdata/Speaker_cal.acdb|285080da96158535c6f1d613c9de18c5b12f4b96
+vendor/etc/audio/sku_lahaina/audio_effects.xml:odm/etc/prj_11/audio/sku_lahaina/audio_effects.xml|849fbf740dfe8bb2d9461246ade29d8f3ae203a0
+vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:odm/etc/prj_11/audio/sku_lahaina/audio_platform_info_intcodec.xml|8dad930a286bca6df01be29305008c88eafba3a1
+vendor/etc/audio/sku_lahaina/mixer_paths.xml:odm/etc/prj_11/audio/sku_lahaina/mixer_paths.xml|648fb506585f077deac2de28792f4514e303d5a4
+vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:odm/etc/prj_11/audio/sku_lahaina/sound_trigger_mixer_paths.xml|7c220f4ece221afd9f019a5ac39c3f48cbcfde8c
+vendor/firmware/tfa98xx.cnt:odm/firmware/prj_11/tfa98xx.cnt|3273540edc56b3959a4c8d994c3e2fa0bd6d2cb8
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
