@@ -47,6 +47,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oneplus.overlay.rc",
+    src: "init.oneplus.overlay.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oneplus.power.rc",
     src: "init.oneplus.power.rc",
     sub_dir: "init",

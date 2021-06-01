@@ -776,6 +776,12 @@ vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|8ce4445a740878b231e8c4
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|68bb5c723e0f18ba79e6f6e5d15d04f954541088
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a6c2d3ebba23ea83b931366cd6200ac3f7cd0728
 
+# Camera (Pro) - OOS
+vendor/etc/camera/CameraHWConfiguration.config:odm/etc/prj_11/camera/CameraHWConfiguration.config|e030b34cdcc35ae9429e85f94b49715775e1ac8e
+vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:odm/lib64/prj_11/camera/components/com.arcsoft.node.smooth_transition.so|84ee550a96721e7cddcc974a6eb982aab9c6871d
+vendor/lib64/hw/camera.qcom.so:odm/lib64/prj_11/hw/camera.qcom.so|c5356757519ea8d15bec38575a8a7458e743b950
+vendor/lib64/hw/com.qti.chi.override.so:odm/lib64/prj_11/hw/com.qti.chi.override.so|618bb2cfc6cf07d9af732dd2a64f859d93af2404
+
 # Charging
 vendor/bin/init.qti.chg_policy.sh
 
@@ -1542,6 +1548,17 @@ vendor/lib64/libsnsapi.so|215d24a210db67abdbd4fd773d762fa9e76ac0b7
 vendor/lib64/libsnsdiaglog.so|e4dd35496078cbd88d96f7b9e93afd50a4616657
 vendor/lib64/libssc.so|8ab4fd62b9b24fee9cc1ce44bb41dcf4761740b0
 vendor/lib64/sensors.ssc.so|1ec9e1356f02b11497ce93e42508dad80a987f69
+
+# Sensors (Pro) - OOS
+vendor/etc/sensors/config/lahaina_ak0991x_0.json:odm/etc/prj_11/sensors/config/lahaina_ak0991x_0.json|1ef501b1ded2633de3c525e79b5d98df449e4deb
+vendor/etc/sensors/config/lahaina_aw9610x_0.json:odm/etc/prj_11/sensors/config/lahaina_aw9610x_0.json|bc2cfb1871d5eaf756be2de1ceb079a90ea83043
+vendor/etc/sensors/config/lahaina_aw9610x_down_0.json:odm/etc/prj_11/sensors/config/lahaina_aw9610x_down_0.json|9583998147b2bd58b8f3109b6bd766a7256070dc
+vendor/etc/sensors/config/lahaina_bmi26x_0.json:odm/etc/prj_11/sensors/config/lahaina_bmi26x_0.json|cf00646cc5ff01156333a93884dbb99d6ae16e74
+vendor/etc/sensors/config/lahaina_icm4x6xx_0.json:odm/etc/prj_11/sensors/config/lahaina_icm4x6xx_0.json|fc8f971939c0fb6b54d7861f5fc78b88501c270f
+vendor/etc/sensors/config/lahaina_mmc56x3x_0.json:odm/etc/prj_11/sensors/config/lahaina_mmc56x3x_0.json|1769ab38602a335ef807925272ee519a7501331f
+vendor/etc/sensors/config/lahaina_sx9324_0.json:odm/etc/prj_11/sensors/config/lahaina_sx9324_0.json|a4fc614745614813ad48a53b76646aa32a7170a0
+vendor/etc/sensors/config/lahaina_sx9324up_0.json:odm/etc/prj_11/sensors/config/lahaina_sx9324up_0.json|e73ff34995de44facd09997e6330dbb83633ea68
+vendor/etc/sensors/config/lahaina_tcs3408.json:odm/etc/prj_11/sensors/config/lahaina_tcs3408.json|dc7d79fb0a3052730a6cbc57d451fe446cc390e5
 
 # SecureMSM (EID)
 vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
