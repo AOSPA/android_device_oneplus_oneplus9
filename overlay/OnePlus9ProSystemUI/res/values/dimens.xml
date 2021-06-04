@@ -34,4 +34,7 @@
     <!-- Bottom margin of the keyguard indicator. -->
     <dimen name="keyguard_indication_margin_bottom">87px</dimen>
 
+    <!-- Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
+    <dimen name="config_rounded_mask_size">156px</dimen>
+
 </resources>
