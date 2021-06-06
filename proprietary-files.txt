@@ -804,6 +804,7 @@ vendor/lib64/hw/com.qti.chi.override.so:odm/lib64/prj_11/hw/com.qti.chi.override
 
 # Charging
 vendor/bin/init.qti.chg_policy.sh
+vendor/etc/charger_fw_fstab.qti
 
 # Charging - OOS
 vendor/bin/hw/vendor.oneplus.hardware.charger@1.0-service|ea2572a30c34d0285bafd89be16d5420f0ad9afd
