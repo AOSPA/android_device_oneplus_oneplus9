@@ -25,6 +25,9 @@
 #include <hidl/Status.h>
 #include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
 
+#undef FINGERPRINT_HARDWARE_MODULE_ID
+#define FINGERPRINT_HARDWARE_MODULE_ID "goodix.fod"
+
 namespace android {
 namespace hardware {
 namespace biometrics {
