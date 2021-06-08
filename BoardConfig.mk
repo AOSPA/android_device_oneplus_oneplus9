@@ -131,7 +131,6 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/apr_dlkm.ko \
     $(KERNEL_MODULES_OUT)/aw8697.ko \
     $(KERNEL_MODULES_OUT)/bolero_cdc_dlkm.ko \
-    $(KERNEL_MODULES_OUT)/bootloader_log.ko \
     $(KERNEL_MODULES_OUT)/bt_fm_slim.ko \
     $(KERNEL_MODULES_OUT)/btpower.ko \
     $(KERNEL_MODULES_OUT)/camera.ko \
@@ -143,6 +142,7 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/fingerprint_detect.ko \
     $(KERNEL_MODULES_OUT)/gf_spi_driver.ko \
     $(KERNEL_MODULES_OUT)/hdmi_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/hid-aksys.ko \
     $(KERNEL_MODULES_OUT)/it913x.ko \
     $(KERNEL_MODULES_OUT)/llcc_perfmon.ko \
     $(KERNEL_MODULES_OUT)/m88rs6000t.ko \
@@ -160,10 +160,8 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/mxl5005s.ko \
     $(KERNEL_MODULES_OUT)/mxl5007t.ko \
     $(KERNEL_MODULES_OUT)/native_dlkm.ko \
-    $(KERNEL_MODULES_OUT)/oem_aboard.ko \
     $(KERNEL_MODULES_OUT)/op_cmdline.ko \
     $(KERNEL_MODULES_OUT)/oplus_chg.ko \
-    $(KERNEL_MODULES_OUT)/op_rf_cable_monitor.ko \
     $(KERNEL_MODULES_OUT)/pinctrl_lpi_dlkm.ko \
     $(KERNEL_MODULES_OUT)/pinctrl_wcd_dlkm.ko \
     $(KERNEL_MODULES_OUT)/platform_dlkm.ko \
@@ -171,6 +169,7 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/q6_dlkm.ko \
     $(KERNEL_MODULES_OUT)/q6_notifier_dlkm.ko \
     $(KERNEL_MODULES_OUT)/q6_pdr_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/qcom_edac.ko \
     $(KERNEL_MODULES_OUT)/qm1d1b0004.ko \
     $(KERNEL_MODULES_OUT)/qm1d1c0042.ko \
     $(KERNEL_MODULES_OUT)/qt1010.ko \
@@ -183,7 +182,6 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/rmnet_shs.ko \
     $(KERNEL_MODULES_OUT)/rx_macro_dlkm.ko \
     $(KERNEL_MODULES_OUT)/si2157.ko \
-    $(KERNEL_MODULES_OUT)/sim_holder_detect.ko \
     $(KERNEL_MODULES_OUT)/slimbus.ko \
     $(KERNEL_MODULES_OUT)/slimbus-ngd.ko \
     $(KERNEL_MODULES_OUT)/snd_event_dlkm.ko \
@@ -206,6 +204,8 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/tuner-xc2028.ko \
     $(KERNEL_MODULES_OUT)/tx_macro_dlkm.ko \
     $(KERNEL_MODULES_OUT)/va_macro_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd937x_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd937x_slave_dlkm.ko \
     $(KERNEL_MODULES_OUT)/wcd938x_dlkm.ko \
     $(KERNEL_MODULES_OUT)/wcd938x_slave_dlkm.ko \
     $(KERNEL_MODULES_OUT)/wcd9xxx_dlkm.ko \
