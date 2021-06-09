@@ -994,6 +994,42 @@ vendor/lib64/vendor.pixelworks.hardware.display@1.0.so|94572fc850664a21e2a45a372
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so|ba3b7252c6e626a8584b3a517bbb264e45c2239e
 vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so|cd9a1096fd22773f84a08e9eae20fa69506719bf
 
+# Display (Pro) - OOS
+vendor/etc/inparm/irissoft/inParm14_a.txt:odm/etc/prj_11/inparm/irissoft/inParm14_a.txt|b8de04faf06e00cf0c1ede692f90563aff31f4e3
+vendor/etc/inparm/irissoft/inParm14_b.txt:odm/etc/prj_11/inparm/irissoft/inParm14_b.txt|904e0d8d711df8ac1634caf67700d55ed13b9891
+vendor/etc/inparm/irissoft/inParm14_c.txt:odm/etc/prj_11/inparm/irissoft/inParm14_c.txt|2349d2e008460ab0348b56d31c7bde8845d113aa
+vendor/etc/inparm/irissoft/inParm16_center.txt:odm/etc/prj_11/inparm/irissoft/inParm16_center.txt|5419ed05cdfaa96406811900a91462ca0e5324d4
+vendor/etc/inparm/irissoft/inParm16_down.txt:odm/etc/prj_11/inparm/irissoft/inParm16_down.txt|3c3702f71dabee5ff60cd5d23fb736d0f6cacc3c
+vendor/etc/inparm/irissoft/inParm16_up.txt:odm/etc/prj_11/inparm/irissoft/inParm16_up.txt|c8ed64fd2399e7dcbc88144db88fa39bf8d64efb
+vendor/etc/inparm/irissoft/inParm17_center.txt:odm/etc/prj_11/inparm/irissoft/inParm17_center.txt|7fd63aa01a069fd27ffc6736cf0d6199ebfdb309
+vendor/etc/inparm/irissoft/inParm17_down.txt:odm/etc/prj_11/inparm/irissoft/inParm17_down.txt|24aca3970dd382e412bbc1f321bc1e0460083ac1
+vendor/etc/inparm/irissoft/inParm17_up.txt:odm/etc/prj_11/inparm/irissoft/inParm17_up.txt|69835704e504ff49d1db799533870c63b56adf4a
+vendor/etc/inparm/irissoft/inParm18_center.txt:odm/etc/prj_11/inparm/irissoft/inParm18_center.txt|723702ef39990437418ea9be550161238b1adcea
+vendor/etc/inparm/irissoft/inParm18_down.txt:odm/etc/prj_11/inparm/irissoft/inParm18_down.txt|407956b67b61ef407de95cbbebebc6fdccd7edf0
+vendor/etc/inparm/irissoft/inParm18_up.txt:odm/etc/prj_11/inparm/irissoft/inParm18_up.txt|6be43faafd52b31cdea39bf233db24dd9d72a724
+vendor/etc/inparm/irissoft/inParm1_center.txt:odm/etc/prj_11/inparm/irissoft/inParm1_center.txt|63360186750eacd0a5503e135b02ffd6572c8261
+vendor/etc/inparm/irissoft/inParm1_down.txt:odm/etc/prj_11/inparm/irissoft/inParm1_down.txt|5eb6007e923086c169cca76e8f8b74abacacc12d
+vendor/etc/inparm/irissoft/inParm1_up.txt:odm/etc/prj_11/inparm/irissoft/inParm1_up.txt|f9ecf619db02b9bd05ed8357ec3e0dd4de180dc3
+vendor/etc/inparm/irissoft/inParm2_center.txt:odm/etc/prj_11/inparm/irissoft/inParm2_center.txt|56f892b46a270c920f0ec9cfed02f479eb51e753
+vendor/etc/inparm/irissoft/inParm2_down.txt:odm/etc/prj_11/inparm/irissoft/inParm2_down.txt|acf98ee596619770e0cb7924760f6f35dddbd806
+vendor/etc/inparm/irissoft/inParm2_up.txt:odm/etc/prj_11/inparm/irissoft/inParm2_up.txt|2dd2010e5917896c39cdda117ee91794415d2981
+vendor/etc/inparm/irissoft/inParm3_center.txt:odm/etc/prj_11/inparm/irissoft/inParm3_center.txt|f118a8fef85fabaa0c4fa14e71f2d46f35bbee2a
+vendor/etc/inparm/irissoft/inParm3_down.txt:odm/etc/prj_11/inparm/irissoft/inParm3_down.txt|885ee607339777ac357b67074326095d18cc72ce
+vendor/etc/inparm/irissoft/inParm3_up.txt:odm/etc/prj_11/inparm/irissoft/inParm3_up.txt|1f1cf0db4735a673f204466b4dcccb155e46d477
+vendor/etc/inparm/irissoft/inParm4_center.txt:odm/etc/prj_11/inparm/irissoft/inParm4_center.txt|f16a1c7bd05456b0ab717161f2b301a30de974d1
+vendor/etc/inparm/irissoft/inParm4_down.txt:odm/etc/prj_11/inparm/irissoft/inParm4_down.txt|34d21b9fbf4e7af20f15668a5e51c0000db0e8c4
+vendor/etc/inparm/irissoft/inParm4_up.txt:odm/etc/prj_11/inparm/irissoft/inParm4_up.txt|8ef27807e778c70b8a5db7ef9b6d15f9e02ca1c4
+vendor/etc/inparm/irissoft/inParm5_center.txt:odm/etc/prj_11/inparm/irissoft/inParm5_center.txt|fbdf7eb3114cb0cf61c429a767762f3190e11289
+vendor/etc/inparm/irissoft/inParm5_down.txt:odm/etc/prj_11/inparm/irissoft/inParm5_down.txt|e14a434f6508156485bc4feb63ca5717b5db60fe
+vendor/etc/inparm/irissoft/inParm5_up.txt:odm/etc/prj_11/inparm/irissoft/inParm5_up.txt|e0c26c0cbc46ba42ab995b99a89cae17904b55ea
+vendor/etc/inparm/irissoft/inParm6_center.txt:odm/etc/prj_11/inparm/irissoft/inParm6_center.txt|bb0db6449f4e4f9a86193a4fc743d0bcae17dd92
+vendor/etc/inparm/irissoft/inParm6_down.txt:odm/etc/prj_11/inparm/irissoft/inParm6_down.txt|090b431e38beaeb28d91752656fdfdf58307bc74
+vendor/etc/inparm/irissoft/inParm6_up.txt:odm/etc/prj_11/inparm/irissoft/inParm6_up.txt|522f41dc27b318bee9c8fca72fa6a66fc14f2ea4
+vendor/etc/inparm/irissoft/inParm8_a.txt:odm/etc/prj_11/inparm/irissoft/inParm8_a.txt|dfa101bb133e07466206537164811c19fc17fe00
+vendor/etc/inparm/irissoft/inParm8_b.txt:odm/etc/prj_11/inparm/irissoft/inParm8_b.txt|dfa101bb133e07466206537164811c19fc17fe00
+vendor/etc/inparm/irissoft/inParm8_c.txt:odm/etc/prj_11/inparm/irissoft/inParm8_c.txt|3fea3d7b6a82e9db3a7563d5c1c11cb429c748e8
+vendor/etc/irissoft.fw:odm/etc/prj_11/irissoft.fw|5283a39a278e9466be329c9ec2917468fab2c0b1
+
 # FASTCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
