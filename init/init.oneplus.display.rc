@@ -29,11 +29,3 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/hbm_brightness
     chmod 0666 /sys/class/drm/card0-DSI-1/hbm
     chown system system /sys/class/drm/card0-DSI-1/hbm
-
-    # TP Firmware
-    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-004b/tp_fw_update 0
-    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-0048/tp_fw_update 0
-    write /sys/devices/platform/soc/984000.i2c/i2c-4/4-005d/tp_fw_update 0
-    write /sys/devices/platform/soc/984000.i2c/i2c-4/4-0048/tp_fw_update 0
-    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-005d/tp_fw_update 0
-    write /sys/devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/tp_fw_update 0
