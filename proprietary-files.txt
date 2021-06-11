@@ -1780,6 +1780,9 @@ vendor/firmware/aw8697_haptic_172.bin|222ffdd5dbe972acd600349fffc29ada43b2d163
 vendor/firmware/aw8697_haptic_174.bin|222ffdd5dbe972acd600349fffc29ada43b2d163
 vendor/firmware/aw8697_rtp.bin|b2bf42d9333fffbb7f00da38d1bd1b6d5a85014a
 
+# WLAN
+vendor/bin/cnss-daemon
+
 # Widevine - OOS
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|0fedaf5200f315108e5aadf3ee3c40bb6c515c29
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
