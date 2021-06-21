@@ -1705,6 +1705,22 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Touch - OOS
+vendor/firmware/tp/FW_19811_SY761.bin|ccd6749dfd9ceedca0318ad2145bd280b13f9c9f
+vendor/firmware/tp/FW_19811_SY79x.bin|1a6b1e217f0b640c0cf882314dfcea6c7751d538
+vendor/firmware/tp/FW_19815_S3908.img|69d62b76fde1b75d413aac1e8eeb2b4ae72cd641
+vendor/firmware/tp/FW_19821_S3908.img|026c9c90f0a5a46655d7001a0051e1ee33e5a2ee
+vendor/firmware/tp/FW_19821_SY761.bin|ccd6749dfd9ceedca0318ad2145bd280b13f9c9f
+vendor/firmware/tp/FW_19821_SY771.bin|aa1aa716eeb79d70c173117830e181f4db1b0eae
+vendor/firmware/tp/FW_19825_SY792.bin|66cc61af8f38310d7590da369bbd99f3073bbd27
+vendor/firmware/tp/LIMIT_19811_SY761.img|b6f27a62fa5ea7f45f85ff1ea19d290e6cefea58
+vendor/firmware/tp/LIMIT_19811_SY79x.img|b4ceff41924043ec3c0dc244186bb790e3e51cd2
+vendor/firmware/tp/LIMIT_19815_S3908.img|443f25fac55faec624e79c99e4a18f0046dec77b
+vendor/firmware/tp/LIMIT_19821_S3908.img|2257d456c2fd1f880087a7ec126d4c9e0222346b
+vendor/firmware/tp/LIMIT_19821_SY761.img|b6f27a62fa5ea7f45f85ff1ea19d290e6cefea58
+vendor/firmware/tp/LIMIT_19821_SY771.img|fa3321a84f7bd1f45d622d9ad5dc91d39bf25b59
+vendor/firmware/tp/LIMIT_19825_SY792.img|b056385e904ac21ebd805b49817ad4557d7f2cad
+
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
