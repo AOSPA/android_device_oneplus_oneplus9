@@ -12,6 +12,7 @@
 /vendor/bin/init.oplus_chg.sh                                                                                   u:object_r:vendor_qti_init_shell_exec:s0
 
 # Fingerprint
+/dev/goodix_fp                                                                                                  u:object_r:vendor_fingerprint_device:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.oneplus9                u:object_r:hal_fingerprint_default_exec:s0
 
 # Sysfs wakeup sources
