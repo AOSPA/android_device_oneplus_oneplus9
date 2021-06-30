@@ -1,0 +1,12 @@
+# Allow FOD to find the OnePlus display HAL hwservice.
+allow vendor_fod hal_display_hwservice:hwservice_manager find;
+
+# Allow FOD to read & write to card0-DSI-1 sysfs nodes.
+allow vendor_fod vendor_sysfs_graphics:file rw_file_perms;
+
+# Allow FOD to find the OnePlus fingerprint hardware service.
+allow vendor_fod { hal_oneplus_fingerprint_hwservice hal_display_hwservice }:hwservice_manager find;
+
+# Allow binder communication with the OnePlus display & AOSP fingerprint HAL.
+binder_call(vendor_fod, hal_display)
+binder_call(vendor_fod, hal_fingerprint)
