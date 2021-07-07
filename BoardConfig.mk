@@ -163,7 +163,6 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/q6_dlkm.ko \
     $(KERNEL_MODULES_OUT)/q6_notifier_dlkm.ko \
     $(KERNEL_MODULES_OUT)/q6_pdr_dlkm.ko \
-    $(KERNEL_MODULES_OUT)/qcom_edac.ko \
     $(KERNEL_MODULES_OUT)/qm1d1b0004.ko \
     $(KERNEL_MODULES_OUT)/qm1d1c0042.ko \
     $(KERNEL_MODULES_OUT)/qt1010.ko \
