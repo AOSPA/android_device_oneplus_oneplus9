@@ -198,6 +198,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.fingerprint.rc \
     init.oneplus.haptics.rc \
     init.oneplus.overlay.rc \
+    init.oneplus.perf.rc \
     init.oneplus.power.rc \
     init.oneplus.telephony.rc \
     init.qti.ufs.rc \
