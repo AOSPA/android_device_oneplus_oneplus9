@@ -8,5 +8,8 @@ type proc_touchpanel, fs_type, proc_type;
 # Fingerprint (Goodix)
 type vendor_fingerprint_device, dev_type;
 
+# Persist OEM Files
+type oem_file, file_type;
+
 # Project Info
 type sysfs_project_info, fs_type, sysfs_type;
