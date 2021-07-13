@@ -27,3 +27,10 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 1000
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 3000
+
+    # Setup runtime cpusets.
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-3,5-6
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/restricted/cpus 0-3
