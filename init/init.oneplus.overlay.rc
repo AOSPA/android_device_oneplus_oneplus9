@@ -15,11 +15,11 @@
 # OnePlus has some stuff that still isn't unified for their variants.
 # Instead of making a seperate target we can put the diff in /odm and overlay it.
 on init
-    mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/etc/prj_${ro.boot.prj_version}/acdbdata:/odm/etc/acdbdata,context=u:object_r:vendor_file:s0
-    mount overlay overlay /vendor/etc/audio lowerdir=/odm/etc/prj_${ro.boot.prj_version}/audio:/vendor/etc/audio,context=u:object_r:vendor_file:s0
-    mount overlay overlay /vendor/etc/camera lowerdir=/odm/etc/prj_${ro.boot.prj_version}/camera:/vendor/etc/camera,context=u:object_r:vendor_file:s0
-    mount overlay overlay /vendor/etc/inparm lowerdir=/odm/etc/prj_${ro.boot.prj_version}/inparm:/vendor/etc/inparm,context=u:object_r:vendor_file:s0
-    mount overlay overlay /vendor/etc/sensors lowerdir=/odm/etc/prj_${ro.boot.prj_version}/sensors:/vendor/etc/sensors,context=u:object_r:vendor_file:s0
+    mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/etc/prj_${ro.boot.prj_version}/acdbdata:/odm/etc/acdbdata,context=u:object_r:vendor_configs_file:s0
+    mount overlay overlay /vendor/etc/audio lowerdir=/odm/etc/prj_${ro.boot.prj_version}/audio:/vendor/etc/audio,context=u:object_r:vendor_configs_file:s0
+    mount overlay overlay /vendor/etc/camera lowerdir=/odm/etc/prj_${ro.boot.prj_version}/camera:/vendor/etc/camera,context=u:object_r:vendor_configs_file:s0
+    mount overlay overlay /vendor/etc/inparm lowerdir=/odm/etc/prj_${ro.boot.prj_version}/inparm:/vendor/etc/inparm,context=u:object_r:vendor_configs_file:s0
+    mount overlay overlay /vendor/etc/sensors lowerdir=/odm/etc/prj_${ro.boot.prj_version}/sensors:/vendor/etc/sensors,context=u:object_r:vendor_configs_file:s0
     mount none /odm/etc/prj_${ro.boot.prj_version}/irissoft.fw /vendor/etc/irissoft.fw bind
     mount overlay overlay /vendor/firmware lowerdir=/odm/firmware/prj_${ro.boot.prj_version}:/vendor/firmware,context=u:object_r:vendor_file:s0
     mount overlay overlay /vendor/lib64 lowerdir=/odm/lib64/prj_${ro.boot.prj_version}:/vendor/lib64,context=u:object_r:vendor_file:s0
