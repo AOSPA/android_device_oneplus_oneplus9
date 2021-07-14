@@ -15,6 +15,9 @@ genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/battery     
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/usb                                                              u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/wireless                                                         u:object_r:vendor_sysfs_usb_supply:s0
 
+# Project info
+genfscon sysfs /project_info                                                                                                         u:object_r:sysfs_project_info:s0
+
 # Wakeups
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/battery/wakeup                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/usb/wakeup                                                       u:object_r:sysfs_wakeup:s0

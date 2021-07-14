@@ -4,3 +4,6 @@ type vendor_sysfs_tri_state_key, sysfs_type, fs_type;
 
 # Display
 type proc_touchpanel, fs_type, proc_type;
+
+# Project Info
+type sysfs_project_info, fs_type, sysfs_type;
