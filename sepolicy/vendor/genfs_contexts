@@ -7,6 +7,7 @@ genfscon sysfs /kernel/tof_control                                              
 
 # Display
 genfscon proc  /touchpanel                                                                                                           u:object_r:proc_touchpanel:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/aod                                                 u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha                                           u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm                                                 u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode                              u:object_r:vendor_sysfs_graphics:s0
