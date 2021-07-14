@@ -1,15 +1,22 @@
 # Alert Slider
-/mnt/vendor/persist/engineermode/tri_state_hall_data                                               u:object_r:vendor_persist_tri_state_key_file:s0
-/vendor/bin/tri-state-key_daemon                                                                   u:object_r:tri-state-key_daemon_exec:s0
+/mnt/vendor/persist/engineermode/tri_state_hall_data                                                            u:object_r:vendor_persist_tri_state_key_file:s0
+/vendor/bin/tri-state-key_daemon                                                                                u:object_r:tri-state-key_daemon_exec:s0
 
 # Display
-/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                     u:object_r:hal_display_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                 u:object_r:hal_graphics_composer_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service          u:object_r:hal_graphics_composer_default_exec:s0
-/(vendor|system/vendor)/bin/irisConfig                                                             u:object_r:iris_config_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                                  u:object_r:hal_display_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                              u:object_r:hal_graphics_composer_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service                       u:object_r:hal_graphics_composer_default_exec:s0
+/(vendor|system/vendor)/bin/irisConfig                                                                          u:object_r:iris_config_exec:s0
 
 # Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.oneplus9   u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.oneplus9                u:object_r:hal_fingerprint_default_exec:s0
+
+# Sysfs wakeup sources
+/sys/devices(/platform)?/soc/soc:oplus,chg_gki/power_supply/(battery|usb|wireless)/wakeup[0-9]+(/.*)?           u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/oplus_chg/(usb|battery)/wakeup[0-9]+(/.*)?                      u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,(wireless-charge|common-charge)/oplus_chg/(wireless|common)/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/fastrpc/adsprpc-smd-secure/wakeup[0-9]+(/.*)?                                              u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/fastrpc/adsprpc-smd/wakeup[0-9]+(/.*)?                                                     u:object_r:sysfs_wakeup:s0
 
 # Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.oneplus9                                  u:object_r:hal_vibrator_default_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.oneplus9                                               u:object_r:hal_vibrator_default_exec:s0
