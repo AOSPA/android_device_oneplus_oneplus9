@@ -20,6 +20,11 @@
 /mnt/vendor/persist/camera_ae_sync(/.*)?                                                                             u:object_r:oem_file:s0
 /mnt/vendor/persist/dual_camera_calibration(/.*)?                                                                    u:object_r:oem_file:s0
 
+# Sysfs battery supply
+/sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/(?!.*wakeup\d+).*                                             u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,common-charge/oplus_chg/(?!.*wakeup\d+).*      u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/(?!.*wakeup\d+).*    u:object_r:vendor_sysfs_battery_supply:s0
+
 # Sysfs wakeup sources
 /sys/devices(/platform)?/soc/soc:oplus,chg_gki/power_supply/(battery|usb|wireless)/wakeup[0-9]+(/.*)?                u:object_r:sysfs_wakeup:s0
 /sys/devices(/platform)?/soc/soc:oplus,chg_intf/oplus_chg/(usb|battery)/wakeup[0-9]+(/.*)?                           u:object_r:sysfs_wakeup:s0
