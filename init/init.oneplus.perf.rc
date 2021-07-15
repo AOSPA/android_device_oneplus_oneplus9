@@ -34,3 +34,6 @@ on property:vendor.post_boot.parsed=1
 
     # Scheduler configuration.
     write /proc/sys/kernel/sched_group_downmigrate 10
+    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
+    write /sys/devices/system/cpu/cpu4/core_ctl/enable 0
+    write /sys/devices/system/cpu/cpu7/core_ctl/enable 0
