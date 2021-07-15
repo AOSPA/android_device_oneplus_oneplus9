@@ -31,3 +31,6 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/background/cpus 0-2
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
+
+    # Scheduler configuration.
+    write /proc/sys/kernel/sched_group_downmigrate 10
