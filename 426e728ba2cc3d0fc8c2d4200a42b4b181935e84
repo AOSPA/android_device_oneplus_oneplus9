@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e9203e7_7dac0743",
+        "filename": "sepolicy/vendor/init.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2021-07-15T19:09:09Z",
+      "side": 1,
+      "message": "should we make this global",
+      "revId": "426e728ba2cc3d0fc8c2d4200a42b4b181935e84",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
