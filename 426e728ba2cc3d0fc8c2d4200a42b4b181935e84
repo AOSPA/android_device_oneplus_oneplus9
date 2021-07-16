@@ -16,6 +16,24 @@
       "message": "should we make this global",
       "revId": "426e728ba2cc3d0fc8c2d4200a42b4b181935e84",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37f3f069_908243c1",
+        "filename": "sepolicy/vendor/init.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-07-16T12:28:34Z",
+      "side": 1,
+      "message": "no need i guess. we really dont have any devices that do vendorless builds. can be handled from device tree",
+      "parentUuid": "9e9203e7_7dac0743",
+      "revId": "426e728ba2cc3d0fc8c2d4200a42b4b181935e84",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
