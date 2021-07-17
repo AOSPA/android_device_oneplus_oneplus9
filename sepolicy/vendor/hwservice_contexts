@@ -1,4 +1,5 @@
 # Camera
+vendor.oneplus.camera.CameraHIDL::IOnePlusCameraProvider                   u:object_r:hal_camera_hwservice:s0
 vendor.oneplus.hardware.CameraMDMHIDL::IOnePlusCameraMDM                   u:object_r:hal_camera_hwservice:s0
 vendor.oneplus.hardware.camera::IOnePlusCameraProvider                     u:object_r:hal_camera_hwservice:s0
 
