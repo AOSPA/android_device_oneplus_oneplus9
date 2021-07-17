@@ -1,3 +1,7 @@
+# Camera
+vendor.oneplus.hardware.CameraMDMHIDL::IOnePlusCameraMDM                   u:object_r:hal_camera_hwservice:s0
+vendor.oneplus.hardware.camera::IOnePlusCameraProvider                     u:object_r:hal_camera_hwservice:s0
+
 # Display
 vendor.oneplus.hardware.display::IOneplusDisplay                           u:object_r:hal_display_hwservice:s0
 vendor.pixelworks.hardware.display::IIris                                  u:object_r:hal_display_iris_hwservice:s0

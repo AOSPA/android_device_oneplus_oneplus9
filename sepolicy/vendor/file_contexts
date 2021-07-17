@@ -2,6 +2,13 @@
 /mnt/vendor/persist/engineermode/tri_state_hall_data                                                                 u:object_r:vendor_persist_tri_state_key_file:s0
 /vendor/bin/tri-state-key_daemon                                                                                     u:object_r:tri-state-key_daemon_exec:s0
 
+# Camera
+/mnt/vendor/persist/camera(/.*)?                                                                                     u:object_r:persist_camera_file:s0
+/mnt/vendor/persist/camera_ae_sync(/.*)?                                                                             u:object_r:persist_camera_file:s0
+/mnt/vendor/persist/dual_camera_calibration(/.*)?                                                                    u:object_r:persist_camera_file:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.camera@1\.0-service                                        u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service                                 u:object_r:hal_camera_default_exec:s0
+
 # Display
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                                       u:object_r:hal_display_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                                   u:object_r:hal_graphics_composer_default_exec:s0
@@ -14,11 +21,6 @@
 # Fingerprint
 /dev/goodix_fp                                                                                                       u:object_r:vendor_fingerprint_device:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.oneplus9                     u:object_r:hal_fingerprint_default_exec:s0
-
-# Persist
-/mnt/vendor/persist/camera(/.*)?                                                                                     u:object_r:persist_camera_file:s0
-/mnt/vendor/persist/camera_ae_sync(/.*)?                                                                             u:object_r:persist_camera_file:s0
-/mnt/vendor/persist/dual_camera_calibration(/.*)?                                                                    u:object_r:persist_camera_file:s0
 
 # Sysfs battery supply
 /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/(?!.*wakeup\d+).*                                             u:object_r:vendor_sysfs_battery_supply:s0
