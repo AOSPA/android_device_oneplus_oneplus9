@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69e0d1df_03418e44",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2021-07-17T07:54:53Z",
+      "side": 1,
+      "message": "i don\u0027t think you need /system/vendor also",
+      "revId": "3e436531f3004b816d5392f4f4f5b77404b08b12",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
