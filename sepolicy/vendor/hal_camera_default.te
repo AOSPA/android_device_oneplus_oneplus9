@@ -19,3 +19,6 @@ set_prop(hal_camera_default, vendor_oplus_prop)
 
 # Allow camera to call itself.
 binder_call(hal_camera_default, hal_camera_default)
+
+# Allow camera to read OnePlus specific props.
+set_prop(hal_camera_default, vendor_oplus_prop)
