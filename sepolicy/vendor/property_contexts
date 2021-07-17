@@ -1,2 +1,4 @@
 # Camera
+persist.camera.assert.panic                                        u:object_r:vendor_oplus_prop:s0
+persist.sys.assert.panic                                           u:object_r:vendor_oplus_prop:s0
 vendor.sys.op.disable_ufstw                                        u:object_r:vendor_oplus_prop:s0
