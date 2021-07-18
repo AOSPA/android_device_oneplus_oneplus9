@@ -1,3 +1,6 @@
+# Charger
+type hal_oplus_charger_hwservice, hwservice_manager_type;
+
 # Display
 type hal_display_hwservice, hwservice_manager_type;
 type hal_display_iris_hwservice, hwservice_manager_type;
