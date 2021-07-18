@@ -22,3 +22,6 @@ binder_call(hal_camera_default, hal_camera_default)
 
 # Allow camera to read OnePlus specific props.
 set_prop(hal_camera_default, vendor_oplus_prop)
+
+# Allow camera to access charger hwservice.
+allow hal_camera_default hal_oplus_charger_hwservice:hwservice_manager find;
