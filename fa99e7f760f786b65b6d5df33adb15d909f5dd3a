@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9dcd31ad_b830742e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2021-07-18T03:51:21Z",
+      "side": 1,
+      "message": "why so many changes that rewrite or move other changes.  why not just do it the way you wanted the first time?",
+      "revId": "fa99e7f760f786b65b6d5df33adb15d909f5dd3a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
