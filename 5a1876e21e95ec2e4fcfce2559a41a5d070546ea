@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "409d8309_af3680e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-07-18T14:08:11Z",
+      "side": 1,
+      "message": "DNM, using this to fix camera on jenkins builds.",
+      "revId": "5a1876e21e95ec2e4fcfce2559a41a5d070546ea",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
