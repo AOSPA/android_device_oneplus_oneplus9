@@ -97,9 +97,6 @@ DEVICE_MATRIX_FILE += \
 # Hacks
 BUILD_BROKEN_DUP_RULES := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus9
-
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
@@ -213,6 +210,9 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/snd_event_dlkm.ko
 
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
+
+# OTA
+TARGET_OTA_ASSERT_DEVICE := OnePlus9,oneplus9
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0xC000000
