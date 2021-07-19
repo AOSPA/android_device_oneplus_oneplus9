@@ -20,11 +20,5 @@ on boot
     chown system system /proc/touchpanel/touch_hold
     chmod 0666 /dev/qseecom
 
-# Set variant positions for the FOD HAL.
-on property:ro.boot.prj_version=11
-    setprop persist.sys.fod.pos.x 604
-    setprop persist.sys.fod.pos.y 2828
-    setprop persist.sys.fod.size 232
-
 on property:gf.debug.dump_path=*
     mkdir /sdcard/Android/data/gf_file 0755 system ext_data_rw
