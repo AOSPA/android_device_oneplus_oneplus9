@@ -33,22 +33,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.oneplus.fingerprint.rc",
-    src: "init.oneplus.fingerprint.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.oneplus.haptics.rc",
     src: "init.oneplus.haptics.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.oneplus.overlay.rc",
-    src: "init.oneplus.overlay.rc",
     sub_dir: "init",
     vendor: true,
 }
@@ -93,15 +79,4 @@ prebuilt_etc {
     filename: "ueventd.rc",
     src: "ueventd.oneplus.rc",
     vendor: true,
-}
-
-cc_library_static {
-    name: "libinit_oneplus9",
-    recovery_available: true,
-    shared_libs: ["libbase"],
-    srcs: ["init_oneplus9.cpp"],
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init"
-    ]
 }
