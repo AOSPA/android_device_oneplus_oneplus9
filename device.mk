@@ -229,15 +229,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPAOnePlus9ProSystemUI \
     AOSPAOnePlus9SeriesFrameworks \
     AOSPAOnePlus9SeriesSettings \
     AOSPAOnePlus9SeriesSystemUI \
     AOSPAOnePlus9SystemUI \
     FrameworksResTarget \
     OnePlus9Frameworks \
-    OnePlus9ProFrameworks \
-    OnePlus9ProSystemUI \
     OnePlus9SeriesFrameworks \
     OnePlus9SeriesSystemUI \
     OnePlus9SystemUI \
