@@ -1,2 +1,0 @@
-# Allow overlayFS to mount.
-allow init vendor_configs_file:{ dir file } mounton;
