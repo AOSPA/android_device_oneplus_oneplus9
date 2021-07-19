@@ -1,2 +1,6 @@
 # Allow overlayFS to mount.
 allow init vendor_configs_file:{ dir file } mounton;
+allow init vendor_configs_file:filesystem relabelfrom;
+allow init vendor_file:filesystem relabelfrom;
+allow init vendor_configs_file:filesystem relabelto;
+allow init vendor_file:filesystem relabelto;
