@@ -87,9 +87,6 @@ TARGET_SCREEN_DENSITY += 420
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/oneplus_vendor_framework_compatibility_matrix.xml
 
-DEVICE_FRAMEWORK_MANIFEST_FILE += \
-    $(DEVICE_PATH)/framework_manifest.xml \
-
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/manifest.xml \
     $(DEVICE_PATH)/oneplus_manifest.xml

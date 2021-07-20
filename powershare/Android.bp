@@ -18,6 +18,7 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "vendor.aospa.powershare@1.0-service.oneplus_lahaina",
     init_rc: ["vendor.aospa.powershare@1.0-service.oneplus_lahaina.rc"],
+    vintf_fragments: ["vendor.aospa.powershare@1.0-service.oneplus_lahaina.xml"],
     srcs: ["service.cpp", "PowerShare.cpp"],
     shared_libs: [
         "libbase",
