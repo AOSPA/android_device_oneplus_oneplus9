@@ -1,4 +1,4 @@
-<manifest version="1.0" type="framework">
+<manifest version="1.0" type="device">
     <hal format="hidl">
         <name>vendor.aospa.powershare</name>
         <transport>hwbinder</transport>
@@ -8,4 +8,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-</manifest>
+</manifest> 
