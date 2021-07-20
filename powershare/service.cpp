@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "aospa.powershare@1.0-service.oneplus_lahaina"
+#define LOG_TAG "vendor.aospa.powershare@1.0-service.oneplus_lahaina"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
