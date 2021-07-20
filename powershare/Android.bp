@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "aospa.powershare@1.0-service.oneplus_lahaina",
-    init_rc: ["aospa.powershare@1.0-service.oneplus_lahaina.rc"],
+    name: "vendor.aospa.powershare@1.0-service.oneplus_lahaina",
+    init_rc: ["vendor.aospa.powershare@1.0-service.oneplus_lahaina.rc"],
     srcs: ["service.cpp", "PowerShare.cpp"],
     shared_libs: [
         "libbase",
@@ -27,4 +27,5 @@ cc_binary {
         "libutils",
         "vendor.aospa.powershare@1.0",
     ],
+    proprietary: true,
 }
