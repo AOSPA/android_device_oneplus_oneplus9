@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05d24d21_4d5f6320",
+        "filename": "framework_manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-07-21T06:18:57Z",
+      "side": 1,
+      "message": "Make this file oneplus_framework*",
+      "revId": "0f9c8700abfd8a47efd1f736d3ad615cf6b6612c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5101a73_98af2e06",
+        "filename": "powershare/aospa.powershare@1.0-service.oneplus_lahaina.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-07-21T06:18:57Z",
+      "side": 1,
+      "message": "remove oneplus_lahaina bits from everywhere. dont really need it",
+      "revId": "0f9c8700abfd8a47efd1f736d3ad615cf6b6612c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "877ff791_848159ea",
+        "filename": "sepolicy/private/file.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-07-21T06:18:57Z",
+      "side": 1,
+      "message": "change label to something like vendor_sysfs_battery or something close to CAF",
+      "revId": "0f9c8700abfd8a47efd1f736d3ad615cf6b6612c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
