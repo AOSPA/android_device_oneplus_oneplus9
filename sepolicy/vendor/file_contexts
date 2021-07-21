@@ -25,6 +25,9 @@
 /dev/goodix_fp                                                                                                       u:object_r:vendor_fingerprint_device:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.oneplus9                     u:object_r:hal_fingerprint_default_exec:s0
 
+# PowerShare
+/(vendor|system/vendor)/bin/hw/vendor\.aospa\.powershare@1\.0-service\.oneplus_lahaina                               u:object_r:hal_powershare_default_exec:s0
+
 # Sysfs battery supply
 /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/(?!.*wakeup\d+).*                                             u:object_r:vendor_sysfs_battery_supply:s0
 /sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,common-charge/oplus_chg/(?!.*wakeup\d+).*      u:object_r:vendor_sysfs_battery_supply:s0
