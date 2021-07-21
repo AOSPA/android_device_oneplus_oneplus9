@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c814dbd_e8276b78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-07-21T12:31:58Z",
+      "side": 1,
+      "message": "works good. talked about it with alex, he adviced me to test battery and performance which was all fine and better in some cases",
+      "revId": "35301aa873dd9850a7efe9fe5b304437bc29016f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
