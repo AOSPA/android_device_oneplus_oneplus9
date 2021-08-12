@@ -69,12 +69,4 @@
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
 
-    <!-- OnePlus uses a proprietary vibrator HAL to utilize the new powerful motor since the
-         OnePlus 7 Pro. -->
-    <bool name="config_hasOnePlusHapticMotor">true</bool>
-
-    <!-- Defines the sysfs attribute path used by the device
-         to enable/disable DC dimming. -->
-    <string name="config_deviceDcDimmingSysfsNode">/sys/class/drm/card0-DSI-1/dimlayer_bl_en</string>
-
 </resources>
