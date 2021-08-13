@@ -419,7 +419,6 @@
     <!-- List supported color modes. -->
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
@@ -437,12 +436,10 @@
          currently set composition color space will not be modified.-->
     <integer-array name="config_displayCompositionColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL   -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
-        <item>2</item> <!-- COLOR_MODE_SATURATED -->
-        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+        <item>1</item> <!-- COLOR_MODE_SATURATED -->
+        <item>2</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
     <integer-array name="config_displayCompositionColorSpaces">
-        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
