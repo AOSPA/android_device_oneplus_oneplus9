@@ -20,6 +20,12 @@
     <bool name="config_audioPanelOnLeftSide">true</bool>
 
     <!-- FOD Color -->
-    <color name="config_fodColor">#ffffe6</color>
+    <color name="config_udfpsColor">#ffffe6</color>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM 
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfps_hbm_type">0</integer>
 
 </resources>
