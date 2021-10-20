@@ -254,5 +254,5 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
 
-PRODUCT_PRIVATE_SEPOLICY_DIRS += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/private
