@@ -18,6 +18,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6398c8a9_3ee51f6b",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-10-28T06:13:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55dc46ef_a1832446",
+      "revId": "ea12883d5078fd6d7b4817a7af7de129802e9afb",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1568c166_530ec686",
@@ -35,6 +53,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "63c4c0e2_629c9dce",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-10-28T06:13:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1568c166_530ec686",
+      "revId": "ea12883d5078fd6d7b4817a7af7de129802e9afb",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "69b33b6a_2156a592",
@@ -48,6 +84,24 @@
       "writtenOn": "2021-10-23T07:23:38Z",
       "side": 1,
       "message": "telephony component?",
+      "revId": "ea12883d5078fd6d7b4817a7af7de129802e9afb",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63ddb448_731ec583",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-10-28T06:13:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69b33b6a_2156a592",
       "revId": "ea12883d5078fd6d7b4817a7af7de129802e9afb",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
