@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fddcbb23_81f4448c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2021-10-28T06:14:03Z",
+      "side": 1,
+      "message": "@jake, will fix it out later. For now focusing on build",
+      "revId": "5aa0bf66afa0e66dbcd3b277f82cee9e20a3f525",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
