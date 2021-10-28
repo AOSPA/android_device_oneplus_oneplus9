@@ -1,0 +1,35 @@
+cc_library_static {
+    name: "libudfps_extension.oneplus9",
+    srcs: ["UdfpsExtension.cpp"],
+    whole_static_libs: ["vendor.oneplus.hardware.display@1.0"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger/CompositionEngine/include",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.biometrics.fingerprint@2.3-service.oneplus9",
+    defaults: ["hidl_defaults"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.oneplus9.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.oneplus9.xml"],
+    vendor: true,
+    relative_install_path: "hw",
+    srcs: [
+        "BiometricsFingerprint.cpp",
+        "service.cpp",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libhidlbase",
+        "libhardware",
+        "libutils",
+        "android.hardware.biometrics.fingerprint@2.1",
+        "android.hardware.biometrics.fingerprint@2.2",
+        "android.hardware.biometrics.fingerprint@2.3",
+        "vendor.oneplus.fingerprint.extension@1.0",
+        "vendor.oneplus.hardware.display@1.0",
+    ],
+
+}
