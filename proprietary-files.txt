@@ -107,7 +107,6 @@ vendor/lib/liblistensoundmodel2.so|4300acb2c27ac4375c1bb6128cdc830df93e6044
 vendor/lib/libmulawdec.so|cf5ccece58bc5053c96294886fbe79ad50dbdded
 vendor/lib/libqtigef.so|0bd0b183bb14b4a6bca01c25d4031e02854b6b37
 vendor/lib/libsmwrapper.so|0904196e8df2157d50eceec599daccd9d0a67f8e
-vendor/lib/libssrec.so|73152a42ae882f3f4c6da9b032576b34e70b7286
 vendor/lib/libstagefright_soft_qtiflacdec.so|38d7a21e097b3e9d7a5809fc6a28eb69b16732e1
 vendor/lib/libsurround_3mic_proc.so|80921a6cb1946721ac9f68adc3577dde72226454
 vendor/lib/vendor.qti.voiceprint@1.0.so|3fb9915035ee66d6c3dc749cd7dd31fd082493d0
@@ -157,7 +156,6 @@ vendor/lib64/libhdmipassthru.so|29726ac3f5be0cd892583cb0c35238fcdf9c5e10
 vendor/lib64/liblistensoundmodel2.so|79fad747ee68ce401dc3e63c92e5fbb2eb747213
 vendor/lib64/libmulawdec.so|f6d753655cb3f59ed9423b23bdb0c2cc155ed8bf
 vendor/lib64/libqtigef.so|6066a3a6c27a329732345d937f2178e652e624db
-vendor/lib64/libssrec.so|4605c36573ff366315e9e18c9009c074cd1a3e2f
 vendor/lib64/libstagefright_soft_qtiflacdec.so|3c2e1246c04c5abb271d27ef0396dddbfc5048b7
 vendor/lib64/vendor.qti.voiceprint@1.0.so|975999ec0c79581c68d1d5eca2dae7bca6eb5e0b
 
