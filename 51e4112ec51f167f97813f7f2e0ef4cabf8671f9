@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56835dad_0e407eba",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2021-10-29T14:10:17Z",
+      "side": 1,
+      "message": "Still need these props?",
+      "revId": "51e4112ec51f167f97813f7f2e0ef4cabf8671f9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68f9951d_6bb6190a",
+        "filename": "init/init.oneplus.fingerprint.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2021-10-29T14:10:17Z",
+      "side": 1,
+      "message": "And these",
+      "revId": "51e4112ec51f167f97813f7f2e0ef4cabf8671f9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
