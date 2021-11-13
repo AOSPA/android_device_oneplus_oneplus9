@@ -2,14 +2,13 @@ Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
 cc_library_shared {
-    name: "vendor.qti.hardware.vibrator.impl.oneplus9",
+    name: "vendor.qti.hardware.vibrator.impl.oplus",
     vendor: true,
     cflags: Common_CFlags,
     srcs: [
         "Vibrator.cpp",
     ],
     shared_libs: [
-        "libbase",
         "libcutils",
         "libutils",
         "liblog",
@@ -17,17 +16,16 @@ cc_library_shared {
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk",
     ],
-    include_dirs: ["system/libbase/include"],
     export_include_dirs: ["include"]
 }
 
 cc_binary {
-    name: "vendor.qti.hardware.vibrator.service.oneplus9",
+    name: "vendor.qti.hardware.vibrator.service.oplus",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.vibrator.service.oneplus9.rc"],
+    init_rc: ["vendor.qti.hardware.vibrator.service.oplus.rc"],
     vintf_fragments: [
-        "vendor.qti.hardware.vibrator.service.oneplus9.xml",
+        "vendor.qti.hardware.vibrator.service.oplus.xml",
     ],
     cflags: Common_CFlags,
     srcs: [
@@ -39,7 +37,48 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk",
-        "vendor.qti.hardware.vibrator.impl.oneplus9",
+        "vendor.qti.hardware.vibrator.impl.oplus",
     ],
-    overrides: ["vendor.qti.hardware.vibrator.service"],
+}
+
+cc_library_shared {
+    name: "vendor.qti.hardware.vibrator.offload.impl.oplus",
+    vendor: true,
+    cflags: Common_CFlags + ["-DTARGET_SUPPORTS_OFFLOAD"],
+    srcs: [
+        "Vibrator.cpp",
+        "VibratorOffload.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libqtivibratoreffect",
+        "libqtivibratoreffectoffload",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V1-ndk",
+    ],
+    export_include_dirs: ["include"],
+}
+
+cc_binary {
+    name: "vendor.qti.hardware.vibrator.offload.service.oplus",
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["vendor.qti.hardware.vibrator.offload.service.oplus.rc"],
+    vintf_fragments: [
+        "vendor.qti.hardware.vibrator.offload.service.oplus.xml",
+    ],
+    cflags: Common_CFlags + ["-DTARGET_SUPPORTS_OFFLOAD"],
+    srcs: [
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V1-ndk",
+        "vendor.qti.hardware.vibrator.offload.impl.oplus",
+    ],
 }
