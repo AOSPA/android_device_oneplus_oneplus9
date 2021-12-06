@@ -1,0 +1,4 @@
+allow init vendor_file:file execute;
+allow init vendor_xdsp_device:chr_file {read open ioctl};
+allow init same_process_hal_file:file execute;
+allow init ion_device:chr_file {read open ioctl};
