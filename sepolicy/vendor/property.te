@@ -1,1 +1,2 @@
-type vendor_oplus_prop, property_type;
+system_vendor_config_prop(vendor_exported_overlay_prop)
+system_public_prop(vendor_oplus_prop)

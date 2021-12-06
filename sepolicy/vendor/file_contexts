@@ -23,7 +23,7 @@
 
 # Fingerprint
 /dev/goodix_fp                                                                                                       u:object_r:vendor_fingerprint_device:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.oneplus9                     u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus9                     u:object_r:hal_fingerprint_default_exec:s0
 
 # Sysfs battery supply
 /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/(?!.*wakeup\d+).*                                             u:object_r:vendor_sysfs_battery_supply:s0

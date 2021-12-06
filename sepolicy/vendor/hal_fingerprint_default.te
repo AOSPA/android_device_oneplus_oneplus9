@@ -4,6 +4,10 @@ allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 # Allow binder communication with performance HAL.
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
+# Allow binder communication with hal_display_default
+binder_call(hal_fingerprint_default, hal_display_default)
+typeattribute hal_fingerprint_default hal_display_client;
+
 # Allow the fingerprint service to find the performance HAL hwservice.
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
