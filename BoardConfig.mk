@@ -252,4 +252,5 @@ SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
 # SELinux
-SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
