@@ -20,4 +20,7 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- Define UDFPS vendor code for AOD -->
+    <integer name="config_udfps_vendor_code">0</integer>
+
 </resources>
