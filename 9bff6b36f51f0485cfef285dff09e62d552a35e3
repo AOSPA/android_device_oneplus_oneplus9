@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1a2593b_ce764019",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2021-12-14T06:59:30Z",
+      "side": 1,
+      "message": "why would this be at the device level? also does this do anything without an apk",
+      "revId": "9bff6b36f51f0485cfef285dff09e62d552a35e3",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
