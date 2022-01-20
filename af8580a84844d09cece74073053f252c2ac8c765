@@ -16,6 +16,24 @@
       "message": "can\u0027t you just take the kernel commit",
       "revId": "af8580a84844d09cece74073053f252c2ac8c765",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf7f26db_6c720cb8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-01-20T06:56:46Z",
+      "side": 1,
+      "message": "i took it, apparently mainline modules cause a huge dex2oat/linker error and thats kinda weird. I have no clue on it but this works so we good",
+      "parentUuid": "11165371_cfefc0a3",
+      "revId": "af8580a84844d09cece74073053f252c2ac8c765",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
