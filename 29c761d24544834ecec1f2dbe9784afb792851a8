@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f65cd69_5c9b084c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-01-20T13:32:45Z",
+      "side": 1,
+      "message": "this looks a lot better to me now, but as I don\u0027t own the device, not giving the +2 it probably deserves",
+      "revId": "29c761d24544834ecec1f2dbe9784afb792851a8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
