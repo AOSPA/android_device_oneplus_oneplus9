@@ -146,13 +146,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.refresh_rate_switching=true \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
-# Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sensor.pickup=oneplus.sensor.op_motion_detect
-
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -288,7 +281,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal \
+    android.hardware.sensors@2.1-service.op9-multihal \
     libsensorndkbridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
