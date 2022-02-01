@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c23c056_a270c37b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-02-01T05:08:50Z",
+      "side": 1,
+      "message": "our pixel repo sets this already https://github.com/ThankYouMario/android_vendor_google_pixel/blob/sapphire/overlay/PixelFrameworksOverlay/res/values/config.xml#L118",
+      "revId": "0f02bbc8ee5f821abe9b639eee256f4f02d67194",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
