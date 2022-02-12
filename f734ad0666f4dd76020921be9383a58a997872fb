@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70f74ecc_bed99d08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-02-12T13:47:06Z",
+      "side": 1,
+      "message": "been doing great since 6 months with this patch. Didn\u0027t face any data corruption",
+      "revId": "f734ad0666f4dd76020921be9383a58a997872fb",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
