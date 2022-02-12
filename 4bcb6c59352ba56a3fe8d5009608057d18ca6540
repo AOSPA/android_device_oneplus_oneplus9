@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c5cc9e2_1bdf58f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000143
+      },
+      "writtenOn": "2022-02-12T12:55:43Z",
+      "side": 1,
+      "message": "using this on op8 causes the screen to not wake sometimes",
+      "revId": "4bcb6c59352ba56a3fe8d5009608057d18ca6540",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
