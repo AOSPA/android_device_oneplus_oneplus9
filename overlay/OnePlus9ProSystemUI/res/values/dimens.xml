@@ -32,7 +32,7 @@
     <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
 
     <!-- Bottom margin of the keyguard indicator. -->
-    <dimen name="keyguard_indication_margin_bottom">87px</dimen>
+    <dimen name="keyguard_indication_margin_bottom">400px</dimen>
 
     <!-- Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">156px</dimen>
