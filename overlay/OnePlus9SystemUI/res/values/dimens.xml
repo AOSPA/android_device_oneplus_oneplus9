@@ -38,6 +38,6 @@
     <dimen name="rounded_corner_content_padding">8dp</dimen>
 
     <!-- Bottom margin of the keyguard indicator. -->
-    <dimen name="keyguard_indication_margin_bottom">65px</dimen>
+    <dimen name="keyguard_indication_margin_bottom">300px</dimen>
 
 </resources>
