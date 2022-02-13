@@ -75,6 +75,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "vendor.qti.hardware.display.composer-service.rc",
+    src: "vendor.qti.hardware.display.composer-service.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "ueventd.lahaina.rc",
     filename: "ueventd.rc",
     src: "ueventd.lahaina.rc",

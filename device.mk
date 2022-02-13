@@ -198,6 +198,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.telephony.rc \
     init.qti.ufs.rc \
     init.target.rc \
+    vendor.qti.hardware.display.composer-service.rc \
     ueventd.lahaina.rc \
     ueventd.oneplus.rc \
     init.oneplus.post_boot.sh
