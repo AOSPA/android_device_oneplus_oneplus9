@@ -23,6 +23,9 @@ genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/battery     
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/usb                                                              u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/wireless                                                         u:object_r:vendor_sysfs_usb_supply:s0
 
+# zram
+genfscon sysfs /module/zram/parameters/wb_start_mins                                                                                 u:object_r:sysfs_zram:s0
+
 # Project info
 genfscon sysfs /project_info                                                                                                         u:object_r:sysfs_project_info:s0
 
