@@ -199,7 +199,11 @@ PRODUCT_PACKAGES += \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc \
-    ueventd.oneplus.rc
+    ueventd.oneplus.rc \
+    init.oneplus.post_boot.sh
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.post_boot.custom=true
 
 # Kernel
 KERNEL_MODULES_INSTALL := dlkm
