@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+on boot
+    chown system system /sys/module/zram/parameters/wb_start_mins
+
 service oneplus-post-boot /vendor/bin/sh /vendor/bin/init.oneplus.post_boot.sh
     class core
     user root
