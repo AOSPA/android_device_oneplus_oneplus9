@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c997b1d_8cf147ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-02-13T08:47:57Z",
+      "side": 1,
+      "message": "This is for my kernel.\n\nShouldn\u0027t be merged until PA switches to my kernel (if ever).",
+      "revId": "df66d001ed77581da81c3c791fe4ad7bd52508c6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
