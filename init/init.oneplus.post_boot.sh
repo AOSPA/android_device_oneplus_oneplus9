@@ -176,6 +176,7 @@ echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
 # cpuset parameters
 echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
+echo 0-6 > /dev/cpuset/foreground/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
@@ -328,7 +329,7 @@ do
     echo 50 > $qoslat/mem_latency/ratio_ceil
 done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
-echo s2idle > /sys/power/mem_sleep
+echo deep > /sys/power/mem_sleep
 configure_memory_parameters
 
 # Let kernel know our image version/variant/crm_version
@@ -360,3 +361,6 @@ case "$console_config" in
 esac
 
 setprop vendor.post_boot.parsed 1
+
+#liochen@SYSTEM, 2020/11/02, Add for enable ufs performance
+echo 0 > /sys/class/scsi_host/host0/../../../clkscale_enable
