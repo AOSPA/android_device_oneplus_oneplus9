@@ -176,6 +176,9 @@ echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
 # cpuset parameters
 echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
+# jared.wu@OPTIMIZATION, 2020/09/22, Make foreground run on cpu 0-6
+echo 0-6 > /dev/cpuset/foreground/cpus
+echo 0-6 > /dev/cpuset/display/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
@@ -328,7 +331,7 @@ do
     echo 50 > $qoslat/mem_latency/ratio_ceil
 done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
-echo s2idle > /sys/power/mem_sleep
+echo deep > /sys/power/mem_sleep
 configure_memory_parameters
 
 # Let kernel know our image version/variant/crm_version
@@ -360,3 +363,12 @@ case "$console_config" in
 esac
 
 setprop vendor.post_boot.parsed 1
+
+# UFS add component info
+UFS_PN=`cat /sys/devices/platform/soc/1d84000.ufshc/string_descriptors/product_name`
+UFS_VENDOR=`cat /sys/devices/platform/soc/1d84000.ufshc/string_descriptors/manufacturer_name`
+UFS_VERSION=`cat /sys/devices/platform/soc/1d84000.ufshc/string_descriptors/product_revision`
+UFS_INFO="UFS "`echo ${UFS_PN} | tr -d "\r"`" "`echo ${UFS_VENDOR} | tr -d "\r"`" "`echo ${UFS_VERSION} | tr -d "\r"`
+echo ${UFS_INFO}> /sys/project_info/add_component
+#liochen@SYSTEM, 2020/11/02, Add for enable ufs performance
+echo 0 > /sys/class/scsi_host/host0/../../../clkscale_enable
