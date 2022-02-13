@@ -47,6 +47,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oneplus.perf.rc",
+    src: "init.oneplus.perf.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oneplus.power.rc",
     src: "init.oneplus.power.rc",
     sub_dir: "init",
@@ -78,5 +85,11 @@ prebuilt_etc {
     name: "ueventd.oneplus.rc",
     filename: "ueventd.rc",
     src: "ueventd.oneplus.rc",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.oneplus.post_boot.sh",
+    src: "init.oneplus.post_boot.sh",
     vendor: true,
 }
