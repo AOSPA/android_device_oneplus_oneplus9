@@ -1,3 +1,5 @@
+#!/vendor/bin/sh
+
 #=============================================================================
 # Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
@@ -29,6 +31,9 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
+
+# Exit on errors
+set -e
 
 rev=`cat /sys/devices/soc0/revision`
 ddr_type=`od -An -tx /proc/device-tree/memory/ddr_device_type`

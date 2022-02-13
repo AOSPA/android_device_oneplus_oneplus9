@@ -18,6 +18,7 @@ service op9-post-boot /vendor/bin/sh /vendor/bin/init.op9.post_boot.sh
     group root system wakelock graphics
     disabled
     oneshot
+    critical
 
 on property:sys.boot_completed=1
     start op9-post-boot
