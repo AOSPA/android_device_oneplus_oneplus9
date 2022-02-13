@@ -30,55 +30,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 
-function configure_zram_parameters() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    low_ram=`getprop ro.config.low_ram`
-
-    # Zram disk - 75% for Go and < 2GB devices .
-    # For >2GB Non-Go devices, size = 50% of RAM size. Limit the size to 4GB.
-    # And enable lz4 zram compression for Go targets.
-
-    let RamSizeGB="( $MemTotal / 1048576 ) + 1"
-    diskSizeUnit=M
-    if [ $RamSizeGB -le 2 ]; then
-        let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
-    else
-        let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
-    fi
-
-    # use MB avoid 32 bit overflow
-    if [ $zRamSizeMB -gt 4096 ]; then
-        let zRamSizeMB=4096
-    fi
-
-    if [ "$low_ram" == "true" ]; then
-        echo lz4 > /sys/block/zram0/comp_algorithm
-    fi
-
-    if [ -f /sys/block/zram0/disksize ]; then
-        if [ -f /sys/block/zram0/use_dedup ]; then
-            echo 1 > /sys/block/zram0/use_dedup
-        fi
-        echo "$zRamSizeMB""$diskSizeUnit" > /sys/block/zram0/disksize
-
-        # ZRAM may use more memory than it saves if SLAB_STORE_USER
-        # debug option is enabled.
-        if [ -e /sys/kernel/slab/zs_handle ]; then
-            echo 0 > /sys/kernel/slab/zs_handle/store_user
-        fi
-        if [ -e /sys/kernel/slab/zspage ]; then
-            echo 0 > /sys/kernel/slab/zspage/store_user
-        fi
-
-        mkswap /dev/block/zram0
-        swapon /dev/block/zram0 -p 32758
-    fi
-
-    echo 100 > /proc/sys/vm/swappiness
-}
-
 rev=`cat /sys/devices/soc0/revision`
 ddr_type=`od -An -tx /proc/device-tree/memory/ddr_device_type`
 ddr_type4="07"
@@ -283,7 +234,42 @@ done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 echo deep > /sys/power/mem_sleep
 
-configure_zram_parameters
+# Remove unused swapfile
+rm -f /data/vendor/swap/swapfile 2>/dev/null
+sync
+
+# Setup zram (requires arter97 kernel)
+while [ ! -e /dev/block/zram0 ]; do
+  sleep 1
+done
+if ! grep -q zram /proc/swaps; then
+  # Setup backing device
+  BDEV="/dev/block/by-name/last_parti"
+  if [ ! -e "$BDEV" ]; then
+    echo "post_boot: failed to find the backing device"
+  fi
+  echo "post_boot: using $BDEV for zram backing_dev"
+  realpath $BDEV > /sys/block/zram0/backing_dev
+  # 4GB
+  echo 4294967296 > /sys/block/zram0/disksize
+
+  # Set swappiness reflecting the device's RAM size
+  RamStr=$(cat /proc/meminfo | grep MemTotal)
+  RamMB=$((${RamStr:16:8} / 1024))
+  if [ $RamMB -le 6144 ]; then
+    echo 160 > /proc/sys/vm/rswappiness
+    echo 240 > /sys/module/zram/parameters/wb_start_mins
+  elif [ $RamMB -le 8192 ]; then
+    echo 120 > /proc/sys/vm/rswappiness
+    echo 360 > /sys/module/zram/parameters/wb_start_mins
+  else
+    echo 90 > /proc/sys/vm/rswappiness
+    echo 480 > /sys/module/zram/parameters/wb_start_mins
+  fi
+
+  mkswap /dev/block/zram0
+  swapon /dev/block/zram0
+fi
 
 # Let kernel know our image version/variant/crm_version
 if [ -f /sys/devices/soc0/select_image ]; then
