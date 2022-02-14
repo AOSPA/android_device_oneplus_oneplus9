@@ -63,7 +63,4 @@
    <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
    <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
 
-   <dimen name="rounded_corner_radius">20dp</dimen>
-   <dimen name="rounded_corner_content_padding">0dp</dimen>
-
 </resources>
