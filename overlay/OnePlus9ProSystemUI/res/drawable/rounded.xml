@@ -1,13 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="209px"
-    android:height="209px"
-    android:viewportWidth="209"
-    android:viewportHeight="209">
+    android:width="230px"
+    android:height="230px"
+    android:viewportWidth="230"
+    android:viewportHeight="230">
 
     <path
         android:fillColor="#ff000000"
-        android:pathData="M196.755,-0L-0,-0L-0,208.273C-0,116.958 2.154,70.516 39.062,36.485C75.202,3.163 108.538,-0 196.755,-0Z"
-        android:strokeColor="#00000000"
-        android:strokeWidth="1.0"
-        android:fillType="evenOdd" />
+        android:pathData="M 0 229.8136 L 0 208.8531 L 0.0824 193.2383 L 0.3399 177.7368 L 0.8343 163.9657 L 1.5862 151.6984 L 2.6162 140.5744 L 3.9037 130.3465 L 5.459 120.8499 L 7.2924 111.9713 L 9.3524 103.618 L 11.7214 95.7385 L 14.42 88.2916 L 17.3246 81.2361 L 20.497 74.5411 L 23.9372 68.186 L 27.6452 62.1502 L 31.6313 56.4337 L 35.8852 51.0056 L 40.4172 45.8556 L 42.7965 43.3939 L 45.2479 41.0043 L 50.3979 36.4311 L 55.723 32.136 L 61.4086 28.119 L 67.4032 24.3698 L 73.7171 20.8884 L 80.34 17.6954 L 87.3543 14.7496 L 94.76 12.0716 L 102.588 9.6614 L 110.8898 7.519 L 119.7272 5.6547 L 129.1723 4.0582 L 139.359 2.7295 L 150.4727 1.6995 L 162.8327 0.9064 L 176.9643 0.3708 L 194.1138 0.0824 L 218.0922 0 L 0 0 L 0 229.8136 Z" />
 </vector>
