@@ -209,8 +209,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.post_boot.custom=true
 
 # Kernel
-KERNEL_MODULES_INSTALL := dlkm
-KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/oneplus9/$(KERNEL_MODULES_INSTALL)/lib/modules
 KERNEL_SD_LLVM_SUPPORT := false
 
 # Keymaster
