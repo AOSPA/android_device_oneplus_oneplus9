@@ -35,7 +35,6 @@ LOCAL_HEADER_LIBRARIES += \
     qti_kernel_headers
 
 LOCAL_SHARED_LIBRARIES += \
-    audio.primary.$(TARGET_BOARD_PLATFORM) \
     libcutils \
     liblog \
     libtinyalsa
