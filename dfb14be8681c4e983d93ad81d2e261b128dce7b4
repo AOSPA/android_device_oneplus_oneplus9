@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab300bd3_1b1e9739",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-02-18T17:42:37Z",
+      "side": 1,
+      "message": "Is this necessary? you can convert the mk to bp and do the same for the audio Hal in proprietary-files.txt.",
+      "revId": "dfb14be8681c4e983d93ad81d2e261b128dce7b4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
