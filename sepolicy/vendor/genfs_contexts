@@ -29,6 +29,14 @@ genfscon sysfs /module/zram/parameters/wb_start_mins                            
 # Project info
 genfscon sysfs /project_info                                                                                                         u:object_r:sysfs_project_info:s0
 
+# Touchscreen
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-004b/tp_fw_update                                                            u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-0048/tp_fw_update                                                            u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-005d/tp_fw_update                                                            u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-0048/tp_fw_update                                                            u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-005d/tp_fw_update                                                            u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/tp_fw_update                                                  u:object_r:sysfs_touchpanel:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator                                                         u:object_r:sysfs_leds:s0
 
