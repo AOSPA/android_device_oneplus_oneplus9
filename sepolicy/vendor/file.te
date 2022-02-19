@@ -14,3 +14,6 @@ type vendor_fingerprint_device, dev_type;
 
 # Project Info
 type sysfs_project_info, fs_type, sysfs_type;
+
+# Touchpanel
+type sysfs_touchpanel, fs_type, sysfs_type;
