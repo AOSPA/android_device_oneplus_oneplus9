@@ -16,6 +16,24 @@
       "message": "this probably fails to compile, dotprod seems to be Arm64 only, you probably need to revert 2nd arch back to 8.2a",
       "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c02f12d_b03c346b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000469
+      },
+      "writtenOn": "2022-03-08T20:42:17Z",
+      "side": 1,
+      "message": "Should work fine after https://gerrit.aospa.co/c/AOSPA/android_build/+/21089",
+      "parentUuid": "c8702bb5_757aa97e",
+      "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
