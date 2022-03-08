@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8702bb5_757aa97e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-03-08T17:20:01Z",
+      "side": 1,
+      "message": "this probably fails to compile, dotprod seems to be Arm64 only, you probably need to revert 2nd arch back to 8.2a",
+      "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
