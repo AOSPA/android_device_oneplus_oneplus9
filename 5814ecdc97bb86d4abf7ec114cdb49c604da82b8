@@ -52,6 +52,24 @@
       "parentUuid": "4c02f12d_b03c346b",
       "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a02db23c_266436aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-03-09T10:55:59Z",
+      "side": 1,
+      "message": "build/make/core/combo/TARGET_linux-arm.mk:53: error: Incorrect TARGET_2ND_ARCH_VARIANT, armv8-2a-dotprod. Use armv8-a instead\n\nx",
+      "parentUuid": "ae90aa87_e743e351",
+      "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
