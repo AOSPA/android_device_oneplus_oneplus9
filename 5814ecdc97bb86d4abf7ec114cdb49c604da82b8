@@ -88,6 +88,23 @@
       "parentUuid": "a02db23c_266436aa",
       "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "369a304b_36f93662",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-03-09T13:33:50Z",
+      "side": 1,
+      "message": "dotprod is not mentioned at https://github.com/AOSPA/android_build_soong/blob/sapphire/cc/config/arm_device.go#L52 so there is no definition in aarch32",
+      "revId": "5814ecdc97bb86d4abf7ec114cdb49c604da82b8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
