@@ -977,7 +977,7 @@ vendor/lib64/libthreadutils.so|6ab1d3ce2d2b7e7c36bff6cda4e0f450e303a1de
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|bf9174821ff9c980b80898057f7025f82fd32477
 vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so|a6e40fe6a88649fd889f266c39e553733fbbb603
 vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so|e78625a9bc5bdf1c3fa29da5af5cfa9422c146fd
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|0bed32bc1b8914a214d2bbb9b46387014feb8b4a
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|0bed32bc1b8914a214d2bbb9b46387014feb8b4a|41ff023bb72c65b38ded7f51c9be02fd9b653618
 
 # Charging
 vendor/bin/init.qti.chg_policy.sh
