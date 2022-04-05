@@ -19,6 +19,12 @@ ifneq ($(filter oneplus9 oneplus9pro,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 # Symlinks
+ACDBDATA_SYMLINKS := $(TARGET_OUT_ODM)/etc/acdbdata
+$(ACDBDATA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating acdbdata symlinks: $@"
+	@mkdir -p $@
+	$(hide) ln -sf /vendor/etc/acdbdata/adsp_avs_config.acdb $@/adsp_avs_config.acdb
+
 RFS_MSM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/adsp/
 $(RFS_MSM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@/*
@@ -82,6 +88,7 @@ $(WLAN_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
 
 ALL_DEFAULT_INSTALLED_MODULES += \
+    $(ACDBDATA_SYMLINKS) \
     $(RFS_MSM_ADSP_SYMLINKS) \
     $(RFS_MSM_CDSP_SYMLINKS) \
     $(RFS_MSM_MPSS_SYMLINKS) \
