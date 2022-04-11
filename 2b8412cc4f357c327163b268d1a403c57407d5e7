@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70f1de3f_babc75da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-04-11T04:48:04Z",
+      "side": 1,
+      "message": "OOS uses 60 Hz too, and FOD is brighter on 60 Hz.",
+      "revId": "2b8412cc4f357c327163b268d1a403c57407d5e7",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
