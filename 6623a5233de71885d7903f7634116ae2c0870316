@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4e4daf6_99eecb52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-04-20T13:43:17Z",
+      "side": 1,
+      "message": "Untested and probably causes SELinux denials.",
+      "revId": "6623a5233de71885d7903f7634116ae2c0870316",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
