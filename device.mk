@@ -208,9 +208,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.post_boot.custom=true
 
-# Kernel
-KERNEL_SD_LLVM_SUPPORT := false
-
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.dm_default_key.options_format.version=2 \
