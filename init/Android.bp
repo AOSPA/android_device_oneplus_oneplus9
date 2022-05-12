@@ -12,6 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+cc_library_static {
+    name: "libinit_oplus",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_oplus.cpp"],
+}
+
 prebuilt_etc {
     name: "fstab.default",
     src: "fstab.default",
