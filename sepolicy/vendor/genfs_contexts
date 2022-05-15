@@ -25,6 +25,7 @@ genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/wireless    
 
 # zram
 genfscon sysfs /module/zram/parameters/wb_start_mins                                                                                 u:object_r:sysfs_zram:s0
+genfscon proc  /sys/vm/rswappiness                                                                                                   u:object_r:proc_swaps:s0
 
 # Project info
 genfscon sysfs /project_info                                                                                                         u:object_r:sysfs_project_info:s0
