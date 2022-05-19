@@ -16,14 +16,14 @@
 -->
 <resources>
 
-    <!-- The padding on the top of the statusbar (usually 0). -->
-    <dimen name="status_bar_padding_top">32px</dimen>
-
     <!-- The padding on the start of the status bar. -->
     <dimen name="status_bar_padding_start">0px</dimen>
 
     <!-- The padding on the end of the status bar. -->
-    <dimen name="status_bar_padding_end">48px</dimen>
+    <dimen name="status_bar_padding_end">28px</dimen>
+
+    <!-- The padding on the top of the statusbar (usually 0). -->
+    <dimen name="status_bar_padding_top">9dp</dimen>
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
@@ -32,7 +32,7 @@
     <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
-    <dimen name="config_rounded_mask_size">94px</dimen>
+    <dimen name="config_rounded_mask_size">97px</dimen>
 
     <!-- The rounded corner content padding. -->
     <dimen name="rounded_corner_content_padding">8dp</dimen>
