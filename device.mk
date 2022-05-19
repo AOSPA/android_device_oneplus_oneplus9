@@ -240,6 +240,7 @@ PRODUCT_PACKAGES += \
     OnePlus9Frameworks \
     OnePlus9ProFrameworks \
     OnePlus9ProSystemUI \
+    OnePlus9SeriesCarrierConfig \
     OnePlus9SeriesFrameworks \
     OnePlus9SeriesSystemUI \
     OnePlus9SystemUI \
