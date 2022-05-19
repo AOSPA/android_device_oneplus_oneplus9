@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8a9bb91_3a228abb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-05-19T19:20:43Z",
+      "side": 1,
+      "message": "TARGET_DEVICE isn\u0027t working here.",
+      "revId": "c93f80f85939ba833e80c103af1d5d0368bd86ba",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
