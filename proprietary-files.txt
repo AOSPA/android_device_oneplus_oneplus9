@@ -281,7 +281,7 @@ vendor/firmware/evass.mbn|e40b288bd0273147076cf4d95dc15d779172d421
 vendor/firmware/evass.mdt|e105e29ff1fcafbbc052dcc3f694eba698f2391b
 
 # Camera - OOS
-odm/etc/camera/CameraHWConfiguration.config|b71482d44b024e2f4ea95b920a46a1942208294b
+odm/etc/camera/CameraHWConfiguration.config|b71482d44b024e2f4ea95b920a46a1942208294b|81c1d981c3f226d38a41a6f81acdd03133f2f35a
 odm/etc/camera/anc_cl_kernel.cache|7c483eedb83b50476042d1e78229ec5f355a8312
 odm/etc/camera/anc_cl_kernel_ins.cache|b96972f3ef98be6479a7433eef4e0fbda627baad
 odm/etc/camera/ancsegbase/anc_cl_kernel.cache|6d84034beebc1b9f210e6885ff8114c0a1a8ee0e
@@ -925,7 +925,7 @@ vendor/lib64/com.qualcomm.mcx.linearmapper.so|268f8e13f181cd3aaa65bcf5cc50834dcc
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so|0a2c954097ea88a9da8002daa7e6d6599e8851d6
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so|354de469baff9d5aa0d76d56457911ac5126c5e4
 vendor/lib64/hw/camera.qcom.so|d9e0a2576cb7406a96a55964f83985c641052486
-vendor/lib64/hw/com.qti.chi.override.so|26ca45c094105c5118ea33555dbedefa8d0d22c1
+vendor/lib64/hw/com.qti.chi.override.so|26ca45c094105c5118ea33555dbedefa8d0d22c1|c93087d3b8fdc1b29d704c130ce7c1487d339b66
 vendor/lib64/libSonyIMX471RmscLibrary.so|7deb61212e4d44311e99292e61252509c0b80fa2
 vendor/lib64/libaidenoiser.so|39d3096648ca55783a0a3a6e546bba4f094bfc54
 vendor/lib64/libbitmlengine.so|17243f9cffec35701abcf8124b70462960206fbf
