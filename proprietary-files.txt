@@ -694,7 +694,7 @@ odm/etc/camera/tonemap/tonemap_lut_6|285d2345fc48c30e63225c827601061a29defb30
 odm/etc/camera/tonemap/tonemap_lut_7|ca6098e12166e3830fe30d9788be10a283755e4b
 odm/etc/camera/tonemap/tonemap_lut_8|8a25c8bf43bad6c4ab8928959dbc80d3ffdffde2
 odm/etc/camera/tonemap/tonemap_lut_9|e7eebd43c4d3d5d399ea531aea23f787cc97becb
-odm/etc/camera/CameraHWConfiguration.config|02b383f0deb73f1509d414ec51aa93880d79ad33
+odm/etc/camera/CameraHWConfiguration.config|02b383f0deb73f1509d414ec51aa93880d79ad33|0a5ee583204ad152ddb20ce8cc6c8eba40c88b5f
 odm/etc/camera/anc_cl_kernel.cache|7c483eedb83b50476042d1e78229ec5f355a8312
 odm/etc/camera/anc_cl_kernel_ins.cache|b96972f3ef98be6479a7433eef4e0fbda627baad
 odm/etc/camera/calibrationOutput_uw.bin|a5bdcc7266d4b2f6eb995cd691576123f765dfbb
@@ -896,7 +896,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so|0472de1737ba9b33855bba
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so|90b5316377965d26b8da0c73ecee966f3a40553f
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so|1ee65fd7f3094fd614b1a84bcd4c1306680bb7c1
 vendor/lib64/hw/camera.qcom.so|9eccfc0afcbb3378f3be5a1a5b8431e7602d1788
-vendor/lib64/hw/com.qti.chi.override.so|d0debb2f9a3daefbcad4560a573dbf85686fd68f
+vendor/lib64/hw/com.qti.chi.override.so|d0debb2f9a3daefbcad4560a573dbf85686fd68f|764132fe1d51afe26bd04d3280270f95901dca7b
 vendor/lib64/com.qti.chiusecaseselector.so|586c6264ec363b4eae1bee85ed41153a181c02db
 vendor/lib64/com.qti.feature2.anchorsync.so|6ea7cf96452f97313bff7b8d8a35879bd87eea87
 vendor/lib64/com.qti.feature2.demux.so|fa6e9a0fb4603f4e65bcf8c943318da84cca7c49
