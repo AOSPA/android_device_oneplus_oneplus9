@@ -243,29 +243,20 @@ while [ ! -e /dev/block/zram0 ]; do
   sleep 1
 done
 if ! grep -q zram /proc/swaps; then
-  # Setup backing device
-  BDEV="/dev/block/by-name/last_parti"
-  if [ ! -e "$BDEV" ]; then
-    echo "post_boot: failed to find the backing device"
-  fi
-  echo "post_boot: using $BDEV for zram backing_dev"
-  realpath $BDEV > /sys/block/zram0/backing_dev
-  # 4GB
-  echo 4294967296 > /sys/block/zram0/disksize
+  MemStr=$(cat /proc/meminfo | grep MemTotal)
+  MemKb=$((${MemStr:16:8}))
 
-  # Set swappiness reflecting the device's RAM size
-  RamStr=$(cat /proc/meminfo | grep MemTotal)
-  RamMB=$((${RamStr:16:8} / 1024))
-  if [ $RamMB -le 6144 ]; then
-    echo 160 > /proc/sys/vm/rswappiness
-    echo 240 > /sys/module/zram/parameters/wb_start_mins
-  elif [ $RamMB -le 8192 ]; then
-    echo 120 > /proc/sys/vm/rswappiness
-    echo 360 > /sys/module/zram/parameters/wb_start_mins
-  else
-    echo 90 > /proc/sys/vm/rswappiness
-    echo 480 > /sys/module/zram/parameters/wb_start_mins
-  fi
+  # set watermark_scale_factor = 36MB * 1024 * 1024 * 10 / MemTotal
+  factor=`expr 377487360 / $MemKb`
+  echo $factor > /proc/sys/vm/watermark_scale_factor
+
+  # set min_free_kbytes = 32MB
+  echo 32768 > /proc/sys/vm/min_free_kbytes
+
+  # Set swap size to half of MemTotal
+  # Align by 4 MiB
+  expr $MemKb / 2 '*' 1024 / 4194304 '*' 4194304 > /sys/block/zram0/disksize
+  echo 160 > /proc/sys/vm/rswappiness
 
   mkswap /dev/block/zram0
   swapon /dev/block/zram0
