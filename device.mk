@@ -139,15 +139,12 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.sf.native_mode=2 \
-    ro.vendor.display.sensortype=2 \
-    vendor.display.disable_mask_layer_hint=1 \
-    vendor.display.use_layer_ext=1 \
     ro.surface_flinger.refresh_rate_switching=true \
     ro.surface_flinger.set_idle_timer_ms=4000 \
     ro.surface_flinger.set_touch_timer_ms=4000 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
+    vendor.display.primary_mixer_stages=9
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -189,11 +186,8 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.oneplus.camera.rc \
     init.oneplus.display.rc \
-    init.oneplus.fingerprint.rc \
     init.oneplus.haptics.rc \
-    init.oneplus.overlay.rc \
     init.oneplus.perf.rc \
-    init.oneplus.power.rc \
     init.oneplus.telephony.rc \
     init.qti.ufs.rc \
     init.target.rc \
@@ -251,6 +245,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
+
+# QTEE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qteeconnector.retrying_interval=30
+    persist.vendor.qteeconnector.retrying_timeout=2000
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
