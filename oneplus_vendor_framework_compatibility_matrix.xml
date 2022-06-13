@@ -1,4 +1,4 @@
-<!-- Copyright (C) 2021 Paranoid Android
+<!-- Copyright (C) 2021-2022 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,46 +13,8 @@
      limitations under the License.
 -->
 <compatibility-matrix version="1.0" type="framework">
-    <!-- Camera -->
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraMDM</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.camera</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraProvider</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <!-- Charging -->
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.charger</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICharger</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- Display -->
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.display</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusDisplay</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>vendor.pixelworks.hardware.display</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -61,7 +23,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>vendor.pixelworks.hardware.feature</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -71,7 +33,7 @@
         </interface>
     </hal>
     <!-- Fingerprint -->
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -80,13 +42,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- Fingerprint -->
-    <hal format="hidl">
-        <name>vendor.oneplus.fingerprint.extension</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.biometrics.fingerprint</name>
+        <version>2.1</version>
         <interface>
-            <name>IVendorFingerprintExtensions</name>
+            <name>IBiometricsFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>

@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Paranoid Android
+# Copyright (C) 2021-2022 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,4 @@ on property:ro.boot.rf_version=12
     setprop persist.radio.multisim.config ssss
 
 on property:ro.boot.rf_version=22
-    setprop persist.radio.multisim.config ssss
-
-on property:ro.boot.rf_version=23
     setprop persist.radio.multisim.config ssss

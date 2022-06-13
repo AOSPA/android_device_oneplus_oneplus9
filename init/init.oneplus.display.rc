@@ -13,47 +13,13 @@
 # limitations under the License.
 
 on boot
-    # AOD
-    chmod 0666 /sys/class/drm/card0-DSI-1/aod
-    chown system system /sys/class/drm/card0-DSI-1/aod
-
-    # Backlight
-    chmod 0666 /sys/class/backlight/panel0-backlight/brightness
-
-    # DC Dimming
-    chown system system /sys/class/drm/card0-DSI-1/dimlayer_bl_en
-    chmod 0660 /sys/class/drm/card0-DSI-1/dimlayer_bl_en
-
-    # Dimming
-    chmod 0666 /sys/class/drm/card0-DSI-1/notify_dim
-    chown system system /sys/class/drm/card0-DSI-1/notify_dim
-
-    # HBM
-    chmod 0666 /sys/class/drm/card0-DSI-1/hbm_brightness
-    chown system system /sys/class/drm/card0-DSI-1/hbm_brightness
-    chmod 0666 /sys/class/drm/card0-DSI-1/hbm
-    chown system system /sys/class/drm/card0-DSI-1/hbm
+    chown system system /dev/oplus_display
+    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
+    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
+    chown system system /sys/kernel/oplus_display/hbm
+    chown system system /sys/kernel/oplus_display/notify_fppress
+    chown system system /sys/kernel/oplus_display/panel_serial_number
 
 on fs
     # Trigger touchpanel firmware update
-    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-004b/tp_fw_update 0
-    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-0048/tp_fw_update 0
-    write /sys/devices/platform/soc/984000.i2c/i2c-4/4-005d/tp_fw_update 0
-    write /sys/devices/platform/soc/984000.i2c/i2c-4/4-0048/tp_fw_update 0
-    write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-005d/tp_fw_update 0
-    write /sys/devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/tp_fw_update 0
-
-# Set sRGB calibration on Natural and Boosted Mode.
-on property:persist.sys.sf.native_mode=0
-    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
-    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 1
-
-# Set unmanaged calibration on Saturated Mode.
-on property:persist.sys.sf.native_mode=1
-    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
-    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
-
-# Set P3 calibration on Adaptive/Automatic Mode.
-on property:persist.sys.sf.native_mode=2
-    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
-    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 1
+    write /proc/touchpanel/tp_fw_update 0
