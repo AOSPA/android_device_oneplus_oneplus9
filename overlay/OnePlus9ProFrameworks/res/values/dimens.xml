@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 Paranoid Android
+                   2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,10 +17,14 @@
 -->
 <resources>
 
-    <!-- Height of the status bar. -->
-    <dimen name="status_bar_height">138px</dimen>
+    <!-- Height of the status bar.
+         Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
+         -->
+    <dimen name="status_bar_height_default">28dp</dimen>
+    <dimen name="status_bar_height_portrait">152px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">140px</dimen>
+    <dimen name="rounded_corner_radius">8dp</dimen>
 
 </resources>
