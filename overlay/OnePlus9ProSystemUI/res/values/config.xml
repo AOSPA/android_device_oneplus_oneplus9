@@ -1,5 +1,6 @@
 <!--
      Copyright (C) 2021 The Android Open Source Project
+                   2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,7 +19,7 @@
     <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">125</integer>
+    <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">115</integer>
 
 </resources>
