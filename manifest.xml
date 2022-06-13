@@ -152,6 +152,15 @@
             <instance>camerapostprocservice</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.camera.cameraextension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
+        </interface>
+    </hal>
     <!-- Config Store -->
     <hal format="hidl">
         <name>vendor.qti.hardware.capabilityconfigstore</name>
