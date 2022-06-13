@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2021 Paranoid Android
+     Copyright (C) 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,11 +17,8 @@
 -->
 <resources>
 
-    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
-         Note that while rounded.xml includes the entire path (including the horizontal and vertical
-         corner edges), this pulls out just the curve.
-     -->
-    <string name="config_rounded_mask" translatable="false">M196.755 0H0V208.273C0 116.958 0.153999 68.516 37.062 34.485C73.202 1.163 108.538 0 196.755 0Z</string>
+    <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
+    <bool name="config_roundedCornerMultipleRadius">true</bool>
 
     <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">101</integer>

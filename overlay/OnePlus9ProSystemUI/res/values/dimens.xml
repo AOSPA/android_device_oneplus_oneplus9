@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2021 Paranoid Android
+                   2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,14 +17,17 @@
 -->
 <resources>
 
-    <!-- The padding on the start of the status bar. -->
+    <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
+    <dimen name="config_rounded_mask_size">156px</dimen>
+
+    <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">0px</dimen>
 
-    <!-- The padding on the end of the status bar. -->
+    <!-- the padding on the end of the statusbar -->
     <dimen name="status_bar_padding_end">35px</dimen>
 
-    <!-- The padding on the top of the statusbar (usually 0). -->
-    <dimen name="status_bar_padding_top">8dp</dimen>
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">11px</dimen>
 
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
@@ -31,10 +35,6 @@
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
 
-    <!-- Margin on the right side of the system icon group on Keyguard. -->
-    <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
-
-    <!-- Bottom margin of the keyguard indicator. -->
     <dimen name="keyguard_indication_margin_bottom">400px</dimen>
 
     <!-- Location on the screen of the center of the physical power button. -->
