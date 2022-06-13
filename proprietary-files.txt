@@ -57,13 +57,10 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|810a8fbbc0ea6e12979f327330c
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so|8a89bfc289fad5442b163ff9107ce5e4b36fea6a
 vendor/lib/soundfx/libasphere.so|5dbf85a6fe991124aaceda17c43a401d1293ed75
 vendor/lib/soundfx/libhaptic_effect.so|ac8f68b4ea33047e8c837c5f8bd17ba83cd0e6e1
-vendor/lib/soundfx/libhwdap.so|6871c1e26df02b479907e9c5fd94aaed24525de0
 vendor/lib/soundfx/libqcbassboost.so|1a717cf6b07cf95d89c2eb316283f797d52aaac0
 vendor/lib/soundfx/libqcreverb.so|e1a807e4fafdee9c989b1509f904015ce02d5553
 vendor/lib/soundfx/libqcvirt.so|cd95e250003e203091dc861d43dcbae8a599ae1e
 vendor/lib/soundfx/libshoebox.so|c66eb8e57a26cebd5939651c9b4bbbab0881d7ae
-vendor/lib/soundfx/libswdap.so|f476a901463183905e4056588b225b2e8f6a9997
-vendor/lib/soundfx/libswgamedap.so|0f9ebf216554fd19cbad0a992802c3f96472c3c4
 vendor/lib/libAlacSwDec.so|b97ac4abdb831a3526d9671325d7267d181f2c8b
 vendor/lib/libApeSwDec.so|2322a41731bf04dcfb165617dcc050416fe83680
 vendor/lib/libFlacSwDec.so|d673e926dd350ac68813bef68180029f27b6e3ee
@@ -113,13 +110,10 @@ vendor/lib/vendor.qti.voiceprint@1.0.so|3fb9915035ee66d6c3dc749cd7dd31fd082493d0
 vendor/lib64/hw/sound_trigger.primary.lahaina.so|a8e3fea20fda80905187d9f943d756698504ced1
 vendor/lib64/soundfx/libasphere.so|bbb55c2299019c89c8d767795ff0ae8f27613f1d
 vendor/lib64/soundfx/libhaptic_effect.so|ac8f68b4ea33047e8c837c5f8bd17ba83cd0e6e1
-vendor/lib64/soundfx/libhwdap.so|1eb09fa89b0c9d40ddadcc6cd1874531bcf668be
 vendor/lib64/soundfx/libqcbassboost.so|2f307d5306617a7da0dfc3f624cab246473cf68a
 vendor/lib64/soundfx/libqcreverb.so|1a552bcd8bd252bb7ed75cd5ced8a0c08a657747
 vendor/lib64/soundfx/libqcvirt.so|b77e215bc64220e321fb714b9aa66f9e31ed83ef
 vendor/lib64/soundfx/libshoebox.so|322525389d4710dbbb40a2dc1c2b8d6eced27693
-vendor/lib64/soundfx/libswdap.so|d28980440b35c26580ecda4d3b66684263b5216c
-vendor/lib64/soundfx/libswgamedap.so|9eb9cbf22333eefe1182a32ae22cf0a5c89a9305
 vendor/lib64/libAlacSwDec.so|4e388a6385e69efc8b1b9bf268da53f32437f676
 vendor/lib64/libApeSwDec.so|07923eb7d45619a902d24274406454668380ea8c
 vendor/lib64/libFlacSwDec.so|6ad3d07a4b49778a5cad52b89df0d768d3911872
@@ -1066,7 +1060,6 @@ vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.3.so
-vendor/lib64/lib-imsSDP.so
 vendor/lib64/lib-imscommon.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
@@ -1279,7 +1272,6 @@ vendor/lib64/libqcrildatactl.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmimiscservices.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/qcrilMarshal.so
