@@ -113,6 +113,7 @@ BOARD_KERNEL_CMDLINE := \
     swiotlb=0 \
     loop.max_part=7
 
+BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_BINARIES := kernel
 BOARD_KERNEL_PAGESIZE := 4096
@@ -120,6 +121,94 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
 USE_KERNEL_AOSP_LLVM := true
 KERNEL_SD_LLVM_SUPPORT := false
+
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(KERNEL_MODULES_OUT)/adsp_loader_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/apr_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/aw8697.ko \
+    $(KERNEL_MODULES_OUT)/bolero_cdc_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/bt_fm_slim.ko \
+    $(KERNEL_MODULES_OUT)/btpower.ko \
+    $(KERNEL_MODULES_OUT)/camera.ko \
+    $(KERNEL_MODULES_OUT)/e4000.ko \
+    $(KERNEL_MODULES_OUT)/fc0011.ko \
+    $(KERNEL_MODULES_OUT)/fc0012.ko \
+    $(KERNEL_MODULES_OUT)/fc0013.ko \
+    $(KERNEL_MODULES_OUT)/fc2580.ko \
+    $(KERNEL_MODULES_OUT)/hdmi_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/hid-aksys.ko \
+    $(KERNEL_MODULES_OUT)/it913x.ko \
+    $(KERNEL_MODULES_OUT)/llcc_perfmon.ko \
+    $(KERNEL_MODULES_OUT)/m88rs6000t.ko \
+    $(KERNEL_MODULES_OUT)/machine_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/max2165.ko \
+    $(KERNEL_MODULES_OUT)/mbhc_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/mc44s803.ko \
+    $(KERNEL_MODULES_OUT)/msi001.ko \
+    $(KERNEL_MODULES_OUT)/msm_drm.ko \
+    $(KERNEL_MODULES_OUT)/mt2060.ko \
+    $(KERNEL_MODULES_OUT)/mt2063.ko \
+    $(KERNEL_MODULES_OUT)/mt20xx.ko \
+    $(KERNEL_MODULES_OUT)/mt2131.ko \
+    $(KERNEL_MODULES_OUT)/mt2266.ko \
+    $(KERNEL_MODULES_OUT)/mxl301rf.ko \
+    $(KERNEL_MODULES_OUT)/mxl5005s.ko \
+    $(KERNEL_MODULES_OUT)/mxl5007t.ko \
+    $(KERNEL_MODULES_OUT)/native_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/pinctrl_lpi_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/pinctrl_wcd_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/platform_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/q6_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/q6_notifier_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/q6_pdr_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/qcom_edac.ko \
+    $(KERNEL_MODULES_OUT)/qm1d1b0004.ko \
+    $(KERNEL_MODULES_OUT)/qm1d1c0042.ko \
+    $(KERNEL_MODULES_OUT)/qt1010.ko \
+    $(KERNEL_MODULES_OUT)/r820t.ko \
+    $(KERNEL_MODULES_OUT)/radio-i2c-rtc6226-qca.ko \
+    $(KERNEL_MODULES_OUT)/rdbg.ko \
+    $(KERNEL_MODULES_OUT)/rmnet_core.ko \
+    $(KERNEL_MODULES_OUT)/rmnet_ctl.ko \
+    $(KERNEL_MODULES_OUT)/rmnet_offload.ko \
+    $(KERNEL_MODULES_OUT)/rmnet_shs.ko \
+    $(KERNEL_MODULES_OUT)/rx_macro_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/si2157.ko \
+    $(KERNEL_MODULES_OUT)/slimbus.ko \
+    $(KERNEL_MODULES_OUT)/slimbus-ngd.ko \
+    $(KERNEL_MODULES_OUT)/snd_event_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/stub_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/swr_ctrl_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/swr_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/swr_dmic_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/swr_haptics_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/tda18212.ko \
+    $(KERNEL_MODULES_OUT)/tda18218.ko \
+    $(KERNEL_MODULES_OUT)/tda18250.ko \
+    $(KERNEL_MODULES_OUT)/tda9887.ko \
+    $(KERNEL_MODULES_OUT)/tea5761.ko \
+    $(KERNEL_MODULES_OUT)/tea5767.ko \
+    $(KERNEL_MODULES_OUT)/tfa98xx-v6_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/tua9001.ko \
+    $(KERNEL_MODULES_OUT)/tuner-simple.ko \
+    $(KERNEL_MODULES_OUT)/tuner-types.ko \
+    $(KERNEL_MODULES_OUT)/tuner-xc2028.ko \
+    $(KERNEL_MODULES_OUT)/tx_macro_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/va_macro_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd937x_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd937x_slave_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd938x_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd938x_slave_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd9xxx_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wcd_core_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wlan.ko \
+    $(KERNEL_MODULES_OUT)/wsa883x_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/wsa_macro_dlkm.ko \
+    $(KERNEL_MODULES_OUT)/xc4000.ko \
+    $(KERNEL_MODULES_OUT)/xc5000.ko
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
+    $(KERNEL_MODULES_OUT)/msm_drm.ko
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := OnePlus9,oneplus9
