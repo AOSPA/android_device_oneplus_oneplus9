@@ -1,29 +1,18 @@
-# Allow the fingerprint service to create the netlink socket.
 allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 
-# Allow binder communication with performance HAL.
-binder_call(hal_fingerprint_default, vendor_hal_perf_default)
+binder_call(hal_fingerprint_default, hal_fingerprint_default)
 
-# Allow binder communication with hal_display_default
-binder_call(hal_fingerprint_default, hal_display_default)
-typeattribute hal_fingerprint_default hal_display_client;
+allow hal_fingerprint_default vendor_hal_orms_hwservice:hwservice_manager find;
 
-# Allow the fingerprint service to find the performance HAL hwservice.
-allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default graphics_device:chr_file rw_file_perms;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
-# Allow the fingerprint service to find fingerprint extensions.
-add_hwservice(hal_fingerprint_default, hal_oneplus_fingerprint_hwservice)
-allow hal_fingerprint_default hal_oneplus_fingerprint_hwservice:hwservice_manager find;
+allow hal_fingerprint_default vendor_proc_display:dir r_dir_perms;
+allow hal_fingerprint_default vendor_proc_display:file rw_file_perms;
 
-# Allow fingerprint HAL to read and write.
-allow hal_fingerprint_default {
-  vendor_fingerprint_device
-  tee_device
-}: chr_file { rw_file_perms ioctl };
+r_dir_file(hal_fingerprint_default, vendor_proc_fingerprint)
 
-# Allow the fingerprint service to lookup in /proc.
-allow hal_fingerprint_default { mnt_vendor_file proc_touchpanel }:dir search;
-allow hal_fingerprint_default { proc_touchpanel }:file rw_file_perms;
-
-# Allow access to display sysfs nodes.
-allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
+get_prop(hal_fingerprint_default, system_oplus_project_prop)
+set_prop(hal_fingerprint_default, system_fingerprint_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
