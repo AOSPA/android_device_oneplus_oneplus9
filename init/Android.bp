@@ -54,13 +54,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.lahaina.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.lahaina.rc",
-    device_specific: true,
-}
-
-prebuilt_etc {
     name: "ueventd.oplus.rc",
     filename: "ueventd.rc",
     src: "ueventd.oplus.rc",
