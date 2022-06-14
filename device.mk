@@ -307,9 +307,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Treble
-PRODUCT_FULL_TREBLE_OVERRIDE := true
-
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
