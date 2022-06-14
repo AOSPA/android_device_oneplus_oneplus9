@@ -231,6 +231,7 @@ PRODUCT_PACKAGES += \
     OnePlus9ProSystemUI \
     OnePlus9SeriesCarrierConfig \
     OnePlus9SeriesFrameworks \
+    OnePlus9SeriesSettings \
     OnePlus9SeriesSystemUI \
     OnePlus9SystemUI \
     WifiResTarget
