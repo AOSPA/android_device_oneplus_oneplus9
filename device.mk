@@ -177,7 +177,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.oneplus.camera.rc \
     init.oneplus.display.rc \
-    init.oneplus.haptics.rc \
     init.oneplus.perf.rc \
     init.oneplus.telephony.rc \
     init.oplus.wlan.rc \
