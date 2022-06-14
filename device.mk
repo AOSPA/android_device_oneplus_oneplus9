@@ -161,7 +161,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0 \
     android.hardware.gatekeeper@1.0.vendor
 
 
@@ -207,7 +206,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.metadata.method=dm-default-key
 
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster@4.1 \
    android.hardware.keymaster@4.1.vendor
 
 # lmkd
