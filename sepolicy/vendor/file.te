@@ -1,19 +1,20 @@
 # Alert Slider
-type vendor_persist_tri_state_key_file, file_type;
-type vendor_sysfs_tri_state_key, sysfs_type, fs_type;
+type vendor_proc_tri_state_key, fs_type, proc_type;
 
 # Camera
-type persist_camera_file, file_type;
-type sysfs_camera, fs_type, sysfs_type;
+type vendor_persist_camera_file, file_type;
+
+# Charging
+type vendor_proc_wireless, fs_type, proc_type;
 
 # Display
-type proc_touchpanel, fs_type, proc_type;
+type vendor_proc_display, fs_type, proc_type;
+
+# Engineering
+type vendor_persist_engineer_file, file_type;
 
 # Fingerprint
-type vendor_fingerprint_device, dev_type;
+type vendor_proc_fingerprint, fs_type, proc_type;
 
-# Project Info
-type sysfs_project_info, fs_type, sysfs_type;
-
-# Touchpanel
-type sysfs_touchpanel, fs_type, sysfs_type;
+# Versioning
+type vendor_proc_oplus_version, fs_type, proc_type;
