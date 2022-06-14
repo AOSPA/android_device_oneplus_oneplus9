@@ -206,10 +206,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/oplus
 
-# Netflix
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.netflix.bsp_rev=Q875-32408-1
-
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
