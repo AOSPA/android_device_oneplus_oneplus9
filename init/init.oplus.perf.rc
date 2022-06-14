@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-service oneplus-post-boot /vendor/bin/sh /vendor/bin/init.oneplus.post_boot.sh
+service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
     class core
     user root
     group root system wakelock graphics
@@ -20,4 +20,4 @@ service oneplus-post-boot /vendor/bin/sh /vendor/bin/init.oneplus.post_boot.sh
     oneshot
 
 on property:sys.boot_completed=1
-    start oneplus-post-boot
+    start oplus-post-boot
