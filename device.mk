@@ -201,10 +201,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
-# lmkd
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.lmk.force_inkernel_lmk=true
-
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
