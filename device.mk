@@ -57,8 +57,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.spv4.enable=false \
     persist.vendor.audio.vbat.enabled=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.hal.output.suspend.supported=false
+    vendor.audio.feature.spkr_prot.enable=false
 
 # Authsecret
 PRODUCT_PACKAGES += \
