@@ -175,16 +175,16 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.default \
-    init.oneplus.camera.rc \
-    init.oneplus.display.rc \
-    init.oneplus.perf.rc \
-    init.oneplus.telephony.rc \
+    init.oplus.camera.rc \
+    init.oplus.display.rc \
+    init.oplus.perf.rc \
+    init.oplus.telephony.rc \
     init.oplus.wlan.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc \
-    ueventd.oneplus.rc \
-    init.oneplus.post_boot.sh
+    ueventd.oplus.rc \
+    init.oplus.post_boot.sh
 
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.post_boot.custom=true
