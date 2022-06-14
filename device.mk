@@ -201,10 +201,18 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/oplus
+
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -245,9 +253,7 @@ TARGET_COMMON_QTI_COMPONENTS := all
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    android.system.net.netd@1.1.vendor \
+    android.hardware.radio.deprecated@1.0.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
