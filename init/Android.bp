@@ -19,29 +19,29 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.oneplus.camera.rc",
-    src: "init.oneplus.camera.rc",
+    name: "init.oplus.camera.rc",
+    src: "init.oplus.camera.rc",
     sub_dir: "init",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.oneplus.display.rc",
-    src: "init.oneplus.display.rc",
+    name: "init.oplus.display.rc",
+    src: "init.oplus.display.rc",
     sub_dir: "init",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.oneplus.perf.rc",
-    src: "init.oneplus.perf.rc",
+    name: "init.oplus.perf.rc",
+    src: "init.oplus.perf.rc",
     sub_dir: "init",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.oneplus.telephony.rc",
-    src: "init.oneplus.telephony.rc",
+    name: "init.oplus.telephony.rc",
+    src: "init.oplus.telephony.rc",
     sub_dir: "init",
     vendor: true,
 }
@@ -61,14 +61,14 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.oneplus.rc",
+    name: "ueventd.oplus.rc",
     filename: "ueventd.rc",
-    src: "ueventd.oneplus.rc",
+    src: "ueventd.oplus.rc",
     vendor: true,
 }
 
 sh_binary {
-    name: "init.oneplus.post_boot.sh",
-    src: "init.oneplus.post_boot.sh",
+    name: "init.oplus.post_boot.sh",
+    src: "init.oplus.post_boot.sh",
     vendor: true,
 }
