@@ -1628,7 +1628,6 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json|1993aad43c7fdab15b03388a3d5f
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json|a64bb0122f628f5eac1eee0f7892222be44dab58
 vendor/etc/sensors/config/sns_tilt_to_wake.json|cf31c90a1fc6a8586a39961c6140d98ad9d4e99d
 vendor/etc/sensors/config/sns_wrist_pedo.json|3f6298f23c182c16585dbef20c419ce5353842b5
-vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/etc/sensors/sns_reg_config|96a71f0f3295ecb4a9e5bde7727dc4aa2bec90e6
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
