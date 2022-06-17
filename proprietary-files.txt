@@ -1707,13 +1707,15 @@ vendor/etc/init/tloc_daemon.rc
 
 # Thermal
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
+
+# Thermal Engine - OOS
+vendor/bin/thermal-engine|e602079fbee69a4d443b570cde0ccde71fb257d0
+vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
+-vendor/lib/libthermalclient.so|fd11530cf88b6bf6dc6781c71a69a639dd6eb11a
+-vendor/lib64/libthermalclient.so|d5759cf6b255895e5d59e45975fba5f2fd84a759
 
 # Time Services
 -vendor/app/TimeService/TimeService.apk
