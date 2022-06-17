@@ -294,3 +294,6 @@ setprop vendor.post_boot.parsed 1
 
 #liochen@SYSTEM, 2020/11/02, Add for enable ufs performance
 echo 0 > /sys/class/scsi_host/host0/../../../clkscale_enable
+
+# SSG
+echo 25 > /dev/blkio/background/blkio.ssg.max_available_ratio
