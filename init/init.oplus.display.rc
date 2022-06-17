@@ -23,3 +23,7 @@ on boot
 on fs
     # Trigger touchpanel firmware update
     write /proc/touchpanel/tp_fw_update 0
+
+on property:ro.boot.prjname=*
+    # Display
+    setprop ro.separate.soft ${ro.boot.prjname}
