@@ -69,9 +69,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oneplus9 \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.oneplus.fingerprint.extension@1.0.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -139,9 +137,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
-PRODUCT_PACKAGES += \
-    vendor.oneplus.hardware.display@1.0.vendor
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.refresh_rate_switching=true \
     ro.surface_flinger.set_idle_timer_ms=4000 \
@@ -222,7 +217,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/oplus
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -295,7 +291,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.op9-multihal \
-    libsensorndkbridge
+    libsensorndkbridge \
+    sensors.oplus
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.allow_non_default_discovery=true \
@@ -349,7 +346,7 @@ $(call inherit-product, vendor/oneplus/oneplus9/oneplus9-vendor.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus9
+    vendor.qti.hardware.vibrator.service.oplus
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
