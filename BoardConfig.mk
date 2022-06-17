@@ -67,7 +67,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 
 # Biometrics
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus9
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
