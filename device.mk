@@ -266,7 +266,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.data.iwlan.enable=true \
+    persist.vendor.radio.5g_mode_pref=1 \
+    persist.vendor.radio.bar_fake_gcell=1 \
+    persist.vendor.radio.data_con_rprt=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.efssync=true \
+    persist.vendor.radio.force_on_dc=true \
+    persist.vendor.radio.ignore_dom_time=10 \
+    persist.vendor.radio.process_sups_ind=1 \
+    persist.vendor.radio.snapshot_enabled=0 \
+    persist.vendor.radio.snapshot_timer=0
 
 # Sensors
 PRODUCT_COPY_FILES += \
