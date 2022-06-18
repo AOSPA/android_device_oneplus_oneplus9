@@ -263,6 +263,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
+    persist.vendor.radio.force_on_dc=true \
+    persist.vendor.radio.poweron_opt=1 \
+    persist.vendor.radio.stack_id_1=1
 
 # Sensors
 PRODUCT_COPY_FILES += \
