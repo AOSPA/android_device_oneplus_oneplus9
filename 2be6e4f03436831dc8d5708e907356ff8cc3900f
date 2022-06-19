@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bc3e810_13a5ba5b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2022-06-19T02:58:38Z",
+      "side": 1,
+      "message": "Just to test if this fixes IMEI on Chinese variants",
+      "revId": "2be6e4f03436831dc8d5708e907356ff8cc3900f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
