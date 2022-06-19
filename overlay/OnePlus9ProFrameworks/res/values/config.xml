@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2021 Paranoid Android
+                   2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -414,23 +415,17 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
         M 0,0
         H 236
-        V 126
+        V 152
         H 0
         Z
         @left
     </string>
 
-
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
-      <!--
-        <item>sensorLocationX</item>
-        <item>sensorLocationY</item>
-        <item>sensorRadius</item>
-      -->
-      <item>720</item>
-      <item>2944</item>
-      <item>116</item>
+        <item>717</item>  <!-- <item>sensorLocationX</item> -->
+        <item>2936</item> <!-- <item>sensorLocationY</item> -->
+        <item>110</item>  <!-- <item>sensorRadius</item> -->
     </integer-array>
 
 </resources>
