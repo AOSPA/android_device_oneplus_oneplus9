@@ -264,9 +264,6 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.5g_mode_pref=1 \
     persist.vendor.radio.bar_fake_gcell=1 \
