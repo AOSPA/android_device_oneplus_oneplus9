@@ -47,6 +47,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.sensors.rc",
+    src: "init.oplus.sensors.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.telephony.rc",
     src: "init.oplus.telephony.rc",
     sub_dir: "init",
