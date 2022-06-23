@@ -1590,6 +1590,7 @@ vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
 # Sensors - OOS
+odm/bin/oplus_sensor_fb|e7f126b2cc3dd983154602a3ce6ef49be2d6f408
 odm/etc/sensor/config/lahaina_aw9610x_0.json|132445e76e560137a4df7600c030d5ddb0a9f3c1
 odm/etc/sensor/config/lahaina_aw9610x_down_0.json|a80d879bb3ecaa734d6ac2c0857b6846d5df3907
 odm/etc/sensor/config/lahaina_bmp380.json|131799c39f35f70e6dff895eb37fc5d133fb8282
@@ -1604,12 +1605,16 @@ odm/etc/sensor/config/lahaina_qrd_sx932x.json|2de6db3a86499da93e203b716f352008ff
 odm/etc/sensor/config/lahaina_qrd_sx932x_down.json|4bea3ce45b324a9a6075bec381fe2f04f0b3f5c7
 odm/etc/sensor/config/lahaina_tcs3707.json|27110c033872a3514317e75b74e85977aa19e432
 odm/etc/sensor/sensor_config.json|8220aeebd4f87a128d919c6e6578193d40c99891
+odm/lib64/liboplus_service.so|44a418c760e13ab69206545789be49762d8f6604
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|c23cf10c4329e9cbcf656ab091c57b54aa1656ad
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
 vendor/bin/sensors.qti|8320689ea68c11d935184fdb4f301f192a41563e
 vendor/bin/sscrpcd|10235af6a79a9315d2a7811d8e7e947436e96f53
 vendor/etc/init/init.vendor.sensors.rc|f1382fe6f3cf0dbb1a2673716d3c087757695835
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc|449c88778d880c0d47cc4d651fc60c4c424c1a3f
 vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
 vendor/etc/init/vendor.sensors.sscrpcd.rc|df52901f1ad0fbc97d6070e28896a6be40154814
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml|1da4413d851427006472e4251cd20d397052d41f
 vendor/etc/sensors/config/lahaina_default_sensors.json|27a611b7abef799bdd8908b6c2ca045d35d9c887
 vendor/etc/sensors/config/lahaina_dynamic_sensors.json|80716e11fb6c31abff0728100dadd4206750ad78
 vendor/etc/sensors/config/lahaina_irq.json|be5ac7dfe059964bc0c1767576769f936d7552b5
@@ -1652,8 +1657,10 @@ vendor/etc/sensors/config/sns_wrist_pedo.json|3f6298f23c182c16585dbef20c419ce535
 vendor/etc/sensors/sns_reg_config|8e1e7175533177fe45b89c4ba572a861e262467f
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|5ce09c98dd4bc567b30a7a1af9f89aa7e7b519d1
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib64/libsensorcal.so|069b7268f3b6b4e6b8b370564dcb287fd7627dd1
 vendor/lib64/libsensorslog.so|b1b32af08e41b47795dda9aae4a3278379f006e0
 vendor/lib64/libsns_api.so|a7db1464739615b289b14a495b51701be45de3f6
 vendor/lib64/libsns_device_mode_stub.so|ed50b686a49aac5572b12fad8207134200d4290d
@@ -1663,7 +1670,9 @@ vendor/lib64/libsns_registry_skel.so|76ad9c963b1670bba71bb20b74314bfa278b179a
 vendor/lib64/libsnsapi.so|da2f3400362e45d5ae2484b27e2627257fdd607d
 vendor/lib64/libsnsdiaglog.so|7c03bf53d874208be0a915ce3d87e367fc04f715
 vendor/lib64/libssc.so|1edd8a472cda4168cff68399c7e98f102c4e9646
+vendor/lib64/libssc_default_listener.so|f4572c8b7388532892bc57279da7f8791063c75a
 vendor/lib64/sensors.ssc.so|6be21254750db293925535726145fc38d357ac11
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|a59ad9349426c0390926054a355779056a33ed17
 
 # SecureMSM (EID)
 vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
