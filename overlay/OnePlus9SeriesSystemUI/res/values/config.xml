@@ -23,7 +23,4 @@
     <!-- Define UDFPS vendor code for AOD -->
     <integer name="config_udfps_vendor_code">0</integer>
 
-    <!-- Preferred refresh rate at keyguard, if supported by the display -->
-    <integer name="config_keyguardRefreshRate">60</integer>
-
 </resources>
