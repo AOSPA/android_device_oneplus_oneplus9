@@ -122,8 +122,7 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x237 \
     pcie_ports=compat \
     service_locator.enable=1 \
-    swiotlb=0 \
-    loop.max_part=7
+    swiotlb=0
 
 BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 BOARD_KERNEL_BASE := 0x00000000
