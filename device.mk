@@ -291,8 +291,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # SOC Properties
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.soc.manufacturer=QTI \
-    ro.soc.model=SM8350
+    ro.soc.manufacturer=QTI
 
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
