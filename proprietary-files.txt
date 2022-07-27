@@ -43,7 +43,6 @@ odm/firmware/tfa98xx.cnt|5578bfb86a4123af049c2885af7b30d3fd0a53e4
 odm/lib/libaudioEngineerTest.so|2210f3acb0d58e8ef0513753369cd3d55610fdcf
 odm/lib/liblvimfs.so|51955be664d0d88044d212c9f1f96924eeb816f7
 odm/lib/liblvimfs_wrapper.so|d099f079a134900932db8fb2417b4e98e14ea05d
-odm/lib/libui.so|fa566b2f19d796df72a3725674f71302bfaa7df2
 vendor/etc/acdbdata/adsp_avs_config.acdb|e7aed8088e8c6dccacff231a1c1fe83936b15cd0
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd|247fa73e3b22ac1d8b98a601a9583bfd1e113879
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd|5271ce640ce35900690f8adf7b57aa53ef560e13
@@ -849,7 +848,6 @@ odm/lib64/libstfd_mobile_api.so|ad5e28e3ccd3080594e94272e0f88a92e2b14a15
 odm/lib64/libtriplecam_image_optical_zoom.so|a2c3ace88fc4de503261bdc22f09988c2c813cf4
 odm/lib64/libtriplecam_optical_zoom_control.so|be3836a7bd683d5f77a889b2b0a455d089015d7b
 odm/lib64/libtriplecam_video_optical_zoom.so|7f6dcf3ddef847be112ae609063776f09249a077
-odm/lib64/libui.so|897f7e597bfe55dd2af5df07d09241ac1f59ecef
 odm/lib64/libwatermark_photo.so|7ce0d7ddfec74286973474e5389683401596022e
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|f9846285ba063461d1539a44e97361c22ec96fbf
 odm/lib64/vendor.oplus.hardware.orms@1.0.so|faff993f8153eaf55223f49e5e2ad378f4e96013
