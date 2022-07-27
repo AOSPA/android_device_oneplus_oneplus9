@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4d7dc74_8325c41b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-07-27T02:55:55Z",
+      "side": 1,
+      "message": "unlikely to be used on Juhyung\u0027s kernel, more difficult to develop with, and no documented advantage.",
+      "revId": "2855334d48a5d11e5d4ed55b00170d0fab339a4c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
