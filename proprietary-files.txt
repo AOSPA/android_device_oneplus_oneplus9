@@ -32,7 +32,6 @@ vendor/firmware/a660_zap.elf|befb603b25945edb4e86ceeccdd060eccbc82aba
 vendor/firmware/a660_zap.mdt|2cbab4b48e12c293f3bab4533306bf2fc33444f7
 
 # Audio - OOS
-<<<<<<< HEAD
 odm/etc/acdbdata/Bluetooth_cal.acdb|fe5db802d2ea9f51b8a765f69afd11705d898d04
 odm/etc/acdbdata/General_cal.acdb|f6af39c7d1523029b8b7eedfcf1d1ee0e32ab47b
 odm/etc/acdbdata/Global_cal.acdb|ca0e2431a7ef50bc60da6a89f97383da9d7e95d4
@@ -40,6 +39,32 @@ odm/etc/acdbdata/Handset_cal.acdb|a4625c05e7ce996c06845976c02be9dcb1287381
 odm/etc/acdbdata/Hdmi_cal.acdb|4d4fece38092541113e16f87b95e30ff8da658cc
 odm/etc/acdbdata/Headset_cal.acdb|b25d5530c2245f42d88bbae55ae9548c56ca86a0
 odm/etc/acdbdata/Speaker_cal.acdb|d34d47e65aed9c8251a539283216e39e60554bfe
+odm/etc/lvimfs_params/LVACFS_Configuration.txt
+odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
+odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 odm/firmware/tfa98xx.cnt|abe175ffd4aa6407317f6adb4e7ff8b3d9ca151c
 odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
