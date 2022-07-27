@@ -325,6 +325,10 @@ $(call inherit-product, vendor/oneplus/oneplus9/oneplus9-vendor.mk)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.oplus
 
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v30.so
+
 # WLAN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini

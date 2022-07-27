@@ -58,6 +58,9 @@ function blob_fixup() {
         odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             ;;
+        vendor/lib/libgui1_vendor.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
+            ;;
         vendor/lib64/hw/com.qti.chi.override.so)
             "${SIGSCAN}" -p "05 B8 05 94" -P "1F 20 03 D5" -f "${2}"
             ;;
