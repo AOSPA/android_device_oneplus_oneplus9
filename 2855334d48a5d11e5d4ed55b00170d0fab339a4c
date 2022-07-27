@@ -16,6 +16,23 @@
       "message": "unlikely to be used on Juhyung\u0027s kernel, more difficult to develop with, and no documented advantage.",
       "revId": "2855334d48a5d11e5d4ed55b00170d0fab339a4c",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fc890d1_fa8c8c81",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-07-27T04:24:37Z",
+      "side": 1,
+      "message": "-2 just to make sure this is properly reviewed.  I don\u0027t own this device so I do not have a dog in the fight.",
+      "revId": "2855334d48a5d11e5d4ed55b00170d0fab339a4c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
