@@ -33,6 +33,24 @@
       "message": "-2 just to make sure this is properly reviewed.  I don\u0027t own this device so I do not have a dog in the fight.",
       "revId": "2855334d48a5d11e5d4ed55b00170d0fab339a4c",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "592fbc10_0b49d773",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2022-07-27T12:01:37Z",
+      "side": 1,
+      "message": "Arter isn\u0027t doing a kernel for OOS 12 so doesn\u0027t really matter",
+      "parentUuid": "d4d7dc74_8325c41b",
+      "revId": "2855334d48a5d11e5d4ed55b00170d0fab339a4c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
