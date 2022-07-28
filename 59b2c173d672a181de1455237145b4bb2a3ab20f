@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3f8cf17_5ba6b63b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-07-28T05:37:24Z",
+      "side": 1,
+      "message": "personally, I prefer .prop files but this is fine",
+      "revId": "59b2c173d672a181de1455237145b4bb2a3ab20f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
