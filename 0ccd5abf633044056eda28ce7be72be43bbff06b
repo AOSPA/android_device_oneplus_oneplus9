@@ -16,6 +16,24 @@
       "message": "why not?",
       "revId": "0ccd5abf633044056eda28ce7be72be43bbff06b",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c76178fa_926026f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2022-07-28T05:37:11Z",
+      "side": 1,
+      "message": "Because we can implement them via HAL, Oplus reworked effects",
+      "parentUuid": "3d6de3e4_4e472b4d",
+      "revId": "0ccd5abf633044056eda28ce7be72be43bbff06b",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
