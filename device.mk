@@ -294,7 +294,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI
 
 # Storage
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
     ro.incremental.enable=yes
 
