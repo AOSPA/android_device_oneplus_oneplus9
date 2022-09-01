@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio_amplifier.lahaina
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.idletimer.mode=default \
     persist.vendor.dpmhalservice.enable=1
 
@@ -138,7 +138,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.sf.native_mode=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.disable_mask_layer_hint=1 \
@@ -150,7 +150,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 # FRP
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fastboot
@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
 # Health
@@ -198,11 +198,11 @@ PRODUCT_PACKAGES += \
     ueventd.oneplus.rc \
     init.oneplus.post_boot.sh
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.post_boot.custom=true
 
 # Keymaster
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.dm_default_key.options_format.version=2 \
     ro.crypto.volume.metadata.method=dm-default-key
 
@@ -211,7 +211,7 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
 # lmkd
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.lmk.force_inkernel_lmk=true
 
 # Namespaces
@@ -219,7 +219,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Netflix
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.netflix.bsp_rev=Q875-32408-1
 
 # Neural networks
@@ -260,7 +260,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     android.system.net.netd@1.1.vendor \
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.5g_mode_pref=1 \
     persist.vendor.radio.bar_fake_gcell=1 \
@@ -286,7 +286,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.op9-multihal \
     libsensorndkbridge
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.allow_non_default_discovery=true \
     persist.vendor.sensors.on_change_sample_period=true \
     persist.vendor.sensors.sync_request=true
@@ -298,12 +298,12 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # SOC Properties
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM8350
 
 # Storage
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
     ro.incremental.enable=yes
 
