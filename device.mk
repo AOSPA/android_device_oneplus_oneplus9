@@ -46,8 +46,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+PRODUCT_ODM_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
-    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.speaker.prot.enable=false \
@@ -144,10 +146,18 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_mask_layer_hint=1 \
     vendor.display.use_layer_ext=1 \
     ro.surface_flinger.refresh_rate_switching=true \
-    ro.surface_flinger.set_idle_timer_ms=4000 \
-    ro.surface_flinger.set_touch_timer_ms=4000 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
+ifeq ($(TARGET_DEVICE), oneplus9)
+PRODUCT_ODM_PROPERTIES += \
+    ro.surface_flinger.set_idle_timer_ms=4000 \
+    ro.surface_flinger.set_touch_timer_ms=4000
+else
+PRODUCT_ODM_PROPERTIES += \
+    ro.surface_flinger.set_idle_timer_ms=250 \
+    ro.surface_flinger.set_touch_timer_ms=300
+endif
 
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
