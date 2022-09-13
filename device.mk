@@ -333,6 +333,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v30.so
 
+PRODUCT_PACKAGES += \
+    android.hardware.common-V1-ndk_platform.vendor \
+    android.hardware.graphics.common-V1-ndk_platform.vendor
+
 # WLAN
 PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor
