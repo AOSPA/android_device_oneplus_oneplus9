@@ -71,7 +71,7 @@ prebuilt_etc {
     name: "ueventd.oplus.rc",
     filename: "ueventd.rc",
     src: "ueventd.oplus.rc",
-    vendor: true,
+    device_specific: true,
 }
 
 sh_binary {
