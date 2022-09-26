@@ -1,6 +1,6 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0. Sections labeled with 'OOS' are
-## on latest OxygenOS which is LE2115_11_C.48 at present.
+## from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0. Sections labeled with 'OOS' are
+## on latest OxygenOS which is LE2115_11_C.63 at present.
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -1627,8 +1627,6 @@ vendor/lib64/libqcbor.so
 odm/bin/oplus_sensor_fb|e7f126b2cc3dd983154602a3ce6ef49be2d6f408
 odm/etc/sensor/config/lahaina_aw9610x_0.json|132445e76e560137a4df7600c030d5ddb0a9f3c1
 odm/etc/sensor/config/lahaina_aw9610x_down_0.json|a80d879bb3ecaa734d6ac2c0857b6846d5df3907
-odm/etc/sensor/config/lahaina_bmp380.json|131799c39f35f70e6dff895eb37fc5d133fb8282
-odm/etc/sensor/config/lahaina_lps22hb.json|c6124b9b77985dd35fabb9763b4b171e33bb128e
 odm/etc/sensor/config/lahaina_qrd_ak0991x.json|922df33fbc07e1c028c567a1482e0b4d5af4cc56
 odm/etc/sensor/config/lahaina_qrd_alsps.json|6895fcc6b8f0742d706231fa835a7263f117ea9e
 odm/etc/sensor/config/lahaina_qrd_bmi16x.json|319614a93c19f9e2b09b439067636b795845dde5
