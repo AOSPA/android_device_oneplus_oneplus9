@@ -73,6 +73,7 @@ RFS_MSM_WPSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/wpss/
 $(RFS_MSM_WPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
+	$(hide) ln -sf /data/vendor/olog $@/olog
 	$(hide) ln -sf /data/vendor/tombstones/rfs/wpss $@/ramdumps
 	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/wpss $@/readwrite
 	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
