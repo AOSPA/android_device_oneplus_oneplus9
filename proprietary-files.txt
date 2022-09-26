@@ -1232,11 +1232,11 @@ vendor/lib64/libfastcvdsp_stub.so
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|dbcae5007e353d83285636ba5bab69d78e401c81
 odm/bin/init.oplus.fingerprints.sh|950befd6f64d4055bf47ab066a0a1e0080e6191e
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|11b728dc6dd93480b8f8aebd8c639589ec143ad5
--odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
-odm/lib64/hw/fingerprint.goodix_G3.default.so|2a7aa43f49cce7142f89e317980f377419939a0d
 odm/lib64/anc.hal.so|194fee4d033990f30a751cd32dcb57914279c6f8
+odm/lib64/hw/fingerprint.goodix_G3.default.so|2a7aa43f49cce7142f89e317980f377419939a0d
 odm/lib64/libgf_hal_G3.so|7740c9b9bd9c18cdf6e08ca30fdb0ce2cb29d7a9
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|a238d506bc890b05f7f297e171406b7625a2d77d
+odm/lib64/vendor.oplus.hardware.performance@1.0.so|e865fd14e30529c3e1ef87f1fedccd9aac983f91
 odm/vendor/firmware/goodixfp.b00|ebe5157114d42df4c9c002bbd39e9f9432cee7f0
 odm/vendor/firmware/goodixfp.b01|52ee9e7eee14ec796eb297760fdfad3bd36f1a22
 odm/vendor/firmware/goodixfp.b02|a707e3abe2293f11f5a2462b921129746aca3505
@@ -1246,6 +1246,7 @@ odm/vendor/firmware/goodixfp.b05|f152dbf8e3eb303b1f9c9dea4de6e01926c93700
 odm/vendor/firmware/goodixfp.b06|9412131ec5659c31a2a4d154be0cbd4a61e87d55
 odm/vendor/firmware/goodixfp.b07|6153a4ad6cd210fc1f5933adf7a01c32016b5897
 odm/vendor/firmware/goodixfp.mdt|c16032d56cd5f7eb892053c2be83649e95cf9817
+-odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
 
 # GPS
 vendor/bin/garden_app
