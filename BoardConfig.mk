@@ -211,7 +211,6 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/wcd938x_slave_dlkm.ko \
     $(KERNEL_MODULES_OUT)/wcd9xxx_dlkm.ko \
     $(KERNEL_MODULES_OUT)/wcd_core_dlkm.ko \
-    $(KERNEL_MODULES_OUT)/wlan.ko \
     $(KERNEL_MODULES_OUT)/wsa883x_dlkm.ko \
     $(KERNEL_MODULES_OUT)/wsa_macro_dlkm.ko \
     $(KERNEL_MODULES_OUT)/xc4000.ko \
