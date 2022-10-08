@@ -61,7 +61,12 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.bcl.enabled=false \
-    persist.vendor.audio.fluence.voicerec=true
+    persist.vendor.audio.fluence.voicerec=true \
+    persist.vendor.audio.speaker.prot.enable=false \
+    persist.vendor.audio.spv4.enable=false \
+    persist.vendor.audio.vbat.enabled=false \
+    vendor.audio.feature.spkr_prot.enable=false \
+    vendor.audio.hal.output.suspend.supported=false
 
 # Authsecret
 PRODUCT_PACKAGES += \
