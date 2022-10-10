@@ -147,9 +147,15 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     vendor.display.primary_mixer_stages=9
 
+ifeq ($(TARGET_DEVICE), oneplus9)
 PRODUCT_ODM_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms=4000 \
     ro.surface_flinger.set_touch_timer_ms=4000
+else
+PRODUCT_ODM_PROPERTIES += \
+    ro.surface_flinger.set_idle_timer_ms=250 \
+    ro.surface_flinger.set_touch_timer_ms=300
+endif
 
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
