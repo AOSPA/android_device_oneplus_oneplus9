@@ -1603,9 +1603,9 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
-# RemoteFS
-vendor/bin/rmt_storage
-vendor/etc/init/vendor.qti.rmt_storage.rc
+# RemoteFS - OOS
+vendor/bin/rmt_storage|03cd4f5285fd395b5b71ff7c54b039fb170375ae
+vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 
 # SCVE
 vendor/lib64/libscveCommon.so
