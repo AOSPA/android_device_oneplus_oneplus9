@@ -33,8 +33,8 @@ PRODUCT_PACKAGES += \
 
 # Alert Slider
 PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key-calibrate
+    TriStateHandler \
+    tri-state-key_daemon
 
 # Attestation
 PRODUCT_COPY_FILES += \

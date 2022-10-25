@@ -1,5 +1,6 @@
 # Alert Slider
-/(vendor|system/vendor)/bin/tri-state-key-calibrate    u:object_r:tri-state-key-calibrate_exec:s0
+/mnt/vendor/persist/engineermode/tri_state_hall_data    u:object_r:vendor_persist_tri_state_key_file:s0
+/vendor/bin/tri-state-key_daemon                        u:object_r:tri-state-key_daemon_exec:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?                     u:object_r:vendor_persist_camera_file:s0

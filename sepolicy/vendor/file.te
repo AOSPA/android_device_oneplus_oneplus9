@@ -1,4 +1,5 @@
 # Alert Slider
+type vendor_persist_tri_state_key_file, file_type;
 type vendor_proc_tri_state_key, fs_type, proc_type;
 
 # Camera
