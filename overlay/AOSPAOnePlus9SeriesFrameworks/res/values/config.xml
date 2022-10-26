@@ -23,7 +23,7 @@
 
     <!-- Names of the key handler classes. -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.lineageos.settings.device.KeyHandler</item>
+        <item>co.aospa.settings.device.KeyHandler</item>
     </string-array>
 
     <!-- The location of the devices physical alert slider.
