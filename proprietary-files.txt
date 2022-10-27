@@ -928,7 +928,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so|1bd8123c9b33f8c0ea8c99
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so|0d90e21049528c583c20a9e3bf876ec4294c198a
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so|1ee65fd7f3094fd614b1a84bcd4c1306680bb7c1
 vendor/lib64/hw/camera.qcom.so|c1fa85d5ecf50fe84e2a1ae341aed9eb7a99f777
-vendor/lib64/hw/com.qti.chi.override.so|3cbf28a9b351dda372ce2e4b58b22d98bc5e5b04
+vendor/lib64/hw/com.qti.chi.override.so|ba55b00530217392dfe621a202927bfe76ce0d27
 vendor/lib64/com.qti.chiusecaseselector.so|5ab1fe32f6b2f30a1b733492555be625ef88afd5
 vendor/lib64/com.qti.feature2.anchorsync.so|6ea7cf96452f97313bff7b8d8a35879bd87eea87
 vendor/lib64/com.qti.feature2.demux.so|fa6e9a0fb4603f4e65bcf8c943318da84cca7c49
