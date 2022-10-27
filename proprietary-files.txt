@@ -77,6 +77,7 @@ vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b1d2f43214d8509cf5f
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd|84537b77f8bdb72e23420f417c2d0a24da7a71a0
 vendor/etc/acdbdata/adsp_avs_config.acdb|e7aed8088e8c6dccacff231a1c1fe83936b15cd0
 vendor/lib/hw/audio.primary.lahaina.so|5fcf1c5669d8916f877a38f0bbc01d89e0ee8e16
+vendor/lib/hw/sound_trigger.primary.lahaina.so|20a5f682585af83273152d80186cf01bc09eec55
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|f357ce20b069feac7e8c87f3615d9201c00aff7b
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|1f568f739f627889ae24f1fc22e62ebb2d264eb5
 vendor/lib/soundfx/libasphere.so|a742e8196f321571132113e0052b9c947cb9d37a
@@ -135,6 +136,7 @@ vendor/lib/libstagefright_soft_qtiflacdec.so|884a7db483e6c7cfa19c87d7cdb9139366d
 vendor/lib/libsurround_3mic_proc.so|3c970233b858df5c048941dd931a6b5212767afa
 vendor/lib/vendor.oplus.hardware.extcamera@1.0.so|837df09bb282bd18c09bed5196d51ea0b9d0c954
 vendor/lib/vendor.qti.voiceprint@1.0.so|5325739853aef4d9b7a752cec9e607e4f7e86ebf
+vendor/lib64/hw/sound_trigger.primary.lahaina.so|b697c8db377b74e8359c8acb23aee662af2a4254
 vendor/lib64/soundfx/libasphere.so|041a144b5bc745f6eebbd1423e61af5ced581bbd
 vendor/lib64/soundfx/libqcbassboost.so|708756550c0fbf42c0e96fba2f82588d69d26624
 vendor/lib64/soundfx/libqcreverb.so|b05c0ce2831aeb777a4b498408b32c63d81e797a
