@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "301e327d_7bd1d222",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2022-10-29T11:57:08Z",
+      "side": 1,
+      "message": "android.hardware.tetheroffload.control still exists.\nout/target/product/lemonades/vendor/lib64/android.hardware.tetheroffload.control@1.0.so\n",
+      "revId": "3797cc6342eea29fcd39f526f5eec2a1c678b619",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ],
   "submitRequirementResults": []
 }
