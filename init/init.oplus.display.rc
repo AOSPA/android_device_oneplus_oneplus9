@@ -27,3 +27,10 @@ on fs
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
+
+# Toggle glove mode.
+on property:persist.vendor.touch_sensitivity_mode=0 && property:sys.boot_completed=1
+    write /proc/touchpanel/game_switch_enable "0"
+
+on property:persist.vendor.touch_sensitivity_mode=1 && property:sys.boot_completed=1
+    write /proc/touchpanel/game_switch_enable "1"
