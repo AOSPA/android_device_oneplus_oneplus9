@@ -309,7 +309,6 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus9/oneplus9-vendor.mk)
-$(call inherit-product-if-exists, vendor/oplus/camera/oplus-camera.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
