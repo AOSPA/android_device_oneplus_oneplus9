@@ -188,10 +188,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.post_boot.custom=true
 
-# Kernel
-KERNEL_MODULES_INSTALL := dlkm
-KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/oneplus9/$(KERNEL_MODULES_INSTALL)/lib/modules
-
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.dm_default_key.options_format.version=2 \
