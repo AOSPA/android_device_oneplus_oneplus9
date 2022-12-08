@@ -188,6 +188,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.post_boot.custom=true
 
+# Kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.dm_default_key.options_format.version=2 \
