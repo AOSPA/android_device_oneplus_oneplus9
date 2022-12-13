@@ -26,26 +26,8 @@
         <item>co.aospa.settings.device.KeyHandler</item>
     </string-array>
 
-    <!-- The location of the devices physical alert slider.
-         0: Left
-         1: Right -->
-    <integer name="config_alertSliderLocation">1</integer>
-
-    <!-- Whether device has an alert slider. -->
-    <bool name="config_hasAlertSlider">true</bool>
-
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
     <integer name="config_doubleTapKeyCode">143</integer>
-    <integer name="config_singleTapKeyCode">67</integer>
-    <integer name="config_drawVKeyCode">252</integer>
-    <integer name="config_drawInverseVKeyCode">255</integer>
-    <integer name="config_drawOKeyCode">250</integer>
-    <integer name="config_drawMKeyCode">247</integer>
-    <integer name="config_drawWKeyCode">246</integer>
-    <integer name="config_drawSKeyCode">248</integer>
-    <integer name="config_drawArrowLeftKeyCode">254</integer>
-    <integer name="config_drawArrowRightKeyCode">253</integer>
-    <integer name="config_twoFingerSwipeKeyCode">251</integer>
 
     <!-- Default settings for gestures:
              0 - Disabled
@@ -59,21 +41,16 @@
              8 - Camera
              9 - Dialer -->
     <integer name="config_doubleTapDefault">1</integer>
-    <integer name="config_singleTapDefault">2</integer>
-    <integer name="config_drawVDefault">3</integer>
-    <integer name="config_drawODefault">8</integer>
-    <integer name="config_twoFingerSwipeDefault">5</integer>
-    <integer name="config_drawArrowLeftDefault">7</integer>
-    <integer name="config_drawArrowRightDefault">6</integer>
 
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
 
-    <!-- Defines the sysfs attribute path used by the device
-         to enable/disable DC dimming. -->
-    <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oplus_display/dimlayer_bl_en</string>
+    <!-- The location of the devices physical alert slider.
+         0: Left
+         1: Right -->
+    <integer name="config_alertSliderLocation">1</integer>
 
-    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-    <bool name="config_dozePulsePickup">true</bool>
+    <!-- Whether device has an alert slider. -->
+    <bool name="config_hasAlertSlider">true</bool>
 
 </resources>

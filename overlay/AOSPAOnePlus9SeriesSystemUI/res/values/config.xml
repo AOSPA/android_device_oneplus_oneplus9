@@ -19,7 +19,7 @@
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
 
-    <!-- FOD Color -->
+    <!-- UDFPS Color -->
     <color name="config_udfpsColor">#ffffe6</color>
 
     <!-- HBM type of UDFPS overlay.
