@@ -111,12 +111,6 @@
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
 
-    <!-- Slow brightness animation ramp rate in float. -->
-    <item name="config_brightnessRampRateSlowFloat" format="float" type="dimen">0.04</item>
-
-    <!-- Fast brightness animation ramp rate in float. -->
-    <item name="config_brightnessRampRateFastFloat" format="float" type="dimen">0.4058823</item>
-
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 
