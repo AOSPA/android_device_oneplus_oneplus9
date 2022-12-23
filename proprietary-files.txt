@@ -1153,16 +1153,6 @@ vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
 vendor/lib/libsn100u_fw.so
 
-# Neural Networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
-vendor/lib64/libQnnHtpAltPrepStub.so
-vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-gpu.so
-vendor/lib64/unnhal-acc-htp.so
-
 # OPF - OOS
 odm/etc/odm_feature_list|1b0ea6243d76dbd2c112f687ec5b8fef417d7ba6
 vendor/bin/opf-service|31f3c24f3ac65f07015ad49ad5e3f2ff423d4fcc
@@ -1255,12 +1245,13 @@ vendor/bin/qtigetprop
 vendor/bin/qtisetprop
 vendor/etc/init/init-qcril-data.rc
 vendor/etc/init/qcrilNrd.rc
-vendor/etc/qcril_database/upgrade/config/10.0_config.sql
-vendor/etc/qcril_database/upgrade/config/11.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
 vendor/etc/qcril_database/upgrade/config/9.0_config.sql
+vendor/etc/qcril_database/upgrade/config/10.0_config.sql
+vendor/etc/qcril_database/upgrade/config/11.0_config.sql
+vendor/etc/qcril_database/upgrade/config/12.0_config.sql
 vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
@@ -1273,6 +1264,7 @@ vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql
 vendor/etc/qcril_database/qcrilNr.db
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy
 vendor/lib64/deviceInfoServiceModuleNr.so
