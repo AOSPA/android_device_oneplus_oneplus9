@@ -70,6 +70,9 @@ AUDIO_FEATURE_ENABLED_SSR := false
 # Biometrics
 TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus9
 
+# Display density
+TARGET_SCREEN_DENSITY := 420
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
