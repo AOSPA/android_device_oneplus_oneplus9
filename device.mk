@@ -255,6 +255,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.poweron_opt=1 \
     persist.vendor.radio.stack_id_1=1
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
