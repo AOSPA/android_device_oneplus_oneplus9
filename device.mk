@@ -238,7 +238,7 @@ TARGET_BOARD_PLATFORM := lahaina
 
 # QTEE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.qteeconnector.retrying_interval=30
+    persist.vendor.qteeconnector.retrying_interval=30 \
     persist.vendor.qteeconnector.retrying_timeout=2000
 
 # QTI
