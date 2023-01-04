@@ -14,6 +14,5 @@
 
 runtime_resource_overlay {
     name: "OnePlus9SeriesSystemUI",
-    sdk_version: "current",
     device_specific: true,
 }

@@ -5,6 +5,5 @@
 
 runtime_resource_overlay {
     name: "OnePlus9SeriesSettings",
-    sdk_version: "current",
     vendor: true,
 }
