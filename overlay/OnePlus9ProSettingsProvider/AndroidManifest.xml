@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.providers.settings.oneplus9pro">
+
+    <overlay
+        android:isStatic="true"
+        android:priority="850"
+        android:requiredSystemPropertyName="ro.boot.prj_version"
+        android:requiredSystemPropertyValue="11"
+        android:targetPackage="com.android.providers.settings" />
+</manifest>
