@@ -16,5 +16,4 @@ runtime_resource_overlay {
     aaptflags: ["--keep-raw-values"],
     name: "OnePlus9SeriesCarrierConfig",
     product_specific: true,
-    sdk_version: "current",
 }
