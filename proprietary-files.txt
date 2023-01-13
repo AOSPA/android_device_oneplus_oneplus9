@@ -2061,6 +2061,7 @@ vendor/bin/cnss-daemon
 # WLAN - OOS
 odm/etc/wifi/bdwlan.elf|1f728fd2862903132686644072fb3e7567b01505
 odm/etc/wifi/cnss_diag_always_on.conf|7c8d94e909d88205adf3bdb428cb6a39f012cabc
+odm/etc/wifi/regdb.bin|30ff599f33dd4058bc79482d5e2e26a4a98adb95
 vendor/etc/wifi/p2p_supplicant_overlay.conf|05f22cd82cbe806d46185a3e5ce69c86cd307128
 vendor/etc/wifi/wpa_supplicant_overlay.conf|fd618998d3dcd4b3a408807fa629967c378ac45a
 
