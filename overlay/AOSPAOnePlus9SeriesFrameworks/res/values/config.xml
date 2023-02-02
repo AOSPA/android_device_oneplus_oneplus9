@@ -69,6 +69,9 @@
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
 
+    <!-- Whether device has an alert slider. -->
+    <bool name="config_hasAlertSlider">true</bool>
+
     <!-- OnePlus uses a proprietary vibrator HAL to utilize the new powerful motor since the
          OnePlus 7 Pro. -->
     <bool name="config_hasOnePlusHapticMotor">true</bool>
