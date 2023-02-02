@@ -28,4 +28,9 @@
     -->
     <integer name="config_udfps_hbm_type">0</integer>
 
+    <!-- The location of the devices physical alert slider.
+         0: Left
+         1: Right -->
+    <integer name="config_alertSliderLocation">1</integer>
+
 </resources>
