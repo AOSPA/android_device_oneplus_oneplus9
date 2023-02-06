@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a5179aa_79a5a23d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-02-06T14:17:56Z",
+      "side": 1,
+      "message": "this change should really be non-functional.  Either remove stuff from oplus post boot and then kill it or move as-is then kill.",
+      "revId": "f520a07d0a64677f10bb4cad8be5218f3637b784",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
