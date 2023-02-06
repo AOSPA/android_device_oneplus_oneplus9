@@ -63,3 +63,7 @@ on property:vendor.post_boot.parsed=1
 
     # Suspend to RAM
     write /sys/power/mem_sleep deep
+
+    # Thread count after setup wizard
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
