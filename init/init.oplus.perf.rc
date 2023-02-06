@@ -52,6 +52,9 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuctl/rt/cpu.shares 20480
     write /dev/cpuctl/top-app/cpu.shares 20480
 
+    # Disable multiple kswapd threads
+    write /proc/sys/vm/kswapd_threads 1
+
     # IRQ Tuning
     # IRQ 243: msm_drm0
     # IRQ 222: kgsl_3d0_irq
