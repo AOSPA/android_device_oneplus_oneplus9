@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cef94984_e5a9ac79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-02-06T14:16:48Z",
+      "side": 1,
+      "message": "Adithya checks for this being after SUW like Pixel does.  I skip the check because these seem like good values at all times.  We still want SUW to be responsive.  Up to you, but thought you should know.",
+      "revId": "a8d5f0f8c03c91b32a13c49468a6f6908eea751b",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
