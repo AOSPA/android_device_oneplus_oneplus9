@@ -1142,11 +1142,8 @@ vendor/lib64/vendor.display.color@1.5.so|5a1e7d0de33509909cf0f514b754e95f2233c86
 vendor/lib64/vendor.display.postproc@1.0.so|e63c770fc317a9d98ddd2de2c7d6250258398f2e
 
 # Display (CWB) - OOS
-odm/bin/cwb_utils|6a5e9678e6ac13eb01ee5f55b827dabc11a1154d
-odm/etc/vintf/manifest/manifest_oplus_cwb.xml|8b03271b55b4ce9722e91a6d42e571c138bcb61f
 odm/lib64/vendor.oplus.hardware.cwb@1.0.so|3d245702c05128c2f9a933421d87df25a2d0c0c0
 vendor/lib64/libcwb_sm8350.so|1411ce7190cb38dfe56c2485e45aeec8a8c5374e
-vendor/lib64/vendor.oplus.hardware.cwb@1.0.so|ceb35acb0e90809a7708e8831c9e36b378e3a968
 
 # Display (Pixelworks) - OOS
 odm/bin/hw/vendor.pixelworks.hardware.display.iris-service|810b2d83e36282c2a45c4c552eb1b8eeb47d76f4
@@ -1263,11 +1260,8 @@ odm/vendor/firmware/goodixfp.mdt|c16032d56cd5f7eb892053c2be83649e95cf9817
 -odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
 
 # Performance - OOS
-odm/bin/hw/vendor.oplus.hardware.performance@1.0-service|3a451c746e1b1469bb2f273901bfd2eff82e7093
-odm/etc/init/vendor.oplus.hardware.performance@1.0-service.rc|a4863e9d669fd46309e92e9faf921461045066a8
 odm/lib/vendor.oplus.hardware.performance@1.0.so|7e2357a5bc0f10603b56c39ab83a53f0036c36f5
 odm/lib64/vendor.oplus.hardware.performance@1.0.so|044896e7af694b64e0f832cb3f2fc26966df6ed0
--odm/etc/vintf/manifest/manifest_oplus_performance.xml|be5b2292ef9197315bc59e4af341c1dcdfea7e89
 
 # GPS
 vendor/bin/garden_app
