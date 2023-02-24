@@ -1238,15 +1238,13 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
-# Fingerprint - OOS
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|acb6c9ddee8ee4620ec7fa325afd1f8f75dd854a
+# Fingerprint - OOS (C.63)
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|dbcae5007e353d83285636ba5bab69d78e401c81
 odm/bin/init.oplus.fingerprints.sh|950befd6f64d4055bf47ab066a0a1e0080e6191e
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|11b728dc6dd93480b8f8aebd8c639589ec143ad5
-odm/lib64/anc.hal.so|30c0aee2fda8682d94ceb8230db344dfef60ccd9
+odm/lib64/anc.hal.so|194fee4d033990f30a751cd32dcb57914279c6f8
 odm/lib64/hw/fingerprint.goodix_G3.default.so|2a7aa43f49cce7142f89e317980f377419939a0d
-odm/lib64/hw/fpsensor_fingerprint.default.so|bc7eb243a4209b49c5ecb2dd9651e2bad7066d9a
-odm/lib64/hw/sidefp_fingerprint.default.so|1e588cc3b1e7be4a1358724f6a1c14e1b4308b8d
-odm/lib64/libgf_hal_G3.so|4b4d146781d0e7004998c99776e3e876064c28be
+odm/lib64/libgf_hal_G3.so|7740c9b9bd9c18cdf6e08ca30fdb0ce2cb29d7a9
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|a238d506bc890b05f7f297e171406b7625a2d77d
 odm/vendor/firmware/goodixfp.b00|ebe5157114d42df4c9c002bbd39e9f9432cee7f0
 odm/vendor/firmware/goodixfp.b01|52ee9e7eee14ec796eb297760fdfad3bd36f1a22
