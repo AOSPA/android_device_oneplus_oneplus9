@@ -249,6 +249,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_COMMON_QTI_COMPONENTS := all
 
 # Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1
+
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
