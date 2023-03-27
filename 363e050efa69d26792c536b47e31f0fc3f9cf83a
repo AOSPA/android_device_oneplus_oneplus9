@@ -16,6 +16,24 @@
       "message": "https://gerrit.aospa.co/c/AOSPA/android_device_motorola_dubai/+/28701\n\nthis is the reason",
       "revId": "363e050efa69d26792c536b47e31f0fc3f9cf83a",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e589c28a_9cff0d9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2023-03-27T18:24:19Z",
+      "side": 1,
+      "message": "just a DNM",
+      "parentUuid": "bd581c74_ae222491",
+      "revId": "363e050efa69d26792c536b47e31f0fc3f9cf83a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
