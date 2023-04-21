@@ -75,6 +75,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # Biometrics
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+SOONG_CONFIG_qtidisplay_udfps := true
 
 # Display density
 TARGET_SCREEN_DENSITY := 420
