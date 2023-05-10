@@ -136,17 +136,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.use_layer_ext=1 \
     ro.surface_flinger.refresh_rate_switching=true \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
-
-ifeq ($(TARGET_DEVICE), oneplus9)
-PRODUCT_ODM_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms=4000 \
-    ro.surface_flinger.set_touch_timer_ms=4000
-else
-PRODUCT_ODM_PROPERTIES += \
-    ro.surface_flinger.set_idle_timer_ms=250 \
-    ro.surface_flinger.set_touch_timer_ms=300
-endif
+    ro.surface_flinger.set_touch_timer_ms=4000 \
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
@@ -176,6 +168,12 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
+
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1  \
+    persist.dbg.wfc_avail_ovr=1
 
 # Init
 PRODUCT_COPY_FILES += \
