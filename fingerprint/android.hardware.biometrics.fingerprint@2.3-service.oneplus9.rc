@@ -13,3 +13,5 @@ on boot
     chmod 0666 /sys/class/drm/card0-DSI-1/cancel_status
     chown system system /sys/class/drm/card0-DSI-1/power_status
     chmod 0666 /sys/class/drm/card0-DSI-1/power_status
+    chown system system /sys/devices/platform/soc/soc:goodix_fp/udfps_pressed
+    chmod 0660 /sys/devices/platform/soc/soc:goodix_fp/udfps_pressed
