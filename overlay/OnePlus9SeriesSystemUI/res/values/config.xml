@@ -20,4 +20,8 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- Trigger onFingerDown for action down events. This is a workaround for certain devices
+         that have UDFPS delays without the commit present and should be false by default. -->
+    <bool name="config_udfpsTriggerOnFingerDownForActionDown">true</bool>
+
 </resources>
