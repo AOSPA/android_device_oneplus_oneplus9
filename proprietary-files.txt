@@ -159,6 +159,18 @@ vendor/lib64/soundfx/libswdap.so|d28980440b35c26580ecda4d3b66684263b5216c
 vendor/lib64/soundfx/libswgamedap.so|9eb9cbf22333eefe1182a32ae22cf0a5c89a9305
 vendor/lib64/vendor.qti.voiceprint@1.0.so|975999ec0c79581c68d1d5eca2dae7bca6eb5e0b
 
+# Audio (Pro) - OOS
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/etc/prj_11/acdbdata/Bluetooth_cal.acdb|1475d5fca1e69792e79cfa54aa1d084fa92099e6
+odm/etc/acdbdata/General_cal.acdb:odm/etc/prj_11/acdbdata/General_cal.acdb|94b5b3b6dfb2a4cbaf681c85a5f67858b5344ce2
+odm/etc/acdbdata/Global_cal.acdb:odm/etc/prj_11/acdbdata/Global_cal.acdb|98b31e589a61fd587ab0790296027881ed75e34d
+odm/etc/acdbdata/Handset_cal.acdb:odm/etc/prj_11/acdbdata/Handset_cal.acdb|7991af348d206b0b5d1910a20bcd0e3c2271c970
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/etc/prj_11/acdbdata/Hdmi_cal.acdb|9b80fe6c8fc3cb5f5dbe6cbcc08cf721f4f1b42b
+odm/etc/acdbdata/Headset_cal.acdb:odm/etc/prj_11/acdbdata/Headset_cal.acdb|5fb84ff86ecce62afdd7d4c0fc4e96df697075b6
+odm/etc/acdbdata/Speaker_cal.acdb:odm/etc/prj_11/acdbdata/Speaker_cal.acdb|2c332b554cf1231b73ab8cc87a97e2918655b15e
+vendor/etc/audio/sku_lahaina/mixer_paths.xml:odm/etc/prj_11/audio/sku_lahaina/mixer_paths.xml|640adcb2c3f3b7abffcf5e648da901a175cb171d
+vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:odm/etc/prj_11/audio/sku_lahaina/sound_trigger_mixer_paths.xml|7c220f4ece221afd9f019a5ac39c3f48cbcfde8c
+vendor/firmware/tfa98xx.cnt:odm/firmware/prj_11/tfa98xx.cnt|3273540edc56b3959a4c8d994c3e2fa0bd6d2cb8
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -780,6 +792,12 @@ vendor/lib64/libyuv2.so|120a7fe2bccfce7b00895c8295f5060c5695e7b5
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|8ce4445a740878b231e8c43e8eba5807791e9e37
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|68bb5c723e0f18ba79e6f6e5d15d04f954541088
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a6c2d3ebba23ea83b931366cd6200ac3f7cd0728
+
+# Camera (Pro) - OOS
+vendor/etc/camera/CameraHWConfiguration.config:odm/etc/prj_11/camera/CameraHWConfiguration.config|4c4260b541774e5e07b13656d3fdfe6a74d39248
+vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:odm/lib64/prj_11/camera/components/com.arcsoft.node.smooth_transition.so|aa0534262421c639bba837b3ab2f275b8973c37b
+vendor/lib64/hw/camera.qcom.so:odm/lib64/prj_11/hw/camera.qcom.so|182dbe0fd22fdb94fec2b3fb4e2429bec1e29783
+vendor/lib64/hw/com.qti.chi.override.so:odm/lib64/prj_11/hw/com.qti.chi.override.so|c5cfd32f4fdda4a27524987926992b267467afbc
 
 # Charging
 vendor/bin/init.qti.chg_policy.sh
@@ -1442,6 +1460,17 @@ vendor/lib64/libssc.so|8ab4fd62b9b24fee9cc1ce44bb41dcf4761740b0
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib64/sensors.ssc.so|1ec9e1356f02b11497ce93e42508dad80a987f69
+
+# Sensors (Pro) - OOS
+vendor/etc/sensors/config/lahaina_ak0991x_0.json:odm/etc/prj_11/sensors/config/lahaina_ak0991x_0.json|1ef501b1ded2633de3c525e79b5d98df449e4deb
+vendor/etc/sensors/config/lahaina_aw9610x_0.json:odm/etc/prj_11/sensors/config/lahaina_aw9610x_0.json|bc2cfb1871d5eaf756be2de1ceb079a90ea83043
+vendor/etc/sensors/config/lahaina_aw9610x_down_0.json:odm/etc/prj_11/sensors/config/lahaina_aw9610x_down_0.json|9583998147b2bd58b8f3109b6bd766a7256070dc
+vendor/etc/sensors/config/lahaina_bmi26x_0.json:odm/etc/prj_11/sensors/config/lahaina_bmi26x_0.json|cf00646cc5ff01156333a93884dbb99d6ae16e74
+vendor/etc/sensors/config/lahaina_icm4x6xx_0.json:odm/etc/prj_11/sensors/config/lahaina_icm4x6xx_0.json|fc8f971939c0fb6b54d7861f5fc78b88501c270f
+vendor/etc/sensors/config/lahaina_mmc56x3x_0.json:odm/etc/prj_11/sensors/config/lahaina_mmc56x3x_0.json|1769ab38602a335ef807925272ee519a7501331f
+vendor/etc/sensors/config/lahaina_sx9324_0.json:odm/etc/prj_11/sensors/config/lahaina_sx9324_0.json|a4fc614745614813ad48a53b76646aa32a7170a0
+vendor/etc/sensors/config/lahaina_sx9324up_0.json:odm/etc/prj_11/sensors/config/lahaina_sx9324up_0.json|e73ff34995de44facd09997e6330dbb83633ea68
+vendor/etc/sensors/config/lahaina_tcs3408.json:odm/etc/prj_11/sensors/config/lahaina_tcs3408.json|dc7d79fb0a3052730a6cbc57d451fe446cc390e5
 
 # SecureMSM (EID)
 vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
