@@ -42,7 +42,7 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd|7d6596a
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd|4160e57be26f1ca99b857276be74c40294a26665
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b1d2f43214d8509cf5f3ca20092c7ca475be684e
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd|84537b77f8bdb72e23420f417c2d0a24da7a71a0
-vendor/etc/audio/sku_lahaina/audio_effects.xml|1ce4c2dd22e32d30ebd4a5dccb5135f30a9bba47
+vendor/etc/audio/sku_lahaina/audio_effects.xml|2e36c91a74cea7714cc37d8f490710bbdaec91e7
 vendor/etc/audio/sku_lahaina/audio_io_policy.conf|412152b21332ec09515bf412e89e539618964d03
 vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml|5b46f399054cd9de68fab596087e6e44704c7fa3
 vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml|d1deb2b192128680d993cc7687f20616e2ba17f9
@@ -773,13 +773,13 @@ vendor/lib64/libtfestriping.so|54022b62ee38e7159464fc8077eeb2862f9c1b99
 vendor/lib64/libthreadutils.so|22e916f801f287bc61b02e16783450e704ae736b
 vendor/lib64/libtriplecam_optical_zoom_control.so|a631ea3bd745665eece5631cd66aaac9edb3883b
 vendor/lib64/libtriplecam_video_optical_zoom.so|81459c4b9533ab02bcb61d4fd6b062e79f06b1ff
-vendor/lib64/libui.so|07e4e1e5dfe5b39b456935bbf2a1bf524ea76c7d
+vendor/lib64/libui.so|42cc274a635a9d9d67b47d62525784d555cb248d
 vendor/lib64/libvdblurless.so|413067f49747a3c215e1da2c74570dfcd226725c
 vendor/lib64/libvdsuperphoto.so|8fb477fcc82bd3b18206100be09a82aa1d8b0545
 vendor/lib64/libyuv2.so|120a7fe2bccfce7b00895c8295f5060c5695e7b5
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|8ce4445a740878b231e8c43e8eba5807791e9e37
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|68bb5c723e0f18ba79e6f6e5d15d04f954541088
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a6c2d3ebba23ea83b931366cd6200ac3f7cd0728
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74925f9b11de9721aa9b8dfa4b94f7c87a8baf33
 
 # Charging
 vendor/bin/init.qti.chg_policy.sh
@@ -1077,12 +1077,26 @@ vendor/lib64/lib-rtpsl.so
 vendor/lib64/librcc.so
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
+vendor/lib64/vendor.qti.ims.configservice@1.0.so
+vendor/lib64/vendor.qti.ims.configservice@1.1.so
+vendor/lib64/vendor.qti.ims.connection@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.1.so
+vendor/lib64/vendor.qti.ims.factory@2.0.so
+vendor/lib64/vendor.qti.ims.factory@2.1.so
+vendor/lib64/vendor.qti.ims.factory@2.2.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib64/vendor.qti.ims.rcssip@1.0.so
+vendor/lib64/vendor.qti.ims.rcssip@1.1.so
+vendor/lib64/vendor.qti.ims.rcssip@1.2.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.0.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.1.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
@@ -1185,14 +1199,12 @@ vendor/lib64/libsoc_helper_jni.so
 
 # QMI
 vendor/bin/irsc_util
-vendor/bin/qdss_qmi_helper
 vendor/bin/qmipriod
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
 vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
-vendor/etc/qmi_fw.conf
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
@@ -1300,6 +1312,7 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so
@@ -1365,8 +1378,8 @@ vendor/lib64/libqcbor.so
 
 # Sensors - OOS
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
-vendor/bin/sensors.qti|7379e59ab3643a96a69597cc9b2a6249cc4408f1
-vendor/bin/sscrpcd|9d4c7d32abb5e9910f87205d100be7922f6a0d80
+vendor/bin/sensors.qti|2e3c0608c4c98357bb8bafbe87fa917c6819890c
+vendor/bin/sscrpcd|c915d931c0caececdaa63978a7b23057e8bdf36d
 vendor/etc/init/init.vendor.sensors.rc|8d286f50fd261dc8843c6a208386b535cc07641e
 vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
 vendor/etc/init/vendor.sensors.sscrpcd.rc|df52901f1ad0fbc97d6070e28896a6be40154814
