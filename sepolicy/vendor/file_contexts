@@ -15,6 +15,9 @@
 # Display
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                                       u:object_r:hal_display_default_exec:s0
 
+# Engineering Mode - Persist
+/mnt/vendor/persist/engineermode(/.*)?                                                                               u:object_r:vendor_persist_engineer_file:s0
+
 # Init
 /vendor/bin/init.oneplus.post_boot.sh                                                                                u:object_r:vendor_qti_init_shell_exec:s0
 /vendor/bin/init.oplus_chg.sh                                                                                        u:object_r:vendor_qti_init_shell_exec:s0
