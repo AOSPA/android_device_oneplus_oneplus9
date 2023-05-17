@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "29f918bf_dc1e9318",
+        "filename": "fingerprint/service.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2023-05-17T06:38:54Z",
+      "side": 1,
+      "message": "isn’t -20, ANDROID_PRIORITY_HIGHEST?\nUse predefined vars/consts",
+      "revId": "9f0b30fee3aac00c3a9bd160577b087b4f2f05db",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
