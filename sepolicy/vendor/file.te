@@ -9,6 +9,9 @@ type sysfs_camera, fs_type, sysfs_type;
 # Display
 type proc_touchpanel, fs_type, proc_type;
 
+# Engineering Mode - Persist
+type vendor_persist_engineer_file, file_type;
+
 # Fingerprint
 type vendor_fingerprint_device, dev_type;
 
