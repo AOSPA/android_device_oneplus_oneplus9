@@ -125,7 +125,7 @@ class UdfpsSensor : public SysfsPollingOneShotSensor {
     UdfpsSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
         : SysfsPollingOneShotSensor(
               sensorHandle, callback, kTsUdfpsPressedPath,
-              "UDFPS Sensor", "org.lineageos.sensor.udfps",
+              "UDFPS Sensor", "co.aospa.sensor.udfps",
               static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
 };
 
