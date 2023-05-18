@@ -131,14 +131,25 @@ class UdfpsSensor : public SysfsPollingOneShotSensor {
 
 const std::string kTsPath = "/sys/devices/platform/soc/990000.i2c/i2c-4/4-0048/";
 
-const std::string kTsDoubleTapPressedPath = kTsPath + "double_tap_pressed";
+const std::string kTsDoubleTapPath = kTsPath + "double_tap_pressed";
 
 class DoubleTapSensor : public SysfsPollingOneShotSensor {
   public:
     DoubleTapSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
         : SysfsPollingOneShotSensor(
-              sensorHandle, callback, kTsDoubleTapPressedPath,
+              sensorHandle, callback, kTsDoubleTapPath,
               "Double Tap Sensor", "org.lineageos.sensor.double_tap",
+              static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
+};
+
+const std::string kTsSingleTapPath = kTsPath + "single_tap_pressed";
+
+class SingleTapSensor : public SysfsPollingOneShotSensor {
+  public:
+    SingleTapSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
+        : SysfsPollingOneShotSensor(
+              sensorHandle, callback, kTsSingleTapPath,
+              "Single Tap Sensor", "org.lineageos.sensor.single_tap",
               static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
 };
 
