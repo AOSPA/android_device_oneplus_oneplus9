@@ -47,6 +47,14 @@ genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-005d/double_tap_pressed 
 genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-0048/double_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-005d/double_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/double_tap_pressed                                            u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/990000.i2c/i2c-4/4-004b/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/990000.i2c/i2c-4/4-0048/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-004b/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-0048/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-005d/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-0048/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-005d/single_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/single_tap_pressed                                            u:object_r:vendor_sysfs_sensors:s0
 
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/udfps_pressed u:object_r:vendor_sysfs_sensors:s0
