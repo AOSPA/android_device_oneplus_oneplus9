@@ -27,3 +27,6 @@ allow hal_fingerprint_default { proc_touchpanel }:file rw_file_perms;
 
 # Allow access to display sysfs nodes.
 allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
+
+# Allow fingerprint HAL to access calibration data
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)

@@ -1,2 +1,3 @@
 system_vendor_config_prop(vendor_exported_overlay_prop)
 system_public_prop(vendor_oplus_prop)
+system_public_prop(vendor_fingerprint_prop)
