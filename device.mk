@@ -193,6 +193,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.perf.rc \
     init.oneplus.power.rc \
     init.oneplus.telephony.rc \
+    init.oneplus.touch.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc \

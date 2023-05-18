@@ -39,8 +39,11 @@ genfscon sysfs /devices/platform/soc/984000.i2c/i2c-4/4-0048/tp_fw_update       
 genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-005d/tp_fw_update                                                            u:object_r:sysfs_touchpanel:s0
 genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/tp_fw_update                                                  u:object_r:sysfs_touchpanel:s0
 
+# Touchscreen - gestures
+genfscon sysfs /devices/platform/soc/990000.i2c/i2c-4/4-0048/double_tap_pressed                                                      u:object_r:vendor_sysfs_sensors:s0
+
 # Fingerprint
-genfscon sysfs /devices/platform/soc/soc:goodix_fp/udfps_pressed u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/udfps_pressed                                                                     u:object_r:vendor_sysfs_sensors:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-9/9-005a/leds/vibrator                                                           u:object_r:sysfs_leds:s0
