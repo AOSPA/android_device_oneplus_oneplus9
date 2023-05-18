@@ -1787,7 +1787,6 @@ vendor/etc/sensors/config/sx9324up_0.json:odm/overlay/prj_11/vendor/etc/sensors/
 vendor/etc/sensors/config/sx9324_0.json:odm/overlay/prj_11/vendor/etc/sensors/config/sx9324_0.json|16ef8e653c46f1d2112a01b7b3553a5a9f7687e1
 vendor/etc/sensors/config/tcs3408.json:odm/overlay/prj_11/vendor/etc/sensors/config/tcs3408.json|9f181130430f284e096a8935c95352fd2cb9cf1d
 vendor/etc/sensors/config/tcs3707.json:odm/overlay/prj_11/vendor/etc/sensors/config/tcs3707.json|fc302908fa38190f4c6ebfe5b2200ddada161977
-vendor/etc/sensors/hals.conf:odm/overlay/prj_11/vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/etc/sensors/proto/descriptor.proto:odm/overlay/prj_11/vendor/etc/sensors/proto/descriptor.proto|e81dc0b96fa8cab38ec5aee65caa73c7ee89a88d
 vendor/etc/sensors/proto/nanopb.proto:odm/overlay/prj_11/vendor/etc/sensors/proto/nanopb.proto|851577006128dc034d9019723ba26d9e8f51d06b
 vendor/etc/sensors/proto/qti_gravity.proto:odm/overlay/prj_11/vendor/etc/sensors/proto/qti_gravity.proto|216b4819596f2f0c80ac78c261a63edef05a6a99
