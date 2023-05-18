@@ -3,3 +3,8 @@ allow init vendor_xdsp_device:chr_file {read open ioctl};
 allow init same_process_hal_file:file execute;
 allow init ion_device:chr_file {read open ioctl};
 allow init sysfs_touchpanel:file rw_file_perms;
+
+# OverlayFS
+allow init vendor_configs_file:dir mounton;
+allow init vendor_file:file mounton;
+allow init vendor_firmware_file:file mounton;

@@ -1,0 +1,24 @@
+# Copyright (C) 2021 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# OnePlus has some stuff that still isn't unified for their variants.
+# Instead of making a seperate target we can put the diff in /odm and overlay it.
+on init
+    mount overlay overlay /odm/etc lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/odm/etc:/odm/etc
+    mount overlay overlay /vendor/etc lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/vendor/etc:/vendor/etc
+    # Use bind mounts for hot directories with few files to avoid overlayfs lookup overheads
+    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/firmware/tfa98xx.cnt /vendor/firmware/tfa98xx.cnt bind
+    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so /vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so bind
+    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/lib64/hw/com.qti.chi.override.so /vendor/lib64/hw/com.qti.chi.override.so bind
+    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/lib64/hw/camera.qcom.so /vendor/lib64/hw/camera.qcom.so bind
