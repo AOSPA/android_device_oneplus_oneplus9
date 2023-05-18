@@ -52,6 +52,7 @@ void vendor_load_properties() {
             OverrideProperty("ro.product.product.device", "OnePlus9Pro");
         } else if (variant == "12") {
             OverrideProperty("ro.product.product.device", "OnePlus9");
+            OverrideProperty("ro.sf.lcd_density", "420");
         }
     }
 }
