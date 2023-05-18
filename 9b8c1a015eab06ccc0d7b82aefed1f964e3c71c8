@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0108e884_cc83cfe5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-05-18T06:39:24Z",
+      "side": 1,
+      "message": "Please remove 9 Pro changes.",
+      "revId": "9b8c1a015eab06ccc0d7b82aefed1f964e3c71c8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
