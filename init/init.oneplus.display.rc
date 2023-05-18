@@ -38,6 +38,10 @@ on boot
     chown system system /proc/touchpanel/i2c/double_tap_pressed
     chmod 0660 /proc/touchpanel/i2c/double_tap_pressed
 
+    # Single Tap Sensor
+    chown system system /proc/touchpanel/i2c/single_tap_pressed
+    chmod 0660 /proc/touchpanel/i2c/single_tap_pressed
+
 on fs
     # Trigger touchpanel firmware update
     write /proc/touchpanel/i2c/tp_fw_update 0
