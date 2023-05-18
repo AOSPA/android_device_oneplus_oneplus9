@@ -42,7 +42,7 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd|7d6596a
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd|4160e57be26f1ca99b857276be74c40294a26665
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b1d2f43214d8509cf5f3ca20092c7ca475be684e
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd|84537b77f8bdb72e23420f417c2d0a24da7a71a0
-vendor/etc/audio/sku_lahaina/audio_effects.xml|2e36c91a74cea7714cc37d8f490710bbdaec91e7
+vendor/etc/audio/sku_lahaina/audio_effects.xml|a6f3c94f71e13553964ff8d90c1f7247b9de5cb3
 vendor/etc/audio/sku_lahaina/audio_io_policy.conf|412152b21332ec09515bf412e89e539618964d03
 vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml|5b46f399054cd9de68fab596087e6e44704c7fa3
 vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml|d1deb2b192128680d993cc7687f20616e2ba17f9
@@ -779,7 +779,7 @@ vendor/lib64/libvdsuperphoto.so|8fb477fcc82bd3b18206100be09a82aa1d8b0545
 vendor/lib64/libyuv2.so|120a7fe2bccfce7b00895c8295f5060c5695e7b5
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|8ce4445a740878b231e8c43e8eba5807791e9e37
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|68bb5c723e0f18ba79e6f6e5d15d04f954541088
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74925f9b11de9721aa9b8dfa4b94f7c87a8baf33
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|040754908683f59ee1b5b7f962f659fbed3a515a
 
 # Charging
 vendor/bin/init.qti.chg_policy.sh
@@ -877,7 +877,7 @@ vendor/bin/qdcmss|a616f9aed56dba1e0f51f94ce0207b21b2deb2ac
 vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
 vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
 vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
-vendor/etc/display/advanced_sf_offsets.xml|057c9cb9dc617a6bc1edfb30debc05610e54985c
+vendor/etc/display/advanced_sf_offsets.xml|a06a6549bbf160349e02930781ab553bc0cc9cba
 vendor/etc/init/feature_enabler_client.rc|7c8e7cf20093d1a6d94d7de2debd53a7e51f8c29
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
@@ -1378,7 +1378,7 @@ vendor/lib64/libqcbor.so
 
 # Sensors - OOS
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
-vendor/bin/sensors.qti|2e3c0608c4c98357bb8bafbe87fa917c6819890c
+vendor/bin/sensors.qti|717a87a8a4b1a8264824898cd0ef29b14b728a4a
 vendor/bin/sscrpcd|c915d931c0caececdaa63978a7b23057e8bdf36d
 vendor/etc/init/init.vendor.sensors.rc|8d286f50fd261dc8843c6a208386b535cc07641e
 vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
