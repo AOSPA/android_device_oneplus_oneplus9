@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a443576_6c1b6c4e",
+        "filename": "overlay/OnePlus9SeriesFrameworks/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000845
+      },
+      "writtenOn": "2023-05-19T20:40:16Z",
+      "side": 1,
+      "message": "should this not be co.aospa.sensor.single_tap ?",
+      "revId": "9e1229a1627d77b789a55cf71d94581a20fe3d24",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
