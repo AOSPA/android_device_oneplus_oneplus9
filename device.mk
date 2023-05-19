@@ -173,12 +173,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
 
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1  \
-    persist.dbg.wfc_avail_ovr=1
-
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
