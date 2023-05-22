@@ -16,6 +16,24 @@
       "message": "should this not be co.aospa.sensor.single_tap ?",
       "revId": "9e1229a1627d77b789a55cf71d94581a20fe3d24",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01e3f76b_637d1fc2",
+        "filename": "overlay/OnePlus9SeriesFrameworks/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2023-05-22T07:38:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6a443576_6c1b6c4e",
+      "revId": "9e1229a1627d77b789a55cf71d94581a20fe3d24",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
