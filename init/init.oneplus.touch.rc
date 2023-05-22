@@ -17,6 +17,10 @@ on boot
     chown system system /sys/devices/platform/soc/990000.i2c/i2c-4/4-0048/double_tap_pressed
     chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-4/4-0048/double_tap_pressed
 
+    # Single Tap Sensor
+    chown system system /sys/devices/platform/soc/990000.i2c/i2c-4/4-0048/single_tap_pressed
+    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-4/4-0048/single_tap_pressed
+
 on fs
     # Trigger touchpanel firmware update
     write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-004b/tp_fw_update 0
