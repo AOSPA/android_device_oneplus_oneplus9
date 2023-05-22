@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54fdef3b_b864cbe3",
+        "filename": "init/init.oneplus.display.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2023-05-22T07:27:57Z",
+      "side": 1,
+      "message": "create a new file, init.oneplus.touch.rc",
+      "revId": "c0c5d2d80f947fd7facd4f9df74c5660317cf689",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "59851409_ecec881d",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2023-05-22T07:27:57Z",
+      "side": 1,
+      "message": "should go under # Touchpanel",
+      "revId": "c0c5d2d80f947fd7facd4f9df74c5660317cf689",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
