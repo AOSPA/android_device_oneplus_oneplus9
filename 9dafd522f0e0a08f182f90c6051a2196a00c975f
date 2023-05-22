@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c05a35a_dffbab14",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2023-05-22T07:28:49Z",
+      "side": 1,
+      "message": "https://gerrit.aospa.co/c/AOSPA/android_device_oneplus_oneplus9/+/30298/comment/54fdef3b_b864cbe3/\nhttps://gerrit.aospa.co/c/AOSPA/android_device_oneplus_oneplus9/+/30298/comment/59851409_ecec881d/",
+      "revId": "9dafd522f0e0a08f182f90c6051a2196a00c975f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
