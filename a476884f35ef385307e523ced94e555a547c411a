@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5fa2fcb0_49a21d7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000469
+      },
+      "writtenOn": "2023-05-22T03:19:49Z",
+      "side": 1,
+      "message": "Don\u0027t think this works: https://github.com/AOSPA/android_system_libhidl/blob/44224531998214ad44d700e6a57793cb28aed507/transport/HidlTransportSupport.cpp#L77",
+      "revId": "a476884f35ef385307e523ced94e555a547c411a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
