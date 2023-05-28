@@ -170,4 +170,8 @@
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
 
+    <!-- Allow the gesture power + volume up to change the ringer mode while the device
+         is interactive. -->
+    <bool name="config_volumeHushGestureEnabled">false</bool>
+
 </resources>
