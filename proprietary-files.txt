@@ -1595,6 +1595,21 @@ vendor/firmware/vpu20_4v.mbn|7981354b8d0b94b568231f013633822356a78a4c
 vendor/firmware/vpu20_4v.mdt|4afaaf8386200a4ccba195f07cd8b59c2771e226
 vendor/firmware/vpu20_4v_unsigned.mbn|315d4277df2a03163377cb5a1a247005cf3b0eb0
 
+# Vibrator (Prebuilt) - OOS
+odm/etc/aac_richtap.config|64cee1be5b7957c37fa770c720531f68b4209ff7
+vendor/bin/hw/vendor.oneplus.hardware.lmvibrator@1.0-service|ee0f61d122bb1cef033278cd407aff8f7a67a392
+vendor/bin/hw/vendor.qti.hardware.vibrator.service|0f4d5e52872db53d30bd5b5edbaea17d34ec90af
+vendor/etc/init/vendor.oneplus.hardware.lmvibrator@1.0-service.rc|8da80426dff98045811df287846c0931de3884ac
+vendor/etc/init/vendor.qti.hardware.vibrator.service.rc|66eb6c772f7fbb58541eed8a9ee6fde87848de8a
+vendor/lib/hw/vibrator.default.so|805d0fdf9dcd7f3cdbaa1686cd04d870af066f75
+vendor/lib64/hw/vibrator.default.so|0fbac9772353a715f59e12ae4b0c6868bb138a6e
+vendor/lib64/libaacvibrator.so|00a76dfb4db9ff80d33c3034c6f6940a71b62ee1
+vendor/lib64/libqtivibratoreffect.so|23bcbfcfcd3199646e4dcdb3e16c685bf595328e
+vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so|e1a0caf99c5abd6cf2afe19134fbf3b8dbf7aa47
+vendor/lib64/vendor.oneplus.hardware.lmvibrator@1.0.so|dce35df8830de5f69e5f91235fe223f47ce4f5bd
+vendor/lib64/vendor.qti.hardware.vibrator.impl.so|0130eb04a10e1b351127fe167229d8988e7988c0
+-vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml|08a0ebee8a556b352fff4bf9981c4beff71bb26f
+
 # Vibrator - OOS
 vendor/firmware/100ms_RTP.bin|53d01a8a09986b43ca4c3e706f54b0cef1152a6e
 vendor/firmware/120ms_RTP.bin|bd7de4df7e6681b5b7cf9d5a47e49b33d696e3e8

@@ -72,4 +72,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Vibrator -->
+    <hal format="hidl" optional="true">
+        <name>vendor.oneplus.hardware.lmvibrator</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILinearMotorVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

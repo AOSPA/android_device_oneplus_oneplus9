@@ -11,3 +11,7 @@ vendor.oneplus.hardware.display::IOneplusDisplay                           u:obj
 # Fingerprint
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon    u:object_r:hal_oneplus_fingerprint_hwservice:s0
 vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_oneplus_fingerprint_hwservice:s0
+
+# Vibrator
+vendor.aac.hardware.richtap.vibrator::IRichtapVibrator                      u:object_r:hal_vibrator_hwservice:s0
+vendor.oneplus.hardware.lmvibrator::ILinearMotorVibrator                    u:object_r:hal_vibrator_hwservice:s0
