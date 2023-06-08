@@ -45,7 +45,6 @@ vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd|84537b77f8bdb72e2
 vendor/etc/audio/sku_lahaina/audio_effects.xml|a6f3c94f71e13553964ff8d90c1f7247b9de5cb3
 vendor/etc/audio/sku_lahaina/audio_io_policy.conf|412152b21332ec09515bf412e89e539618964d03
 vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml|5b46f399054cd9de68fab596087e6e44704c7fa3
-vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml|d1deb2b192128680d993cc7687f20616e2ba17f9
 vendor/etc/audio/sku_lahaina/audio_tuning_mixer.txt|d71705f2afac42ccdac2a5726aa9f18e5cb0b080
 vendor/etc/audio/sku_lahaina/mixer_paths.xml|df1425e6f241a79bb07234bf5a19d55808bc372b
 vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml|438b98504de2e07f7519e9e29916326e61dc239e
