@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018,2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018,2020-2021, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -58,18 +58,45 @@ class LedVibratorDevice {
 public:
     LedVibratorDevice();
     int on(int32_t timeoutMs);
+    int onWaveform(int waveformIndex);
     int off();
-    int setAmplitude(float amplitude);
     bool mDetected;
-    float mAmplitude;
-    int mGain;
     int write_value(const char *file, const char *value);
+    int write_value(const char *file, int value);
 };
+
+#ifdef TARGET_SUPPORTS_OFFLOAD
+class OffloadGlinkConnection {
+public:
+    int GlinkOpen(std::string& dev);
+    int GlinkClose();
+    int GlinkPoll();
+    int GlinkRead(uint8_t *data, size_t size);
+    int GlinkWrite(uint8_t *buf, size_t buflen);
+private:
+    std::string dev_name;
+    int fd;
+};
+
+class PatternOffload {
+public:
+    PatternOffload();
+    void SSREventListener(void);
+    void SendPatterns();
+private:
+    OffloadGlinkConnection GlinkCh;
+    int initChannel();
+    int sendData(uint8_t *data, int len);
+};
+#endif
 
 class Vibrator : public BnVibrator {
 public:
     class InputFFDevice ff;
     class LedVibratorDevice ledVib;
+#ifdef TARGET_SUPPORTS_OFFLOAD
+    class PatternOffload Offload;
+#endif
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs,
