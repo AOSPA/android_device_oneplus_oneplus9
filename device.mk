@@ -130,6 +130,9 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/display/display_id_4630946797824131201.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946797824131201.xml
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor \
     vendor.oneplus.hardware.display@1.0.vendor
