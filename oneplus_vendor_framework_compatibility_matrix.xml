@@ -14,22 +14,21 @@
 -->
 <compatibility-matrix version="1.0" type="framework">
     <!-- Camera -->
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.camera.cameraextension</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IOnePlusCameraMDM</name>
-            <instance>default</instance>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.camera</name>
-        <transport>hwbinder</transport>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cameraextension</name>
         <version>1.0</version>
         <interface>
-            <name>IOnePlusCameraProvider</name>
-            <instance>default</instance>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
         </interface>
     </hal>
     <!-- Charging -->

@@ -13,25 +13,6 @@
      limitations under the License.
 -->
 <manifest version="1.0" type="device">
-    <!-- Camera -->
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraMDM</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.camera</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraProvider</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- Charging -->
     <hal format="hidl">
         <name>vendor.oneplus.hardware.charger</name>

@@ -16,9 +16,7 @@
 # Instead of making a seperate target we can put the diff in /odm and overlay it.
 on init
     mount overlay overlay /odm/etc lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/odm/etc:/odm/etc
+    mount overlay overlay /odm/lib64 lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/odm/lib64:/odm/lib64
     mount overlay overlay /vendor/etc lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/vendor/etc:/vendor/etc
     # Use bind mounts for hot directories with few files to avoid overlayfs lookup overheads
     mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/firmware/tfa98xx.cnt /vendor/firmware/tfa98xx.cnt bind
-    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so /vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so bind
-    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/lib64/hw/com.qti.chi.override.so /vendor/lib64/hw/com.qti.chi.override.so bind
-    mount none /odm/overlay/prj_${ro.boot.prj_version}/vendor/lib64/hw/camera.qcom.so /vendor/lib64/hw/camera.qcom.so bind

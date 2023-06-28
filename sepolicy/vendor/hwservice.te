@@ -6,3 +6,9 @@ type hal_display_hwservice, hwservice_manager_type;
 
 # Fingerprint
 type hal_oneplus_fingerprint_hwservice, hwservice_manager_type;
+
+# ORMS
+type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
+
+# OSENSE
+type vendor_hal_osense_hwservice, hwservice_manager_type, protected_hwservice;

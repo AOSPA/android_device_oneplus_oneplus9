@@ -104,8 +104,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libcamera2ndk_vendor \
-    libstdc++.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 # Charging
@@ -363,6 +361,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.oneplus9
 
 # VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v30.so
+
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # WLAN

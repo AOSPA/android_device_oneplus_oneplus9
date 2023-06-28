@@ -1,6 +1,5 @@
 # Camera
-vendor.oneplus.hardware.CameraMDMHIDL::IOnePlusCameraMDM                   u:object_r:hal_camera_hwservice:s0
-vendor.oneplus.hardware.camera::IOnePlusCameraProvider                     u:object_r:hal_camera_hwservice:s0
+vendor.oplus.hardware.cammidasservice::IMIDASService    u:object_r:hal_camera_hwservice:s0
 
 # Charger
 vendor.oneplus.hardware.charger::ICharger                                  u:object_r:hal_oplus_charger_hwservice:s0
@@ -11,3 +10,9 @@ vendor.oneplus.hardware.display::IOneplusDisplay                           u:obj
 # Fingerprint
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon    u:object_r:hal_oneplus_fingerprint_hwservice:s0
 vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_oneplus_fingerprint_hwservice:s0
+
+# ORMS
+vendor.oplus.hardware.orms::IOrmsHalProxy    u:object_r:vendor_hal_orms_hwservice:s0
+
+# Osense
+vendor.oplus.hardware.osense.client::IOsenseHalReporter                 u:object_r:vendor_hal_osense_hwservice:s0

@@ -3,7 +3,7 @@ type vendor_persist_tri_state_key_file, file_type;
 type vendor_sysfs_tri_state_key, sysfs_type, fs_type;
 
 # Camera
-type persist_camera_file, file_type;
+type vendor_persist_camera_file, file_type;
 type sysfs_camera, fs_type, sysfs_type;
 
 # Display
