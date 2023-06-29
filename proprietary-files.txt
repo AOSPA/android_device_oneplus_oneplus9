@@ -1163,42 +1163,8 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
-# QTEE
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_listener.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
-
-# QSEECOM
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
-vendor/etc/init/qseecomd.rc
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-
-# QSPM HAL
-vendor/bin/vendor.qti.qspmhal@1.0-service
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
-vendor/etc/seccomp_policy/qspm.policy
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
-
 # RemoteFS - OOS (13 - F.20)
-vendor/bin/rm_storage|bd7eb2864e49d7aa0b8fbd7e0839707e3f2ddf60
+vendor/bin/rmt_storage|bd7eb2864e49d7aa0b8fbd7e0839707e3f2ddf60
 
 # RemoteFS
 vendor/etc/init/vendor.qti.rmt_storage.rc
