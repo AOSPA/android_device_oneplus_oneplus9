@@ -1,9 +1,5 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <displayConfiguration>
-    <screenBrightnessRampFastDecrease>0.5</screenBrightnessRampFastDecrease>
-    <screenBrightnessRampFastIncrease>0.5</screenBrightnessRampFastIncrease>
-    <screenBrightnessRampSlowDecrease>0.04</screenBrightnessRampSlowDecrease>
-    <screenBrightnessRampSlowIncrease>0.05</screenBrightnessRampSlowIncrease>
     <!-- Global Brightness-Nit mapping -->
     <screenBrightnessMap>
         <point>
