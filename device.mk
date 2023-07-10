@@ -251,6 +251,8 @@ PRODUCT_COPY_FILES += \
 TARGET_BOARD_PLATFORM := lahaina
 
 # QTI
+# Use 5.10 blobs for adreno.
+TARGET_ADRENO_COMPONENT_VARIANT := adreno
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     alarm \
