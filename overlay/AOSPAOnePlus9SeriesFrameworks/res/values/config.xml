@@ -68,4 +68,7 @@
          Should be set to dt2w max time / 2 when needed -->
     <integer name="config_singleTapDelay">250</integer>
 
+    <!-- Enforce DisplayModeDirector to select user preferred resolution -->
+    <bool name="config_forceToUseSelectedResolution">true</bool>
+
 </resources>
