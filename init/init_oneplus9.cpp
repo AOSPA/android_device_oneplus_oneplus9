@@ -54,7 +54,6 @@ void vendor_load_properties() {
             OverrideProperty("ro.surface_flinger.set_touch_timer_ms", "300");
         } else if (variant == "12") {
             OverrideProperty("ro.product.product.device", "OnePlus9");
-            OverrideProperty("ro.sf.lcd_density", "420");
         }
     }
 }
