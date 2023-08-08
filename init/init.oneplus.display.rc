@@ -46,20 +46,47 @@ on fs
     # Trigger touchpanel firmware update
     write /proc/touchpanel/i2c/tp_fw_update 0
 
-# Set sRGB calibration on Natural and Boosted Mode.
 on property:persist.sys.sf.native_mode=0
+    write /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 0
+
+on property:persist.sys.sf.native_mode=256
+    write /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode 1
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 0
+
+on property:persist.sys.sf.native_mode=257
+    write /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode 1
+    write /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 0
+
+on property:persist.sys.sf.native_mode=258
+    write /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode 0
     write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
     write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 1
+    write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 0
 
-# Set unmanaged calibration on Saturated Mode.
-on property:persist.sys.sf.native_mode=1
-    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
-    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
-
-# Set P3 calibration on Adaptive/Automatic Mode.
-on property:persist.sys.sf.native_mode=2
-    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+on property:persist.sys.sf.native_mode=259
+    write /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode 0
     write /sys/class/drm/card0-DSI-1/native_display_p3_mode 1
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 0
+
+on property:persist.sys.sf.native_mode=260
+    write /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_wide_color_mode 1
 
 # Route touch_sensitivity_mode to persist
 on property:debug.touch_polling_mode=0
