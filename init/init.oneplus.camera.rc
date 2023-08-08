@@ -12,6 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+on fs
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/alg_setting
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_apply_config_calib
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_apply_fac_calib
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_apply_state_data
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_iterations
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_trim_enable
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_trim_set
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_command
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_ctrl_reg
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_diag_state_mask
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_general_configuration
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_get_distance
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_get_fac_calib
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_reflectivity_count
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_temp
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_tof_output
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/capture_delay
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/capture
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/gpio_setting
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/iterations
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/noise_threshold
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/period
+    chown cameraserver cameraserver /sys/kernel/tof_control/bootloader
+    chown cameraserver cameraserver /sys/kernel/tof_control/chip_enable
+    chown cameraserver cameraserver /sys/kernel/tof_control/driver_debug
+    chown cameraserver cameraserver /sys/kernel/tof_control/program_version
+    chown cameraserver cameraserver /sys/kernel/tof_control/program
+    chown cameraserver cameraserver /sys/kernel/tof_control/register_write
+    chown cameraserver cameraserver /sys/kernel/tof_control/registers
+    chown cameraserver cameraserver /sys/kernel/tof_control/request_ram_patch
+
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
     override
     interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
