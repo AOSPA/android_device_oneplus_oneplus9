@@ -5,8 +5,8 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                                     u:object_r:vendor_persist_camera_file:s0
 /mnt/vendor/persist/dual_camera_calibration(/.*)?                                                                    u:object_r:vendor_persist_camera_file:s0
-/sys/kernel/tof_control(/.*)?                                                                                        u:object_r:sysfs_camera:s0
-/sys/kernel/ois_control/dump_registers                                                                               u:object_r:sysfs_camera:s0
+/sys/kernel/tof_control(/.*)?                                                                                        u:object_r:vendor_sysfs_camera:s0
+/sys/kernel/ois_control/dump_registers                                                                               u:object_r:vendor_sysfs_camera:s0
 
 # Charger
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.charger@1\.0-service                                       u:object_r:hal_oplus_charger_default_exec:s0

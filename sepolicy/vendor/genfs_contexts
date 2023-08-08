@@ -14,7 +14,7 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/auth_status                                         u:object_r:vendor_sysfs_graphics:s0
 
 # Camera
-genfscon sysfs /kernel/tof_control                                                                                                   u:object_r:sysfs_camera:s0
+genfscon sysfs /kernel/tof_control                                                                                                   u:object_r:vendor_sysfs_camera:s0
 
 # Charging
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply/battery                                                          u:object_r:vendor_sysfs_battery_supply:s0
