@@ -70,9 +70,6 @@ AUDIO_FEATURE_ENABLED_SSR := false
 # Biometrics
 TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus9
 
-# Camera
-TARGET_USES_OPLUS_CAMERA := true
-
 # Display density
 TARGET_SCREEN_DENSITY := 480
 
