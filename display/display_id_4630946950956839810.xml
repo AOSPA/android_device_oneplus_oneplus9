@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <displayConfiguration>
     <highBrightnessMode enabled="true">
-        <transitionPoint>0.49975574</transitionPoint> <!-- 1023/2047 -->
+        <transitionPoint>0.49987789987</transitionPoint> <!-- 2047/4095 -->
         <minimumLux>6000</minimumLux>
         <timing>
             <timeWindowSecs>600</timeWindowSecs>
