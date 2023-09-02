@@ -27,8 +27,6 @@
     </string-array>
 
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
-    <integer name="config_doubleTapKeyCode">143</integer>
-    <integer name="config_singleTapKeyCode">262</integer>
     <integer name="config_drawVKeyCode">248</integer>
     <integer name="config_drawInverseVKeyCode">249</integer>
     <integer name="config_drawOKeyCode">252</integer>
