@@ -219,14 +219,6 @@ PRODUCT_PACKAGES += \
     OnePlus9SystemUI \
     WifiResTarget
 
-# ParanoidDoze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sensor.pickup=android.sensor.tilt_detector \
-    ro.sensor.pickup.value=0
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
