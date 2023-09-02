@@ -21,6 +21,14 @@ on boot
     chown system system /sys/kernel/oplus_display/panel_serial_number
     chown system system /sys/kernel/oplus_display/power_status
 
+    # Double Tap Sensor
+    chown system system /proc/touchpanel/i2c/double_tap_pressed
+    chmod 0660 /proc/touchpanel/i2c/double_tap_pressed
+
+    # Single Tap Sensor
+    chown system system /proc/touchpanel/i2c/single_tap_pressed
+    chmod 0660 /proc/touchpanel/i2c/single_tap_pressed
+
 on fs
     # Trigger touchpanel firmware update
     write /proc/touchpanel/tp_fw_update 0

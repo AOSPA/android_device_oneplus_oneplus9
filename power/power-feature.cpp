@@ -22,7 +22,6 @@ namespace power {
 
 // based on values in touchpanel_common.h
 static const std::unordered_map<Feature, int> GESTURE_MAP = {
-    {Feature::DOUBLE_TAP, 1},
     {Feature::DRAW_V, 2},
     {Feature::DRAW_INVERSE_V, 3},
     {Feature::DRAW_O, 6},
@@ -36,7 +35,6 @@ static const std::unordered_map<Feature, int> GESTURE_MAP = {
     {Feature::ONE_FINGER_SWIPE_LEFT, 9},
     {Feature::TWO_FINGER_SWIPE, 7},
     {Feature::DRAW_S, 18},
-    {Feature::SINGLE_TAP, 16},
 };
 
 bool setDeviceSpecificFeature(Feature feature, bool enabled) {
