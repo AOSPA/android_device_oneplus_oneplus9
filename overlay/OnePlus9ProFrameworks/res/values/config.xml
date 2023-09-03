@@ -149,6 +149,7 @@
         <item>940</item>
         <item>960</item>
         <item>1000</item>
+        <item>1100</item>
     </array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
@@ -213,6 +214,7 @@
         <item>208271</item>
         <item>223180</item>
         <item>255108</item>
+        <item>380000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
