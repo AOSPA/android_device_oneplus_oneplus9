@@ -1,5 +1,6 @@
 # Camera
-vendor.oplus.hardware.cammidasservice::IMIDASService    u:object_r:hal_camera_hwservice:s0
+vendor.oplus.hardware.cammidasservice::IMIDASService                   u:object_r:hal_camera_hwservice:s0
+vendor.oplus.hardware.cameraextension::ICameraExtensionService         u:object_r:vendor_hal_camera_extension_hwservice:s0
 
 # Fingerprint
 vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint    u:object_r:hal_fingerprint_hwservice:s0
