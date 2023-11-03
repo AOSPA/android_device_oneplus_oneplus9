@@ -77,7 +77,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # Display density
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 480
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
