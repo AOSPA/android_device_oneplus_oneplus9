@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/oplus-camera.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
