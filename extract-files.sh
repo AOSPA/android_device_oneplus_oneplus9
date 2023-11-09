@@ -61,6 +61,9 @@ function blob_fixup() {
         odm/overlay/prj_11/odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             ;;
+        product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
+            sed -i "s/my_product/product/" "${2}"
+            ;;
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
