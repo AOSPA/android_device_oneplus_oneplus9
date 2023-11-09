@@ -22,6 +22,7 @@
 
 # OverlayFS
 /odm/overlay/prj_11(/.*)?                                                                                            u:object_r:vendor_configs_file:s0
+/odm/overlay/prj_12(/.*)?                                                                                            u:object_r:vendor_configs_file:s0
 /odm/overlay/prj_11/vendor/firmware(/.*)?                                                                            u:object_r:vendor_firmware_file:s0
 
 # Partitions

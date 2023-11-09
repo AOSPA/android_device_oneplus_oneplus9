@@ -805,20 +805,6 @@ odm/lib64/camera/arcsoft_calibration_wt.bin|85a277ab96283ca79011109666b881313338
 odm/lib64/camera/arcsoft_dc_calibration_t.bin|09a9a7db650686653b21529ecbd0a65c38ffb5f4
 odm/lib64/camera/arcsoft_dc_calibration_u.bin|1c28e8d987dc4699101fdc372f5f94453c43efb6
 odm/lib64/camera/arcsoft_dc_calibration_w.bin|eadef5ead401e60ee10b7490521eae582044c69a
-odm/lib64/camera/com.qti.sensor.gc02m1b.lemonade.so|3a48e82c6082ec14c2877c87f742be88a84b9961
-odm/lib64/camera/com.qti.sensor.imx471.lemonade.so|5fa4a9bfb835c71e22ef508636339e128486371b
-odm/lib64/camera/com.qti.sensor.imx689.lemonade.so|d1a57e7926db6a20214fe623e32a021de5c4815a
-odm/lib64/camera/com.qti.sensor.imx766.lemonade.so|0e1986ce0ee43c0b89b2f17726b0b4142c7ac931
-odm/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin|a5a6d0396b90df6cfb9f420de3ffddb96955e2cf
-odm/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin|becc4434aa33c51aa09dd9be019ee49d26540606
-odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin|c6f68d56ce2b5cc654bd539fbc4cd46275284fe2
-odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin|10a0a9f7c7ccb3544c169dc54130a2d9576688a5
-odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin|e4a3944a937d525a1384ec94facefc0de7a0c368
-odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin|e964b1f1c4a6f5e95646a9fc53183d5550c38463
-odm/lib64/camera/com.qti.tuned.semco_imx689.bin|7b2a43dd0c6d23057d7f0b7a9db9052608f38deb
-odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin|f3757a70d28c6136b7fb80028119b7356755278c
-odm/lib64/camera/com.qti.tuned.sunny_imx766.bin|d4619688118f2a40a757391f7d41dc6512a50a78
-odm/lib64/camera/com.qti.tuned.truly_imx471.bin|28cfabc852efba025335e38649e3a802b25d6ee3
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so|9b338385ebcf29d0394b774faad9e4dc64a41c01
 odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so|f50f6692a2a3146fc4e6ee321ea3b319116c5703
 odm/lib64/camera/components/com.oplus.node.preview.so|94509c13bcdb2c3769fad4cd96562d9d565b8ece
@@ -1068,7 +1054,7 @@ vendor/lib64/libthreadutils.so|6ab1d3ce2d2b7e7c36bff6cda4e0f450e303a1de
 vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so|4030c69284553a8de25a371aad5324cc5f306000
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|bf9174821ff9c980b80898057f7025f82fd32477
 vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|5df4a49fde6206da1ceed26aa93144ed43fab7f7
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74cb9bfeeb96df0b707654d662042133ffb23c1a
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|38ff048bb7f0a372e0d6ae88144bef2c01b8d10f
 
 # Charging
 vendor/bin/init.qti.chg_policy.sh
@@ -1184,7 +1170,7 @@ odm/vendor/firmware/goodixfp.b07|6153a4ad6cd210fc1f5933adf7a01c32016b5897
 odm/vendor/firmware/goodixfp.mdt|c16032d56cd5f7eb892053c2be83649e95cf9817
 
 # Hotword Enrollment - OOS
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|b869af2708a1ec021cc72165f994d720c8680485
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|74f42fc8c262cad9759e9135a80f909a557699f9
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|3e13e86b36c967a28ff2cef973c51e2e6d29e157
 my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogle.apk|8731f03058b6b32b7f976f49ee9cc947bdacb532
 my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogle.apk|f6657503609b4bb91a9f45ec2e2e659f8f7b0aae
@@ -1951,8 +1937,23 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:odm/overlay/prj_11/
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:odm/overlay/prj_11/odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt|ba68135f46e91dad25f4ce6a93d5ac2384a3a03b
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:odm/overlay/prj_11/odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt|166d8320b6035830fa67096b100cde9cdcc53bd3
 
+# Camera Sensor - OOS
+odm/lib64/camera/com.qti.sensor.gc02m1b.lemonade.so:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensor.gc02m1b.lemonade.so|3a48e82c6082ec14c2877c87f742be88a84b9961
+odm/lib64/camera/com.qti.sensor.imx471.lemonade.so:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensor.imx471.lemonade.so|5fa4a9bfb835c71e22ef508636339e128486371b
+odm/lib64/camera/com.qti.sensor.imx689.lemonade.so:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensor.imx689.lemonade.so|d1a57e7926db6a20214fe623e32a021de5c4815a
+odm/lib64/camera/com.qti.sensor.imx766.lemonade.so:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensor.imx766.lemonade.so|0e1986ce0ee43c0b89b2f17726b0b4142c7ac931
+odm/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensormodule.lemonade.semco_imx689.bin|a5a6d0396b90df6cfb9f420de3ffddb96955e2cf
+odm/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensormodule.lemonade.shine_gc02m1b.bin|becc4434aa33c51aa09dd9be019ee49d26540606
+odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766.bin|c6f68d56ce2b5cc654bd539fbc4cd46275284fe2
+odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_MP.bin|10a0a9f7c7ccb3544c169dc54130a2d9576688a5
+odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensormodule.lemonade.sunny_imx766_ak7375c.bin|e4a3944a937d525a1384ec94facefc0de7a0c368
+odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.sensormodule.lemonade.truly_imx471.bin|e964b1f1c4a6f5e95646a9fc53183d5550c38463
+odm/lib64/camera/com.qti.tuned.semco_imx689.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.tuned.semco_imx689.bin|7b2a43dd0c6d23057d7f0b7a9db9052608f38deb
+odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.tuned.shine_gc02m1b.bin|f3757a70d28c6136b7fb80028119b7356755278c
+odm/lib64/camera/com.qti.tuned.sunny_imx766.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.tuned.sunny_imx766.bin|d4619688118f2a40a757391f7d41dc6512a50a78
+odm/lib64/camera/com.qti.tuned.truly_imx471.bin:odm/overlay/prj_12/odm/lib64/camera/com.qti.tuned.truly_imx471.bin|28cfabc852efba025335e38649e3a802b25d6ee3
 
-# Camera (Pro) - OOS
+# Camera Sensor (Pro) - OOS
 odm/etc/camera/config/camera_unit_config:odm/overlay/prj_11/odm/etc/camera/config/camera_unit_config|803e750571f61ae50597caf8c225eeb40512dc4e
 odm/etc/camera/config/oplus_camera_aps_config:odm/overlay/prj_11/odm/etc/camera/config/oplus_camera_aps_config|69c3c942290c3de9b2e6cff8741877680f3b5a09
 odm/etc/camera/config/oplus_camera_config:odm/overlay/prj_11/odm/etc/camera/config/oplus_camera_config|acfa4d392d864bf01fc9bce23035d1ab2cfccb6b
