@@ -40,6 +40,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.overlay.rc",
+    src: "init.oplus.overlay.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.perf.rc",
     src: "init.oplus.perf.rc",
     sub_dir: "init",
