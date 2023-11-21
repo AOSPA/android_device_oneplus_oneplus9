@@ -208,6 +208,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
