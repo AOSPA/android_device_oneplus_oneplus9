@@ -127,6 +127,9 @@ BOARD_KERNEL_PAGESIZE := 4096
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
 USE_KERNEL_AOSP_LLVM := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/chg_enable
+
 # OTA
 TARGET_OTA_ASSERT_DEVICE := OnePlus9,oneplus9
 
