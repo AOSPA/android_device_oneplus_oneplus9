@@ -250,6 +250,10 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
+# Powershare
+PRODUCT_PACKAGES += \
+    vendor.aospa.powershare-service
+
 # QTEE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qteeconnector.retrying_interval=30 \
