@@ -50,3 +50,6 @@ genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/oplus_chg/usb/wakeup u:o
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,common-charge/oplus_chg/common/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/wireless/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/wakeup u:object_r:sysfs_wakeup:s0
+
+# Wireless Charging (Reverse)
+genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/wireless/trx_online  u:object_r:sysfs_powershare:s0
