@@ -34,7 +34,20 @@ void OverrideProperty(const char* name, const char* value) {
  */
 void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
+    auto prjname = std::stoi(GetProperty("ro.boot.prj_version", "0"));
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
+
+    switch (prjname) {
+        case 11:
+            OverrideProperty("ro.product.product.device", "OnePlus9Pro");
+            OverrideProperty("ro.surface_flinger.set_idle_timer_ms", "250");
+            OverrideProperty("ro.surface_flinger.set_touch_timer_ms", "300");
+            break;
+        case 12:
+            OverrideProperty("ro.product.product.device", "OnePlus9");
+        default:
+            LOG(ERROR) << "Unexpected prj version: " << prjname;
+    }
 
     switch (rf_version) {
         case 11: // CN
