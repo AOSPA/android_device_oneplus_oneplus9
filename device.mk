@@ -249,12 +249,14 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     OnePlus9Frameworks \
     OnePlus9ProFrameworks \
+    OnePlus9ProSettings \
     OnePlus9ProSettingsProvider \
     OnePlus9ProSystemUI \
     OnePlus9SeriesCarrierConfig \
     OnePlus9SeriesFrameworks \
     OnePlus9SeriesSettings \
     OnePlus9SeriesSystemUI \
+    OnePlus9Settings \
     OnePlus9SettingsProvider \
     OnePlus9SystemUI \
     WifiResTarget
