@@ -76,6 +76,9 @@ function blob_fixup() {
         odm/lib/libdlbdsservice_v3_6.so | odm/lib/libstagefright_soft_ddpdec.so | odm/lib/libstagefrightdolby.so | odm/lib64/libdlbdsservice_v3_6.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
+        odm/lib64/libAlgoProcess.so)
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
+            ;;
     esac
 }
 
