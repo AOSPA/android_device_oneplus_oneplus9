@@ -11,8 +11,20 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+on boot
+    # Double Tap Sensor
+    chown system system /proc/touchpanel/i2c/double_tap_pressed
+    chmod 0660 /proc/touchpanel/i2c/double_tap_pressed
 
-# Route touch_polling_mode to persist
+    # Single Tap Sensor
+    chown system system /proc/touchpanel/i2c/single_tap_pressed
+    chmod 0660 /proc/touchpanel/i2c/single_tap_pressed
+
+on fs
+    # Trigger touchpanel firmware update
+    write /proc/touchpanel/tp_fw_update 0
+
+# Route touch_sensitivity_mode to persist
 on property:debug.touch_polling_mode=0
     setprop persist.vendor.touch_polling_mode 0
 
