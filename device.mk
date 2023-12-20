@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/oneplus9pro/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/prj_11/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
 
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
