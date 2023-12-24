@@ -14,5 +14,5 @@
 
 runtime_resource_overlay {
     name: "AOSPAOnePlus9SystemUI",
-    system_ext_specific: true,
+    product_specific: true,
 }
