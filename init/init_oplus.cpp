@@ -45,6 +45,7 @@ void vendor_load_properties() {
             break;
         case 12:
             OverrideProperty("ro.product.odm.device", "OnePlus9");
+            break;
         default:
             LOG(ERROR) << "Unexpected prj version: " << prjname;
     }
