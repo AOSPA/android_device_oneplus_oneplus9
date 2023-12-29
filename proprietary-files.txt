@@ -1309,25 +1309,27 @@ vendor/lib64/libmmosal.so
 # Media
 vendor/bin/hw/qconfigservice
 vendor/etc/init/qconfig.rc
-vendor/etc/media/video_system_specs.json
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_lahaina.xml
-vendor/etc/media_codecs_lahaina_vendor.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_performance_lahaina.xml
-vendor/etc/media_codecs_performance_lahaina_vendor.xml
-vendor/etc/media_lahaina/video_system_specs.json
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_lahaina.xml
-vendor/etc/media_profiles_lahaina_vendor.xml
-vendor/etc/media_profiles_vendor.xml
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqconfigclient.so
 vendor/lib/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib64/libqc2vppfilter.so
 vendor/lib64/libqconfigclient.so
 vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
+
+# Media Profiles - OOS
+vendor/etc/media/video_system_specs.json|d0732bff6336fa90adfcf6ca010e0e9d0114292e
+vendor/etc/media_codecs.xml|bcffcafa991770a2a8e8824c0fc3c002ec9c45a8
+vendor/etc/media_codecs_lahaina.xml|bcffcafa991770a2a8e8824c0fc3c002ec9c45a8
+vendor/etc/media_codecs_lahaina_vendor.xml|afe967c169b49c8ffe29d5da13495a3eb21c22bf
+vendor/etc/media_codecs_performance.xml|71212178fec0dd6a2b8adc6fedd8bdde4fd1e800
+vendor/etc/media_codecs_performance_lahaina.xml|71212178fec0dd6a2b8adc6fedd8bdde4fd1e800
+vendor/etc/media_codecs_performance_lahaina_vendor.xml|e44af59b8611195339bd416e4902dd7c820f194b
+vendor/etc/media_lahaina/video_system_specs.json|47648fbcc295dc9d9878c6d20b0fb22f6fd722e8
+vendor/etc/media_profiles.xml|981dd4a7ffb9020aa1142930ff3ae6d07bda12aa
+vendor/etc/media_profiles_V1_0.xml|2da4310e65720a36ee8422228959795f467f102e
+vendor/etc/media_profiles_lahaina.xml|30e3d2862021cc6bd60f1fa29eaef64126ce07bc
+vendor/etc/media_profiles_lahaina_vendor.xml|30e3d2862021cc6bd60f1fa29eaef64126ce07bc
+vendor/etc/media_profiles_vendor.xml|30e3d2862021cc6bd60f1fa29eaef64126ce07bc
 
 # NFC
 vendor/etc/libnfc-mtp-SN100.conf
