@@ -171,6 +171,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     vendor.display.primary_mixer_stages=9
 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.display.active_config=1080x2412
+
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
