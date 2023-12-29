@@ -42,9 +42,11 @@ void vendor_load_properties() {
             OverrideProperty("ro.product.odm.device", "OnePlus9Pro");
             OverrideProperty("ro.surface_flinger.set_idle_timer_ms", "250");
             OverrideProperty("ro.surface_flinger.set_touch_timer_ms", "300");
+            OverrideProperty("persist.vendor.display.active_config", "1080x2412");
             break;
         case 12:
             OverrideProperty("ro.product.odm.device", "OnePlus9");
+            break;
         default:
             LOG(ERROR) << "Unexpected prj version: " << prjname;
     }
