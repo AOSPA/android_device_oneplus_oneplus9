@@ -313,7 +313,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.poweron_opt=1 \
-    persist.vendor.radio.stack_id_1=1
+    persist.vendor.radio.stack_id_1=1 \
+    ro.vendor.oplus.radio.project=2 \
+    ro.vendor.oplus.radio.sar_regionmark=FCC
 
 # Sensors
 PRODUCT_COPY_FILES += \
