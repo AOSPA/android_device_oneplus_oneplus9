@@ -12,19 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
-    class core
-    user root
-    group root system wakelock graphics
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    start oplus-post-boot
-
 on property:vendor.post_boot.parsed=1
-# IRQ Tuning
-# IRQ 243: msm_drm0
-# IRQ 222: kgsl_3d0_irq
-write /proc/irq/243/smp_affinity_list 2
-write /proc/irq/240/smp_affinity_list 1
+    # IRQ Tuning
+    # IRQ 243: msm_drm0
+    # IRQ 222: kgsl_3d0_irq
+    write /proc/irq/243/smp_affinity_list 2
+    write /proc/irq/240/smp_affinity_list 1
