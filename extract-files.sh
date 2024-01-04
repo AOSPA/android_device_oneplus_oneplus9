@@ -85,6 +85,10 @@ function blob_fixup() {
         odm/lib/liblvimfs_wrapper.so | odm/lib64/libCOppLceTonemapAPI.so | vendor/lib64/libalsc.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        vendor/etc/libnfc-mtp-SN100.conf | vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf)
+            sed -i "/NXPLOG_\w\+_LOGLEVEL/ s/0x03/0x02/" "${2}"
+            sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
+            ;;
     esac
 }
 
