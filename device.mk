@@ -123,6 +123,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.stats@1.0.vendor
 
+# Cutout
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
+
+# Overlays
+PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay
+
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.idletimer.mode=default \
