@@ -1,0 +1,2 @@
+# DC Dimming
+genfscon sysfs /kernel/oplus_display/dimlayer_bl_en                    u:object_r:vendor_sysfs_dc_dim:s0

@@ -20,3 +20,6 @@ on boot
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
     chown system system /sys/kernel/oplus_display/power_status
+
+    # chmod dimlayer_bl_en for DC Dimming
+    chmod 0660 /sys/kernel/oplus_display/dimlayer_bl_en
