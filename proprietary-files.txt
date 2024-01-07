@@ -1942,6 +1942,7 @@ vendor/bin/cnss-daemon
 odm/etc/wifi/bdwlan.elf|3d5aafe7e08b69a42c7fde9be2a90319c4e0c45a
 odm/etc/wifi/cnss_diag_always_on.conf|7c8d94e909d88205adf3bdb428cb6a39f012cabc
 odm/etc/wifi/regdb.bin|30ff599f33dd4058bc79482d5e2e26a4a98adb95
+odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini|30ff599f33dd4058bc79482d5e2e26a4a98adb95
 vendor/etc/wifi/p2p_supplicant_overlay.conf|05f22cd82cbe806d46185a3e5ce69c86cd307128
 vendor/etc/wifi/wpa_supplicant_overlay.conf|fd618998d3dcd4b3a408807fa629967c378ac45a
 
