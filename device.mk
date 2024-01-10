@@ -158,9 +158,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4630946950956839810.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946950956839810.xml \
     $(LOCAL_PATH)/configs/display/display_id_4630946292801050754.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946292801050754.xml
 
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.common-V1-ndk.vendor
-
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.frame_rate_multiple_threshold=60 \
     ro.surface_flinger.refresh_rate_switching=true \
