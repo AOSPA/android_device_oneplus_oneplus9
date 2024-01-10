@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ace933a_e4a21a50",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-01-10T11:13:42Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "546a890008ee6c41049fd15fc4a15627ac90fed5",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90e496b6_92e4dd07",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-01-10T11:13:42Z",
+      "side": 1,
+      "message": "OOS*",
+      "revId": "546a890008ee6c41049fd15fc4a15627ac90fed5",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
