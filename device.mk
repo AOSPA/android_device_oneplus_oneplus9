@@ -186,11 +186,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-qti \
-    android.hardware.health@2.1-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
@@ -200,6 +195,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
 PRODUCT_PACKAGES += \
+    charger_fw_fstab.qti \
     fstab.default \
     init.oplus.camera.rc \
     init.oplus.charging.rc \
@@ -209,8 +205,6 @@ PRODUCT_PACKAGES += \
     init.oplus.sensors.rc \
     init.oplus.telephony.rc \
     init.oplus.touch.rc \
-    init.oplus.wlan.rc \
-    init.qti.ufs.rc \
     init.target.rc \
     ueventd.oplus.rc
 
@@ -287,6 +281,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
+    charging \
     display \
     gps \
     init \

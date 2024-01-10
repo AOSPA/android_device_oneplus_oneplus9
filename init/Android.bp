@@ -12,6 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+prebuilt_etc {
+    name: "charger_fw_fstab.qti",
+    src: "charger_fw_fstab.qti",
+    vendor: true,
+}
+
 cc_library_static {
     name: "libinit_oplus",
     recovery_available: true,
