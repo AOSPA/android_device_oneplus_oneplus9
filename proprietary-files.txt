@@ -1073,11 +1073,6 @@ vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|5df4a49fde62
 vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk_platform.so|f21700553e60838f3f5a7e4a9bdb1740a3d3cb2b
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74cb9bfeeb96df0b707654d662042133ffb23c1a|38ff048bb7f0a372e0d6ae88144bef2c01b8d10f
 
-# Charging
-vendor/bin/init.qti.chg_policy.sh
-vendor/etc/charger_fstab.qti
-vendor/etc/charger_fw_fstab.qti
-
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
@@ -1091,27 +1086,27 @@ vendor/etc/init/ssgtzd.rc
 
 # Dolby - OOS
 odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|7951f0ede5108f0080bb8abb18651058db9e46ae
+odm/etc/audio_effects.xml|35cb765c9acbc16c1c75552dc6cc03ad6f89c0f8
 odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc|5da96cf855061860f27dff6399505f8d1f1daeee
 odm/etc/media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
 odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml|c4704e5bc4da7cdf291c79389f379c8355eaf730
-odm/etc/audio_effects.xml|35cb765c9acbc16c1c75552dc6cc03ad6f89c0f8
-odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so|db0fa99ece32e733f624fb99d4ea5c1e67d1e554
-odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so|893c61e2e39f977406e4c7a6214838fd4fe3eceb
-odm/lib/soundfx/libhwdap_v3_6.so|1992eea271d67bef7482377605a2efa4c2f6dba8
-odm/lib/soundfx/libswdap_v3_6.so|3e521eb43ea5b43e2436f2c46d7b8f169b2f1553
 odm/lib/libdapparamstorage_v3_6.so|c6c36fba280f2373034cf754870611614bf0f22f
 odm/lib/libdeccfg_v3_6.so|742cadaf61aea20eabdac099668bfd43ddf4bb35
 odm/lib/libdlbdsservice_v3_6.so|d0c30c56c88635392d05ccbca8d6b136b7f405e2
 odm/lib/libqtigef.so|c7d588a80c3aac52b160db6ded1528bb8b8fd7bd
+odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so|db0fa99ece32e733f624fb99d4ea5c1e67d1e554
+odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so|893c61e2e39f977406e4c7a6214838fd4fe3eceb
 odm/lib/libstagefrightdolby.so|e34e83479cfdaa9d55fe790815742d7a5bde1e52
+odm/lib/soundfx/libhwdap_v3_6.so|1992eea271d67bef7482377605a2efa4c2f6dba8
+odm/lib/soundfx/libswdap_v3_6.so|3e521eb43ea5b43e2436f2c46d7b8f169b2f1553
 odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|b535d7ebc47cb933fe7654a53cc36a5bfc928639
 odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so|d6f89d6499661023dc8fe451ca5c55f1a3ba7d55
-odm/lib64/soundfx/libhwdap_v3_6.so|e4bf45ccd3ae9d4347d1416019d96681b2c651ea
-odm/lib64/soundfx/libswdap_v3_6.so|92dca01e5bc4cd654a1b72197fc744d8e5bb1b74
 odm/lib64/libdapparamstorage_v3_6.so|d0c9e16ec5a589a9e47a8d3907d7949fd4fdb439
 odm/lib64/libdeccfg_v3_6.so|25a64da2aa3bf9cb2b6fd644547ba1e94cdb47f4
 odm/lib64/libdlbdsservice_v3_6.so|55f2884a2305886b20f904820664bf6e6e390883
 odm/lib64/libqtigef.so|09fb25411b4767ab2f7eebdccd7cc7fd9a85feee
+odm/lib64/soundfx/libhwdap_v3_6.so|e4bf45ccd3ae9d4347d1416019d96681b2c651ea
+odm/lib64/soundfx/libswdap_v3_6.so|92dca01e5bc4cd654a1b72197fc744d8e5bb1b74
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
 
@@ -1172,8 +1167,6 @@ vendor/firmware/ipa_fws.mdt|06b395fffa201551263da53337dcb18784397586
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
 -vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
-vendor/lib/libdiag.so
-vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display
@@ -1305,16 +1298,6 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so
 # MM OSAL
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
-
-# Media
-vendor/bin/hw/qconfigservice
-vendor/etc/init/qconfig.rc
-vendor/lib/libqc2vppfilter.so
-vendor/lib/libqconfigclient.so
-vendor/lib/vendor.qti.hardware.qconfig@1.0.so
-vendor/lib64/libqc2vppfilter.so
-vendor/lib64/libqconfigclient.so
-vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 
 # Media Profiles - OOS
 vendor/etc/media/video_system_specs.json|d0732bff6336fa90adfcf6ca010e0e9d0114292e
@@ -1507,7 +1490,6 @@ vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
@@ -1632,15 +1614,10 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # SecureMSM
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/libops.so
-vendor/lib64/libqisl.so
 vendor/lib64/libspl.so
-vendor/lib64/libtzdrmgenprov.so
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
@@ -1673,7 +1650,6 @@ vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
 
 # Touch - OOS
 odm/firmware/tp/19815/FW_S3908_SAMSUNG.img|aff80e47bd5361baf8047af516588a8619c8a190
@@ -1738,9 +1714,6 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # VPU - OOS
@@ -1935,9 +1908,6 @@ vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
-# WLAN
-vendor/bin/cnss-daemon
-
 # WLAN - OOS
 odm/etc/wifi/bdwlan.elf|3d5aafe7e08b69a42c7fde9be2a90319c4e0c45a
 odm/etc/wifi/cnss_diag_always_on.conf|7c8d94e909d88205adf3bdb428cb6a39f012cabc
@@ -1953,7 +1923,6 @@ odm/lib64/liboemcrypto.so|d8534f91f88503fa1c2b88c32c58012f2b6a9532
 odm/lib64/libwvhidl.so|f58e4a3a2af94101a0db21dd49fbd5bf0ab1a52e
 odm/lib64/mediadrm/libwvdrmengine.so|35f87490ee2a4d442fb77f5a92c37c5c4d98d7c6
 vendor/etc/oplus_Widevine_licenses.pfm|3a24c9b4db3cb2625cd83c3b600ca9adf1998dcb
-vendor/lib64/libtrustedapploader.so|e57218f85b6eb5c8dd9809c768a11ab450fb3aa2
 
 # Audio (Pro) - OOS
 odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/overlay/prj_11/odm/etc/acdbdata/Audio_Parameter_Version.txt|88ecaeac81d9c9bf33591ed4dfc1460080d42299
@@ -1984,13 +1953,13 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:odm/overlay/prj_11/odm/
 
 
 # Camera (Pro) - OOS
-odm/etc/camera/config/camera_unit_config:odm/overlay/prj_11/odm/etc/camera/config/camera_unit_config|efb8760093337a39f249cf6434120e37a812a4d0
-odm/etc/camera/config/oplus_camera_aps_config:odm/overlay/prj_11/odm/etc/camera/config/oplus_camera_aps_config|69c3c942290c3de9b2e6cff8741877680f3b5a09
-odm/etc/camera/config/oplus_camera_config:odm/overlay/prj_11/odm/etc/camera/config/oplus_camera_config|234d333204b4c42ec3c4000622f59d277b06c426
 odm/etc/camera/CameraHWConfiguration.config:odm/overlay/prj_11/odm/etc/camera/CameraHWConfiguration.config|4d7fc535b28e1bbdbc78d9e488c7a821186972f4
 odm/etc/camera/calibrationOutput_uw.bin:odm/overlay/prj_11/odm/etc/camera/calibrationOutput_uw.bin|9081ae18d7ff95d26d283993f617b45cee2121ca
 odm/etc/camera/calibrationOutput_uw_686.bin:odm/overlay/prj_11/odm/etc/camera/calibrationOutput_uw_686.bin|3555b56ed22063b82211aad4dfe45becd53b1026
 odm/etc/camera/calibrationOutput_wt.bin:odm/overlay/prj_11/odm/etc/camera/calibrationOutput_wt.bin|a19e063cd9e7906495a6077ee1a13d7bd0faa80c
+odm/etc/camera/config/camera_unit_config:odm/overlay/prj_11/odm/etc/camera/config/camera_unit_config|efb8760093337a39f249cf6434120e37a812a4d0
+odm/etc/camera/config/oplus_camera_aps_config:odm/overlay/prj_11/odm/etc/camera/config/oplus_camera_aps_config|69c3c942290c3de9b2e6cff8741877680f3b5a09
+odm/etc/camera/config/oplus_camera_config:odm/overlay/prj_11/odm/etc/camera/config/oplus_camera_config|234d333204b4c42ec3c4000622f59d277b06c426
 odm/etc/camera/engineer_camera_config:odm/overlay/prj_11/odm/etc/camera/engineer_camera_config|8c0e6914e48353d724c09f8c1543fb1b1330c940
 odm/etc/camera/settings_fdc.txt:odm/overlay/prj_11/odm/etc/camera/settings_fdc.txt|1b36d4180b981c9def3799dc82d3b1ce4693077b
 odm/etc/init/calibrationOutput_wt.rc:odm/overlay/prj_11/odm/etc/init/calibrationOutput_wt.rc|6fd029628ce0ed52a5afb9c8dc76992d55571a2c
