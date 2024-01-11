@@ -340,10 +340,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# SOC Properties
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.soc.manufacturer=QTI
-
 # Storage
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
