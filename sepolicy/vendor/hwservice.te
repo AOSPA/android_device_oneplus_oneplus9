@@ -1,8 +1,0 @@
-# Dolby
-type hal_dms_hwservice, hwservice_manager_type;
-
-# ORMS
-type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
-
-# Osense
-type vendor_hal_osense_hwservice, hwservice_manager_type, protected_hwservice;
