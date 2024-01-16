@@ -1,0 +1,16 @@
+# Audio
+ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.bcl.enabled=false
+persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.spv4.enable=false
+persist.vendor.audio.vbat.enabled=false
+vendor.audio.feature.spkr_prot.enable=false
+vendor.audio.hal.output.suspend.supported=false
+
+# RIL
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.poweron_opt=1
+persist.vendor.radio.stack_id_1=1
+ro.vendor.oplus.radio.project=2
+ro.vendor.oplus.radio.sar_regionmark=FCC
