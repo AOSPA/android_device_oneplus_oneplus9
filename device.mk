@@ -1,4 +1,4 @@
-# Copyright (C) 2022 Paranoid Android
+# Copyright (C) 2024 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -68,20 +68,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libstdc++_vendor
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.config.vc_call_vol_steps=9 \
-    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
-
-PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.audio.sdk.fluencetype=fluence \
-    persist.vendor.audio.bcl.enabled=false \
-    persist.vendor.audio.fluence.voicerec=true \
-    persist.vendor.audio.speaker.prot.enable=false \
-    persist.vendor.audio.spv4.enable=false \
-    persist.vendor.audio.vbat.enabled=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.hal.output.suspend.supported=false
-
 # Biometrics
 TARGET_USES_FOD_ZPOS := true
 PRODUCT_COPY_FILES += \
@@ -89,19 +75,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
-
-# Bluetooth
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
-    persist.vendor.bluetooth.modem_nv_support=true \
-    persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
-    persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true \
-    persist.vendor.qcom.bluetooth.scram.enabled=false \
-    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    vendor.hw.fm.init=0
 
 # Boot
 PRODUCT_PACKAGES += \
@@ -123,11 +96,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.stats@1.0.vendor
 
-# DPM
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.dpm.idletimer.mode=default \
-    persist.vendor.dpmhalservice.enable=1
-
 # Dolby Manager
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/oneplus9/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
@@ -135,15 +103,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     DolbyManager
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
-    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
-    ro.vendor.dolby.model=PAFM00 \
-    ro.vendor.dolby.device=OP46C3 \
-    ro.vendor.dolby.manufacturer=OPLUS \
-    ro.vendor.dolby.brand=OPLUS
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -158,19 +117,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4630946950956839810.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946950956839810.xml \
     $(LOCAL_PATH)/configs/display/display_id_4630946292801050754.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946292801050754.xml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    debug.sf.frame_rate_multiple_threshold=60 \
-    ro.surface_flinger.refresh_rate_switching=true \
-    ro.surface_flinger.set_display_power_timer_ms=1000 \
-    ro.surface_flinger.set_idle_timer_ms=4000 \
-    ro.surface_flinger.set_touch_timer_ms=4000 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
-    vendor.display.primary_mixer_stages=9
-
-# FRP
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
@@ -178,9 +124,6 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.gatekeeper.disable_spu=true
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -205,10 +148,6 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc
 
 # Keymaster
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.crypto.dm_default_key.options_format.version=2 \
-    ro.crypto.volume.metadata.method=dm-default-key
-
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
@@ -302,13 +241,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor
 
-PRODUCT_ODM_PROPERTIES += \
-    persist.vendor.radio.force_on_dc=true \
-    persist.vendor.radio.poweron_opt=1 \
-    persist.vendor.radio.stack_id_1=1 \
-    ro.vendor.oplus.radio.project=2 \
-    ro.vendor.oplus.radio.sar_regionmark=FCC
-
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -329,22 +261,10 @@ PRODUCT_PACKAGES += \
     sensors.oneplus9 \
     sensors.oplus
 
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.sensors.allow_non_default_discovery=true \
-    persist.vendor.sensors.on_change_sample_period=true \
-    persist.vendor.sensors.sync_request=true
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.sensors.enable.mag_filter=true
-
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Storage
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.fuse.passthrough.enable=true \
-    ro.incremental.enable=yes
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # System Helper
