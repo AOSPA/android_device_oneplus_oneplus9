@@ -1,0 +1,58 @@
+# Audio
+ro.config.vc_call_vol_steps=9
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+# Bluetooth
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.bluetooth.modem_nv_support=true
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+vendor.hw.fm.init=0
+
+# DPM
+persist.vendor.dpm.idletimer.mode=default
+persist.vendor.dpmhalservice.enable=1
+
+# Dolby
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+ro.vendor.dolby.model=PAFM00
+ro.vendor.dolby.device=OP46C3
+ro.vendor.dolby.manufacturer=OPLUS
+ro.vendor.dolby.brand=OPLUS
+
+# Display
+debug.sf.frame_rate_multiple_threshold=60
+ro.surface_flinger.refresh_rate_switching=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+vendor.display.primary_mixer_stages=9
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+# Keymaster
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
+# Sensors
+persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.on_change_sample_period=true
+persist.vendor.sensors.sync_request=true
+
+# Storage
+persist.sys.fuse.passthrough.enable=true
+ro.incremental.enable=yes
+
+
