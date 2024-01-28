@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
-    init.oplus.camera.rc \
     init.oplus.charging.rc \
     init.oplus.display.rc \
     init.oplus.overlay.rc \
