@@ -1,6 +1,7 @@
 # Audio
 ro.config.vc_call_vol_steps=9
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+vendor.audio.feature.compr_voip.enable=true
 
 # Bluetooth
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
