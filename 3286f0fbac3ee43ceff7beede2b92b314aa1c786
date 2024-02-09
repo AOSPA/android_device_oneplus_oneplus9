@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4a40f07_4390e2b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-02-09T07:10:56Z",
+      "side": 1,
+      "message": "this shouldn\u0027t even be registered with qssi bluetooth",
+      "revId": "3286f0fbac3ee43ceff7beede2b92b314aa1c786",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
