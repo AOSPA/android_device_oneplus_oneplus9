@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
     init.oplus.charging.rc \
     init.oplus.display.rc \
     init.oplus.overlay.rc \
-    init.oplus.perf.rc \
     init.oplus.sensors.rc \
     init.oplus.telephony.rc \
     init.oplus.touch.rc \
