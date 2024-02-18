@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6be04ce_89e98830",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2024-02-18T18:48:45Z",
+      "side": 1,
+      "message": "this one is device specific",
+      "revId": "b8789c0b1c8ab284d75431f7845653c446faf69a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2382690c_1225e9f8",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2024-02-18T18:48:45Z",
+      "side": 1,
+      "message": "not sure about this one, lets keep this label in hold.\n\nRest belong to common.",
+      "revId": "b8789c0b1c8ab284d75431f7845653c446faf69a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
