@@ -8,6 +8,10 @@
     <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
-    <dimen name="status_bar_height">28dp</dimen>
+    <dimen name="status_bar_height">82px</dimen>
+
+    <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
+         calculate the status bar height. -->
+    <dimen name="status_bar_height_default">@dimen/status_bar_height</dimen>
 
 </resources>
