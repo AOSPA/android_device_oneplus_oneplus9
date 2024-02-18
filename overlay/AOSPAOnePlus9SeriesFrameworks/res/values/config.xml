@@ -75,4 +75,7 @@
          to enable/disable DC dimming. -->
     <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oplus_display/dimlayer_bl_en</string>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeLightSensorSupported">false</bool>
+
 </resources>
