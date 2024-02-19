@@ -353,16 +353,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- Performance -->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IIop</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- QCC VND -->
     <hal format="hidl">
         <name>vendor.qti.hardware.qccvndhal</name>
