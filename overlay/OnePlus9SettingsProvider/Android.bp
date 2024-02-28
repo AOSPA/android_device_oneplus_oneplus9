@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "OnePlus9SettingsProvider",
-    product_specific: true,
+    device_specific: true,
 }

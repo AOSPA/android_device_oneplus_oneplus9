@@ -14,5 +14,5 @@
 
 runtime_resource_overlay {
     name: "OnePlus9SeriesFrameworks",
-    product_specific: true,
+    device_specific: true,
 }
