@@ -79,6 +79,9 @@ function blob_fixup() {
         odm/lib/liblvimfs_wrapper.so | odm/lib64/libCOppLceTonemapAPI.so | vendor/lib64/libalsc.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        vendor/etc/dolby/dax-default.xml)
+            sed -i 's|volume-leveler-enable value="true"|volume-leveler-enable value="false"|g' "${2}"
+            ;;
     esac
 }
 

@@ -1091,31 +1091,33 @@ vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 
-# Dolby - OOS
-odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|7951f0ede5108f0080bb8abb18651058db9e46ae
-odm/etc/audio_effects.xml|35cb765c9acbc16c1c75552dc6cc03ad6f89c0f8
-odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc|5da96cf855061860f27dff6399505f8d1f1daeee
-odm/etc/media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
-odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml|c4704e5bc4da7cdf291c79389f379c8355eaf730
-odm/lib/libdapparamstorage_v3_6.so|c6c36fba280f2373034cf754870611614bf0f22f
-odm/lib/libdeccfg_v3_6.so|742cadaf61aea20eabdac099668bfd43ddf4bb35
-odm/lib/libdlbdsservice_v3_6.so|d0c30c56c88635392d05ccbca8d6b136b7f405e2
-odm/lib/libqtigef.so|c7d588a80c3aac52b160db6ded1528bb8b8fd7bd
-odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so|db0fa99ece32e733f624fb99d4ea5c1e67d1e554
-odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so|893c61e2e39f977406e4c7a6214838fd4fe3eceb
-odm/lib/libstagefrightdolby.so|e34e83479cfdaa9d55fe790815742d7a5bde1e52
-odm/lib/soundfx/libhwdap_v3_6.so|1992eea271d67bef7482377605a2efa4c2f6dba8
-odm/lib/soundfx/libswdap_v3_6.so|3e521eb43ea5b43e2436f2c46d7b8f169b2f1553
-odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|b535d7ebc47cb933fe7654a53cc36a5bfc928639
-odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so|d6f89d6499661023dc8fe451ca5c55f1a3ba7d55
-odm/lib64/libdapparamstorage_v3_6.so|d0c9e16ec5a589a9e47a8d3907d7949fd4fdb439
-odm/lib64/libdeccfg_v3_6.so|25a64da2aa3bf9cb2b6fd644547ba1e94cdb47f4
-odm/lib64/libdlbdsservice_v3_6.so|55f2884a2305886b20f904820664bf6e6e390883
-odm/lib64/libqtigef.so|09fb25411b4767ab2f7eebdccd7cc7fd9a85feee
-odm/lib64/soundfx/libhwdap_v3_6.so|e4bf45ccd3ae9d4347d1416019d96681b2c651ea
-odm/lib64/soundfx/libswdap_v3_6.so|92dca01e5bc4cd654a1b72197fc744d8e5bb1b74
-odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
-odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
+# Dolby - Motorola Edge 30
+system/app/MotoDolbyDax3/MotoDolbyDax3.apk;OVERRIDES=MusicFX|20849ae4308fa339a359894869d0e4ceb1dc5a6e
+system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml|af6975c3f0063d85efecd1e601fff32458598cec
+system/etc/permissions/motoaudioeffectsdk.xml|8a484c48cb5bb0206929d27083985126a0108de5
+system/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml|ab4600814879c626a410e607107829faceec9d2c
+system/framework/motoaudioeffectsdk.jar|dd15e9363690ba6652493d194032200fd4a7c527
+system_ext/etc/permissions/com.dolby.daxservice.xml|a104f7a8f304c2fecd7d8a3650c5fae238a4ec41
+system_ext/priv-app/daxService/daxService.apk|b5583c0ece1ee5c484e36d5af0e3a2be28fe2ac3
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|13040b473d670d65ab73569ef6459b904c9b6116
+vendor/etc/dolby/dax-default.xml|58270177742691780ab1fc05e8b26b09082213dc
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/lib/libdapparamstorage.so|21c5cd27436ce34c5b6801208cf4ed36a377826b
+vendor/lib/libdlbpreg.so|1f2e37f4ba9e92dab0e540b780aa3e412e94d7c2
+vendor/lib/soundfx/libdlbvol.so|5c2995ad974c9fbb92035a6aa60b9e74b2e89a79
+vendor/lib/soundfx/libswdap.so|7de98d488ea2c35d50071df76076e20ada239387
+vendor/lib/soundfx/libswgamedap.so|042544c13c3e35e9e976dd16121e3a564572ecc8
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|00523c8198effad0be42959a1e97597095eda8d9
+vendor/lib64/libcodec2_soft_ac4dec.so|88d9024a8fd7313c986c9ff2e9b78b997bd28617
+vendor/lib64/libcodec2_soft_ddpdec.so|491d235c644ec34a89421edc35a0e828eee1297f
+vendor/lib64/libcodec2_store_dolby.so|bf76ba79773b9e876686d04c0391b310f48717ca
+vendor/lib64/libdapparamstorage.so|12d64618008472b66dfc24aee0c9fc9f1ad65b2c
+vendor/lib64/libdeccfg.so|c1bd1f65c1766332ef617ab3b66da9f2d755f4f5
+vendor/lib64/libdlbdsservice.so|0009dbaab53227ae3c08dcc655d0b092546f9097
+vendor/lib64/libdlbpreg.so|73c3662ef6276ac9e71815ee6d7f3a94c55931f4
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|87a2ff4993f681f219f8f12c02dd9cdde38a6735
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|5c5ba8f8e32293c44cb5cba1209ee6afaf37baba
 
 # DPM
 vendor/bin/dpmQmiMgr
