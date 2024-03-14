@@ -47,12 +47,12 @@
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
             <meta-data android:name="com.android.settings.summary_uri"
-                       android:value="content://co.aospa.settings.dolby.summary/dolby" />
+                       android:value="content://org.lineageos.settings.device.summary/dolby" />
         </activity>
 
-        <provider
-            android:name=".DolbySummaryProvider"
-            android:authorities="co.aospa.settings.dolby.summary">
+	<provider
+            android:name=".SummaryProvider"
+            android:authorities="org.lineageos.settings.device.summary">
         </provider>
 
         <service
