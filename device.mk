@@ -98,10 +98,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.stats@1.0.vendor
 
-# Dolby Manager
-PRODUCT_PACKAGES += \
-    DolbyManager
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
