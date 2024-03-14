@@ -1623,9 +1623,10 @@
     </data>
   </tuning>
   <tuning name="headphone_Oneplus" endpoint_type="headphone" mono_device="false" tuned_rate="48000" orientation="2" output_channels="2">
-    <device_id id="default_headphone" endpoint_port="headphone" />
-    <device_id id="default_headphone" endpoint_port="usb"/>
+    <device_id id="default_headphone" endpoint_port="headphone"/>
+    <device_id id="default_bluetooth" endpoint_port="bluetooth"/>
     <device_id id="default_usb" endpoint_port="usb"/>
+    <device_id id="headphone" endpoint_port="headphone"/>
     <data>
       <audio-optimizer-bands>
         <band_optimizer frequency="47" gain_left="16" gain_right="16"/>
@@ -1673,7 +1674,7 @@
       </regulator-tuning>
       <regulator-sibilance-suppress-amounts-left value="0,0,0,0,0,0"/>
       <regulator-sibilance-suppress-amounts-right value="0,0,0,0,0,0"/>
-      <bass-enhancer-boost value="32"/>
+      <bass-enhancer-boost value="96"/>
       <bass-enhancer-cutoff-frequency value="77"/>
       <bass-enhancer-width value="16"/>
       <bass-extraction-cutoff-frequency value="200"/>
