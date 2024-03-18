@@ -25,11 +25,11 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 
-import co.aospa.settings.dolby.R;
+import com.android.settingslib.widget.R;
 import co.aospa.settings.dolby.DolbyUtils;
 
 /** Provide preference summary for injected items. */
-public class DolbySummaryProvider extends ContentProvider {
+public class SummaryProvider extends ContentProvider {
 
     private static final String KEY_DOLBY = "dolby";
 
