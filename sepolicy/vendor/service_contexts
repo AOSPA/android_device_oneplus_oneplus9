@@ -4,3 +4,9 @@ vendor.oplus.hardware.cammidasservice.IMIDASService/default              u:objec
 
 # Fingerprint
 vendor.oplus.hardware.commondcs.ICommonDcsAidlHalService/default    u:object_r:hal_fingerprint_service:s0
+
+# Osense
+vendor.oplus.hardware.osense.client.IOsenseAidlHalReporter/default    u:object_r:fwk_osense_aidl_service:s0
+
+# Performance
+vendor.oplus.hardware.performance.IPerformance/default    u:object_r:hal_oplus_performance_aidl_service:s0

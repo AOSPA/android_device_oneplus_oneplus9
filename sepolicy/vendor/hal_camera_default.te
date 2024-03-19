@@ -1,5 +1,6 @@
 allow hal_camera_default vendor_hal_orms_hwservice:hwservice_manager find;
 allow hal_camera_default vendor_hal_osense_hwservice:hwservice_manager find;
+allow hal_camera_default fwk_osense_aidl_service:service_manager find;
 
 allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default proc_meminfo:file r_file_perms;
