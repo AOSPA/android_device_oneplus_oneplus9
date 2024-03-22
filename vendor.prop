@@ -53,7 +53,6 @@ persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.sync_request=true
 
 # Storage
-persist.sys.fuse.passthrough.enable=true
 ro.incremental.enable=yes
 
 
