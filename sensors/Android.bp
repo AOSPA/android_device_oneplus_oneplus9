@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2020 The Android Open Source Project
+// Copyright (C) 2021 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,12 +12,15 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+//
+
+package {
+    // See: http://go/android-license-faq
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
 
 cc_binary {
-    name: "android.hardware.sensors@2.1-service.oneplus9-multihal",
-    defaults: [
-        "hidl_defaults",
-    ],
+    name: "android.hardware.sensors-service.oneplus9-multihal",
     vendor: true,
     relative_install_path: "hw",
     srcs: [
@@ -25,26 +28,31 @@ cc_binary {
         "HalProxy.cpp",
         "HalProxyCallback.cpp",
     ],
-    init_rc: ["android.hardware.sensors@2.1-service.oneplus9-multihal.rc"],
-    vintf_fragments: ["android.hardware.sensors@2.1-oneplus9-multihal.xml"],
     header_libs: [
+        "android.hardware.sensors@2.X-multihal.header",
         "android.hardware.sensors@2.X-shared-utils",
     ],
+    init_rc: ["android.hardware.sensors-service.oneplus9-multihal.rc"],
+    vintf_fragments: ["android.hardware.sensors.oneplus9-multihal.xml"],
     shared_libs: [
-        "android.hardware.sensors@2.0",
         "android.hardware.sensors@2.0-ScopedWakelock",
+        "android.hardware.sensors@2.0",
         "android.hardware.sensors@2.1",
+        "android.hardware.sensors-V2-ndk",
         "libbase",
         "libcutils",
         "libfmq",
-        "libhidlbase",
         "liblog",
         "libpower",
         "libutils",
+        "libbinder_ndk",
+        "libhidlbase",
     ],
     static_libs: [
+        "libaidlcommonsupport",
         "android.hardware.sensors@1.0-convert",
         "android.hardware.sensors@2.X-multihal",
+        "android.hardware.sensors@aidl-multihal",
     ],
 }
 
