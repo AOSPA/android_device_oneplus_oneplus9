@@ -82,7 +82,7 @@ std::vector<V2_1::Event> HalProxyCallbackBase::processEvents(const std::vector<V
         if ((sensor.flags & V1_0::SensorFlagBits::WAKE_UP) != 0) {
             (*numWakeupEvents)++;
         }
-	eventsOut.push_back(event);
+        eventsOut.push_back(event);
     }
     return eventsOut;
 }
