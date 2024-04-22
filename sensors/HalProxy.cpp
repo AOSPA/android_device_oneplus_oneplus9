@@ -81,9 +81,31 @@ int64_t msFromNs(int64_t nanos) {
     return nanos / nanosecondsInAMillsecond;
 }
 
+bool patchOPPickupSensor(V2_1::SensorInfo& sensor) {
+    if (sensor.typeAsString != "android.sensor.tilt_detector") {
+        return true;
+    }
+
+    /*
+     * Implement only the wake-up version of this sensor.
+     */
+    if (!(sensor.flags & V1_0::SensorFlagBits::WAKE_UP)) {
+        return false;
+    }
+
+    sensor.type = V2_1::SensorType::PICK_UP_GESTURE;
+    sensor.typeAsString = SENSOR_STRING_TYPE_PICK_UP_GESTURE;
+    sensor.maxRange = 1;
+
+    return true;
+}
+
 HalProxy::HalProxy() {
-    const char* kMultiHalConfigFile = "/vendor/etc/sensors/hals.conf";
-    initializeSubHalListFromConfigFile(kMultiHalConfigFile);
+    static const std::string kMultiHalConfigFiles[] = {"/vendor/etc/sensors/hals.conf",
+                                                       "/odm/etc/sensors/hals.conf"};
+    for (const std::string& configFile : kMultiHalConfigFiles) {
+        initializeSubHalListFromConfigFile(configFile.c_str());
+    }
     init();
 }
 
@@ -348,7 +370,7 @@ Return<void> HalProxy::configDirectReport(int32_t sensorHandle, int32_t channelH
     return Return<void>();
 }
 
-Return<void> HalProxy::debug(const hidl_handle& fd, const hidl_vec<hidl_string>& /*args*/) {
+Return<void> HalProxy::debug(const hidl_handle& fd, const hidl_vec<hidl_string>& args) {
     if (fd.getNativeHandle() == nullptr || fd->numFds < 1) {
         ALOGE("%s: missing fd for writing", __FUNCTION__);
         return Void();
@@ -382,7 +404,7 @@ Return<void> HalProxy::debug(const hidl_handle& fd, const hidl_vec<hidl_string>&
         stream << "  Name: " << subHal->getName() << std::endl;
         stream << "  Debug dump: " << std::endl;
         android::base::WriteStringToFd(stream.str(), writeFd);
-        subHal->debug(fd, {});
+        subHal->debug(fd, args);
         stream.str("");
         stream << std::endl;
     }
@@ -493,12 +515,9 @@ void HalProxy::initializeSensorList() {
                     ALOGV("Loaded sensor: %s", sensor.name.c_str());
                     sensor.sensorHandle = setSubHalIndex(sensor.sensorHandle, subHalIndex);
                     setDirectChannelFlags(&sensor, mSubHalList[subHalIndex]);
-
-                    // Standardize oplus pickup sensor
-                    if (sensor.typeAsString == "android.sensor.tilt_detector") {
-                        sensor.type = V2_1::SensorType::PICK_UP_GESTURE;
-                        sensor.typeAsString = SENSOR_STRING_TYPE_PICK_UP_GESTURE;
-                        ALOGV("Patched oplus pickup sensor");
+                    bool keep = patchOPPickupSensor(sensor);
+                    if (!keep) {
+                        continue;
                     }
 
                     mSensors[sensor.sensorHandle] = sensor;
