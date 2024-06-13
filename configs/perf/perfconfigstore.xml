@@ -163,12 +163,5 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.perf.qhf" Value="true" Target="lahaina"/>
                 <Prop Name="ro.vendor.perf.qape" Value="true" Target="lahaina"/>
 
-                <!-- AOSPA Edit: Enable Preferred Apps -->
-                <Prop Name="ro.vendor.perf.enable.prefapps" Value="true" />
-                <Prop Name="ro.vendor.perf.count.prefapps" Value="12" />
-                <Prop Name="ro.vendor.use_perf_hal_for_preferredapps" Value="true" />
-                <Prop Name="vendor.prefapps.pkg_retention_mins" Value="28800" />
-                <Prop Name="vendor.prefapps.last_launch_threshold" Value="21600" />
-
     </PerfConfigs>
 </PerfConfigsStore>
