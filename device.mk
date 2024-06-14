@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
     init.oplus.sensors.rc \
     init.oplus.telephony.rc \
     init.oplus.touch.rc \
+    init.oplus.usb.rc \
     init.target.rc \
     ueventd.oplus.rc
 
@@ -173,6 +174,7 @@ PRODUCT_PACKAGES += \
     AOSPAOnePlus9SeriesFrameworks \
     AOSPAOnePlus9SeriesSystemUI \
     AOSPAOnePlus9SystemUI \
+    OnePlus9DeviceAsWebcam \
     OnePlus9Frameworks \
     OnePlus9ProFrameworks \
     OnePlus9ProSettings \

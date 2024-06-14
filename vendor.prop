@@ -59,4 +59,5 @@ persist.vendor.sensors.sync_request=true
 # Storage
 ro.incremental.enable=yes
 
-
+# USB
+ro.usb.uvc.enabled=true
