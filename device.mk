@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/oneplus9pro/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/odm/etc/dolby/multimedia_dolby_dax_default.xml
 
 PRODUCT_PACKAGES += \
-    DolbyManager
+    OplusDolby
 
 # DRM
 PRODUCT_PACKAGES += \
