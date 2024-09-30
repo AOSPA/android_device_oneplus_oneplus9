@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea9582b9_3e639646",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-09-30T16:27:49Z",
+      "side": 1,
+      "message": "bad\nyou have to keep both pre-patch and post-patch hash",
+      "revId": "5c579fa3ee63ca558aade85b69e012d20f7208a9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
