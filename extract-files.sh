@@ -81,7 +81,7 @@ function blob_fixup() {
             ;;
         odm/lib64/mediadrm/libwvdrmengine.so|odm/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
-            grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "$2"
+            grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         vendor/etc/seccomp_policy/atfwd@2.0.policy)
             [ "$2" = "" ] && return 0
