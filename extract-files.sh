@@ -109,7 +109,7 @@ function blob_fixup() {
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             [ "$2" = "" ] && return 0
-            "${SIGSCAN}" -p "23 0B 00 94" -P "1F 20 03 D5" -f "${2}"
+            "${SIGSCAN}" -p "27 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         *)
             return 1

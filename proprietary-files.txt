@@ -1095,9 +1095,7 @@ vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so|4030c69284
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|bf9174821ff9c980b80898057f7025f82fd32477
 vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|5df4a49fde6206da1ceed26aa93144ed43fab7f7
 vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk_platform.so|9b426584c17e1c2b7635e11c86f2ee0be4a3ef04
-
-# Camera postproc - Patched
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74925f9b11de9721aa9b8dfa4b94f7c87a8baf33
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|b08ed1ebb4298f9c9629ead4c8e088d7d543bc18
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
