@@ -18,12 +18,4 @@ ifneq ($(filter oneplus9,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-# Symlinks
-ACDBDATA_SYMLINKS := $(TARGET_OUT_ODM)/etc/acdbdata
-$(ACDBDATA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating acdbdata symlinks: $@"
-	@mkdir -p $@
-	$(hide) ln -sf /vendor/etc/acdbdata/adsp_avs_config.acdb $@/adsp_avs_config.acdb
-
-ALL_DEFAULT_INSTALLED_MODULES += $(ACDBDATA_SYMLINKS)
 endif

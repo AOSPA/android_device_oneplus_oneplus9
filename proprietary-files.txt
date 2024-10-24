@@ -114,7 +114,7 @@ odm/lib/libbluetooth_audio_extend_factory_client.so|f387bd64693acd5192ebe767bb31
 odm/lib/liblvimfs.so|51955be664d0d88044d212c9f1f96924eeb816f7
 odm/lib/liblvimfs_wrapper.so|75b025338b0c966a9cdee22072304240bea9580c
 odm/lib64/libbluetooth_audio_extend_factory_client.so|2363d96d4724c5c50c71944d3ab0faba46a660d3
-vendor/etc/acdbdata/adsp_avs_config.acdb|e7aed8088e8c6dccacff231a1c1fe83936b15cd0
+vendor/etc/acdbdata/adsp_avs_config.acdb;SYMLINK=odm/etc/acdbdata/adsp_avs_config.acdb|e7aed8088e8c6dccacff231a1c1fe83936b15cd0
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd|247fa73e3b22ac1d8b98a601a9583bfd1e113879
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd|5271ce640ce35900690f8adf7b57aa53ef560e13
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd|7d6596a96b602d413857c35bb65b27a115e894b2
