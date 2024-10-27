@@ -1518,8 +1518,8 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json|2443633fd243366bfdcdadf809f57
 vendor/etc/sensors/config/sns_tilt_to_wake.json|aa88c0c28d0eda477db4c06a8c0991fe2b32e270
 vendor/etc/sensors/config/sns_wrist_pedo.json|3f6298f23c182c16585dbef20c419ce5353842b5
 vendor/etc/sensors/sns_reg_config|8e1e7175533177fe45b89c4ba572a861e262467f
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so;SYMLINK=vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so;SYMLINK=vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|035ad0ddaff6b84b28f49f7fb97669fb99b16316
 vendor/lib64/libsensorcal.so|9df04d72592e271efb04cfca81f16b137b539411
 vendor/lib64/libsensorslog.so|b1b32af08e41b47795dda9aae4a3278379f006e0
@@ -1532,8 +1532,6 @@ vendor/lib64/libsnsapi.so|474f6ee6c838297ac23ba1e90b226b036b055cd6
 vendor/lib64/libsnsdiaglog.so|7a0b954aa2e4483a2dc1c9d87ef3e9baf1b00701
 vendor/lib64/libssc.so|97ab05b1a9eb42e59659a78926a9f07f582d138f
 vendor/lib64/libssc_default_listener.so|da9e3d83340a83b42554b738d8a72b0350f600d7
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib64/sensors.ssc.so|4b0e347c8391b2d2f1cc14bfd42d80aba62afe00
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|7484c4f178837ec83a96c8e390716cde655e231b
 
