@@ -144,7 +144,6 @@ vendor/lib/libgcs-calwrapper.so|5d53c3423598ff838370e9d69ab0f26fe9141879
 vendor/lib/libgcs-ipc.so|7f79e3683ed808ae5e67029bb6542b14fa6a86a6
 vendor/lib/libgcs-osal.so|9ac399fbee4e73561c0a3f397fe6ffdc9c42892c
 vendor/lib/libgcs.so|3d4db7d5262064846a27b9169fa6d66a78a2c634
-vendor/lib/libgui1_vendor.so|0072e29818f05e190314fae459294c2111089eff
 vendor/lib/libhdmipassthru.so|3fba3b8c84ff4870bbb881e18052a405e205202d
 vendor/lib/liblistensoundmodel2.so|25b62bedc02e5584706c410b76e4f1874dd4ea46
 vendor/lib/libmulawdec.so|f72724da37b96a8cdce1a9e62d935c593d222096

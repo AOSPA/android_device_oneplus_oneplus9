@@ -64,9 +64,6 @@ function blob_fixup() {
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/my_product/product/" "${2}"
             ;;
-        vendor/lib/libgui1_vendor.so)
-            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
-            ;;
         vendor/lib64/hw/com.qti.chi.override.so)
             "${SIGSCAN}" -p "45 B8 05 94" -P "1F 20 03 D5" -f "${2}"
             ;;
@@ -91,6 +88,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\/vendor\/lib\/liba2dpoffload.so/\/odm\/lib\/liba2dpoffload.so\x00\x00\x00/" "${2}"
             sed -i "s/\/vendor\/lib\/libssrec.so/\/odm\/lib\/libssrec.so\x00\x00\x00/" "${2}"
+            "${PATCHELF}" --replace-needed "libgui1_vendor.so" "libgui_vendor.so" "${2}"
+            ;;
+       vendor/lib/libextcamera_client.so)
+            "${PATCHELF}" --replace-needed "libgui1_vendor.so" "libgui_vendor.so" "${2}"
             ;;
      esac
 }
