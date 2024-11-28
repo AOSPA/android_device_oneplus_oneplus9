@@ -26,6 +26,7 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat <<EOF >>"$1"
+        "hardware/oplus",
         "hardware/qcom/display",
         "hardware/qcom/display/gralloc",
         "hardware/qcom/display/libdebug",
