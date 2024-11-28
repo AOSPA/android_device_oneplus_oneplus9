@@ -1669,14 +1669,12 @@ odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img|15c633d9a18e4028eeb0edf399730b33
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
-vendor/lib/vendor.qti.hardware.vpp@2.0.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
-vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # VPU - OOS
 vendor/firmware/vpu20_4v.b01|680583c50ef49c654f334b012fbc4d3a2519793b
