@@ -65,6 +65,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        odm/lib64/libAlgoProcess.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V5-ndk.so" "${2}"
+            ;;
         odm/lib64/mediadrm/libwvdrmengine.so|odm/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
             grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
