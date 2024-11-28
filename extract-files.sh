@@ -76,6 +76,9 @@ function blob_fixup() {
         odm/lib/liblvimfs_wrapper.so | odm/lib64/libCOppLceTonemapAPI.so | vendor/lib64/libalsc.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        vendor/etc/media_codecs.xml|vendor/etc/media_codecs_lahaina.xml|vendor/etc/media_codecs_lahaina_vendor.xml)
+            sed -Ei "/media_codecs_(google_audio|google_telephony|vendor_audio)/d" "${2}"
+            ;;
     esac
 }
 
