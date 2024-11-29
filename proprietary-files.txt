@@ -835,6 +835,7 @@ odm/lib64/camera/com.qti.tuned.sunny_imx766.bin|d4619688118f2a40a757391f7d41dc65
 odm/lib64/camera/com.qti.tuned.truly_imx471.bin|28cfabc852efba025335e38649e3a802b25d6ee3
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so|77513c6998b0b84f1146d589f0f4bd8065810558
 odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so|30e384850b96632d4f79decbccf6b1b7d3e8248a
+odm/lib64/camera/components/com.oplus.node.pilot.so|3c471219cc79dd552dd4fefad845351a5f901a92
 odm/lib64/camera/components/com.oplus.node.preview.so|60f22eb60e3ed54ffcf35adadfb932a2077c3741
 odm/lib64/camera/components/com.oplus.node.rtb.so|8ef3e4809876b99b137ab156d8d7167670a3cd06
 odm/lib64/camera/components/com.oplus.node.videoenhance.so|c5c93d6214a288aa67bf83585e76ab136c1c39e4
@@ -901,6 +902,8 @@ odm/lib64/libarcsoft_high_dynamic_range_couple.so|0746fdfb3d710aecffac9d811ab0bc
 odm/lib64/libarcsoft_high_dynamic_range_couple_v4.so|bf6ceeb34d2668781e0fe2fecda912cf4d3cc419
 odm/lib64/libarcsoft_high_dynamic_range_v4.so;DISABLE_CHECKELF|05c203d186a748294bd9b8e3f5c6601c0bebc8c3
 odm/lib64/libarcsoft_lensstaindetection.so|87673d5563a7e0461d021de733d07e28454fc2de
+odm/lib64/libarcsoft_long_exposure_capture.so|072692d32aaf2b23cfac9884ed26e1ba09348ede
+odm/lib64/libarcsoft_long_exposure_preview.so|0ca6c19643878611821ba764ebb9c6f6335e657a
 odm/lib64/libarcsoft_low_light_hdr.so|9be673d5b2f9d9af8bd02fc72663c608a355a2a4
 odm/lib64/libarcsoft_pic_best.so|5ecd42e8cc42f4a70f7267091fb1f19fbd05f8b5
 odm/lib64/libarcsoft_portraitSN_hvx_stub.so|f86acec4f27855c2aa6383bcd027634d2fa1fb49
@@ -1092,7 +1095,7 @@ vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|5df4a49fde62
 vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk_platform.so|9b426584c17e1c2b7635e11c86f2ee0be4a3ef04
 
 # Camera postproc - Patched
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74cb9bfeeb96df0b707654d662042133ffb23c1a
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|74925f9b11de9721aa9b8dfa4b94f7c87a8baf33
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -1301,7 +1304,7 @@ vendor/etc/media_codecs_lahaina_vendor.xml|9a0870058b77bcfa7bf8080152739a4cf6a27
 vendor/etc/media_codecs_performance.xml|71212178fec0dd6a2b8adc6fedd8bdde4fd1e800
 vendor/etc/media_codecs_performance_lahaina.xml|71212178fec0dd6a2b8adc6fedd8bdde4fd1e800
 vendor/etc/media_codecs_performance_lahaina_vendor.xml|ac28c6137b261538b2e4a155c4483e016c84c3bf
-vendor/etc/media_lahaina/video_system_specs.json|47648fbcc295dc9d9878c6d20b0fb22f6fd722e8
+vendor/etc/media_lahaina/video_system_specs.json|c02ec6aed9d31254ebdc7781b0c86761a0512e9e
 vendor/etc/media_profiles.xml|981dd4a7ffb9020aa1142930ff3ae6d07bda12aa
 vendor/etc/media_profiles_V1_0.xml|2da4310e65720a36ee8422228959795f467f102e
 vendor/etc/media_profiles_lahaina.xml|30e3d2862021cc6bd60f1fa29eaef64126ce07bc
@@ -1629,9 +1632,9 @@ vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
 vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
-vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/libspl.so
