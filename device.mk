@@ -215,7 +215,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     nfc \
     overlay \
     perf \
-    qseecomd \
     telephony \
     usb \
     wfd \
