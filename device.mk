@@ -91,13 +91,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-ifneq ($(wildcard vendor/oplus/camera/),)
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
-endif
-
-PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.stats@1.0.vendor
 
